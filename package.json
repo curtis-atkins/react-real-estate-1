@@ -1,8 +1,7 @@
 {
-  "name": "react-real-estate-site",
+  "name": "react-real-estate-website",
   "version": "1.0.0",
-  "description": "A full stack real estate website using React.js
-",
+  "description": "A full stack real estate website using React.js",
   "main": "index.js",
   "author": "Curtis Atkins",
   "license": "",

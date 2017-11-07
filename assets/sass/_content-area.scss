@@ -1,0 +1,166 @@
+#content-area {
+  overflow: auto;
+  width: 100%;
+  background: black;
+  min-height: 100vh;
+}
+
+#filter {
+  background: $lightgrey;
+  width: 30%;
+  display: inline-block;
+  float: left;
+
+  .inside {
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  select {
+    background:transparent;
+    padding:10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1b1b1b;
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .filters {
+    .title {
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 1rem;
+      color: $grey;
+    }
+    input[type="text"]{
+      border-radius: 5px;
+      font-size: 1rem;
+      padding: 0.4rem;
+      width: 45%;
+      display:inline-block;
+      margin-right: 2.5%;
+      margin-bottom: 1rem;
+    }
+
+    &.extras {
+      label{
+        display:block;
+        width: 100%;
+        padding: 10px 0;
+
+        input[type="checkbox"] {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+#Listings {
+  width: 70%;
+  float: left;
+  display: inline-block;
+  padding: 15px;
+  background: $offwhite;
+
+
+  .search-area {
+    input[type="text"] {
+    width: 80%;
+    background: transparent;
+    font-size: 1rem;
+    border: none;
+    border: 2px solid $gray;
+    margin-bottom: 20px;
+    color: $gray;
+    }
+  }
+  .sortby-area {
+    margin-bottom: 20px;
+        .results {
+      font-size: 0.8rem;
+      color: $gray;
+      display: inline-block;
+
+    }
+    .sort-options {
+      float: right;
+      select {
+        font-size: 0.9rem;
+        font-weight: 300px;
+        border: 1px solid $gray;
+        background: transparent;
+        padding: 5px;
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: top;
+      }
+      .view {
+        display: inline-block;
+
+      .fa {
+        margin-right: 15px;
+        font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .listings-results {
+    margin-bottom: 60px;
+    border-radius
+
+    .listing {
+      background-color: #fff;
+      width: 33.33%;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 8px 54px 0px rgba(214,214,214,1);
+      -moz-box-shadow: 0px 8px 54px 0px rgba(214,214,214,1);
+      box-shadow: 0px 8px 54px 0px rgba(214,214,214,1);
+    }
+    .listing-img {
+      color: white;
+      padding: 15px;
+      position: relative;
+      background: url(https://cdn.freshome.com/wp-content/uploads/2014/04/Gorgeous-evening-view-of-Russet-Residence--1025x450.jpg)
+      no-repeat center center;-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 200px;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      .details {
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c22ad+0,eb89ff+100 */
+background: rgba(76,34,173, .8); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(76,34,173,.8) 0%, rgba(235,137,255,.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(76,34,173,.8) 0%,rgba(235,137,255,.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(76,34,173,.8) 0%,rgba(235,137,255,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c22ad', endColorstr='#eb89ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+
+    }
+  }
+}
