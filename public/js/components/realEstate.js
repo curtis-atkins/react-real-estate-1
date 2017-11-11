@@ -476,12 +476,12 @@ var Listings = function (_Component) {
               { className: 'bottom-info' },
               _react2.default.createElement(
                 'span',
-                null,
+                { className: 'price' },
                 '$1000/month'
               ),
               _react2.default.createElement(
                 'span',
-                null,
+                { className: 'location' },
                 _react2.default.createElement('i', { className: 'fa fa-map-marker', 'aria-hidden': 'true' }),
                 'Ridgewood, NY'
               )
