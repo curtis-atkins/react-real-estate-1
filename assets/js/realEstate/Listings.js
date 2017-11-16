@@ -3,10 +3,61 @@ import React, { Component} from 'react';
 export default class Listings extends Component {
   constructor () {
     super()
-    this.state = {
-      name: 'Joe'
-    }
+    this.state = {}
+  this.loopListings =  this.loopListings.bind(this);
   }
+
+  loopListings(){
+    const {listingsData} = this.props;
+
+    return listingsData.map((listing, index)=>{
+      return(  <div className="col-md-3" key={index}>
+          <div className="listing">
+          <div className="listing-img" style={{background: `url("${listing.image}")
+          no-repeat center center`}}>
+
+            <span className="address">{listing.address}</span>
+            <div className="details">
+              <div className="col-md-3">
+              <div className="user-img"></div>
+              </div>
+              <div className="col-md-9">
+                <div className="user-details">
+                  <span className="user-name">Nina Smith</span>
+                  <span className="user-date">05/08/2017</span>
+                </div>
+                <div className="listing-details">
+                  <div className="floor-space">
+                    <i className="fa fa-check-square-o" aria-hidden="true"></i>
+                    <span>1000 ft&sup2;</span>
+                  </div>
+                  <div className="bedrooms">
+                    <i className="fa fa-bed" aria-hidden="true"></i>
+                    <span>{listing.rooms}</span>
+                  </div>
+                  <div className="bath">
+                    <i className="fa fa-bath" aria-hidden="true"></i>
+                    <span>{listing.bath}</span>
+                  </div>
+                  <div className="view-btn">
+                    View Listing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bottom-info">
+            <span className="price">${listing.price}</span>
+            <span className="location">
+              <i className="fa fa-map-marker" aria-hidden="true"></i>
+               {listing.city}, {listing.state}
+            </span>
+          </div>
+        </div>
+        </div>)
+    })
+  }
+
   render () {
     return (
         <section id="Listings">
@@ -29,168 +80,7 @@ export default class Listings extends Component {
           </section>
 
           <section className="listings-results">
-            <div className="col-md-3">
-              <div className="listing">
-              <div className="listing-img">
-
-                <span className="address">803 Schley Drive</span>
-                <div className="details">
-                  <div className="col-md-3">
-                  <div className="user-img"></div>
-                  </div>
-                  <div className="col-md-9">
-                    <div className="user-details">
-                      <span className="user-name">Nina Smith</span>
-                      <span className="user-date">05/08/2017</span>
-                    </div>
-                    <div className="listing-details">
-                      <div className="floor-space">
-                        <i className="fa fa-check-square-o" aria-hidden="true"></i>
-                        <span>1000 ft&sup2;</span>
-                      </div>
-                      <div className="bedrooms">
-                        <i className="fa fa-bed" aria-hidden="true"></i>
-                        <span>3 bedrooms</span>
-                      </div>
-                      <div className="view-btn">
-                        View Listing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-info">
-                <span className="price">$1000/month</span>
-                <span className="location">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  Ridgewood, NY
-                </span>
-              </div>
-            </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="listing">
-              <div className="listing-img">
-
-                <span className="address">803 Schley Drive</span>
-                <div className="details">
-                  <div className="col-md-3">
-                  <div className="user-img"></div>
-                  </div>
-                  <div className="col-md-9">
-                    <div className="user-details">
-                      <span className="user-name">Nina Smith</span>
-                      <span className="user-date">05/08/2017</span>
-                    </div>
-                    <div className="listing-details">
-                      <div className="floor-space">
-                        <i className="fa fa-check-square-o" aria-hidden="true"></i>
-                        <span>1000 ft&sup2;</span>
-                      </div>
-                      <div className="bedrooms">
-                        <i className="fa fa-bed" aria-hidden="true"></i>
-                        <span>3 bedrooms</span>
-                      </div>
-                      <div className="view-btn">
-                        View Listing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-info">
-                <span className="price">$1000/month</span>
-                <span className="location">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  Ridgewood, NY
-                </span>
-              </div>
-            </div>
-            </div>
-
-
-
-            <div className="col-md-3">
-              <div className="listing">
-              <div className="listing-img">
-
-                <span className="address">803 Schley Drive</span>
-                <div className="details">
-                  <div className="col-md-3">
-                  <div className="user-img"></div>
-                  </div>
-                  <div className="col-md-9">
-                    <div className="user-details">
-                      <span className="user-name">Nina Smith</span>
-                      <span className="user-date">05/08/2017</span>
-                    </div>
-                    <div className="listing-details">
-                      <div className="floor-space">
-                        <i className="fa fa-check-square-o" aria-hidden="true"></i>
-                        <span>1000 ft&sup2;</span>
-                      </div>
-                      <div className="bedrooms">
-                        <i className="fa fa-bed" aria-hidden="true"></i>
-                        <span>3 bedrooms</span>
-                      </div>
-                      <div className="view-btn">
-                        View Listing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-info">
-                <span className="price">$1000/month</span>
-                <span className="location">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  Ridgewood, NY
-                </span>
-              </div>
-            </div>
-            </div>
-
-
-            <div className="col-md-3">
-              <div className="listing">
-              <div className="listing-img">
-
-                <span className="address">803 Schley Drive</span>
-                <div className="details">
-                  <div className="col-md-3">
-                  <div className="user-img"></div>
-                  </div>
-                  <div className="col-md-9">
-                    <div className="user-details">
-                      <span className="user-name">Nina Smith</span>
-                      <span className="user-date">05/08/2017</span>
-                    </div>
-                    <div className="listing-details">
-                      <div className="floor-space">
-                        <i className="fa fa-check-square-o" aria-hidden="true"></i>
-                        <span>1000 ft&sup2;</span>
-                      </div>
-                      <div className="bedrooms">
-                        <i className="fa fa-bed" aria-hidden="true"></i>
-                        <span>3 bedrooms</span>
-                      </div>
-                      <div className="view-btn">
-                        View Listing
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-info">
-                <span className="price">$1000/month</span>
-                <span className="location">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  Ridgewood, NY
-                </span>
-              </div>
-            </div>
-            </div>
+            {this.loopListings()}
           </section>
 
           <section className="pagination" id="pagination">

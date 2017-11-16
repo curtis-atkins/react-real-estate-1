@@ -1,7 +1,7 @@
-const data = [
+const listingsData = [
 {
     image: "https://photos.zillowstatic.com/p_h/ISqtbui1bh6n1g1000000000.jpg",
-    address:"282 Spring Lake Dr N",
+    address:"282 Spring Lake Drive North",
     city:"Mobile",
     state:"AL",
     hometype:"House",
@@ -22,27 +22,27 @@ const data = [
     price: 64900,
     floorspace: 1064,
     extras: [
-      gym
+      "Gym"
     ]
   },
 {
     image: "http://image2.apartmentfinder.com/i2/aRSuQQE_Ruc_5St-h68EyuaheHMOpS85ZIsAZgYBGxY/111/the-heights-montgomery-montgomery-al-building-photo.jpg",
-    address:"605 Maxwell Blvd",
+    address:"605 Maxwell Boulevard",
     city:"Montgomery",
     state:"AL",
     hometype:"Apartment",
     rooms:1,
     bath:1,
-    price: 1199,
+    price: "1199/mo",
     floorspace: 970,
     extras: [
-      elevator,
-      gym
+      "Elevator",
+      "Gym"
     ]
   },
 {
     image: "https://ap.rdcpix.com/1676509438/351f5567f92a66b48c6eaf3578699546l-m0xd-w1020_h770_q80.jpg",
-    address:"1020 Cresent Fls",
+    address:"1020 Cresent Falls",
     city:"Huntsville",
     state:"AL",
     hometype:"Condo",
@@ -51,7 +51,7 @@ const data = [
     price: 229900,
     floorspace: 1883,
     extras: [
-      gym
+      "Gym"
     ]
   },
 {
@@ -65,10 +65,10 @@ const data = [
     price: 1875000,
     floorspace: 4361,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -85,17 +85,17 @@ const data = [
   },
 {
     image: "https://images1.apartments.com/i2/l4mFLqMMWGfkYN-DTE3u3aaW7E3crTDvFawiHDobkig/117/weeks-field-estates-i-apartments-fairbanks-ak-primary-photo.jpg",
-    address:"1301 Kellum St",
+    address:"1301 Kellum Street",
     city:"Fairbanks",
     state:"AK",
     hometype:"Apartment",
     rooms: 2,
     bath: 1,
-    price: 1069,
+    price: "1069/mo",
     floorspace: 830,
     extras: [
-      Swimming Pool,
-      Gym
+      "Swimming Pool",
+      "Gym"
     ]
   },
 {
@@ -121,8 +121,8 @@ const data = [
     price: 371964,
     floorspace: 2676,
     extras: [
-      Finished Basement,
-      Swimming Pool
+      "Finished Basement",
+      "Swimming Pool"
     ]
   },
 {
@@ -136,26 +136,26 @@ const data = [
     price:9900000 ,
     floorspace:12946 ,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
-    image: "https://1-aegir0-camdenliving-com45.s3.amazonaws.com/styles/_min-width__640px_/s3/community/camden-san-marcos/headers/camden-san-marcos-scottsdale-az-1771.jpg?itok=qLUVTjH5&timestamp=1481903478"
+    image: "https://1-aegir0-camdenliving-com45.s3.amazonaws.com/styles/_min-width__640px_/s3/community/camden-san-marcos/headers/camden-san-marcos-scottsdale-az-1771.jpg?itok=qLUVTjH5&timestamp=1481903478",
     address:"9595 E Thunderbird Road",
     city:"Scottsdale",
     state:"AZ",
     hometype:"Apartment",
     rooms:3,
     bath:2,
-    price: 1429,
+    price: "1429/mo",
     floorspace: 1371,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -169,8 +169,8 @@ const data = [
     price: 655000,
     floorspace: 2575,
     extras: [
-      Gym,
-      Finished Basement
+      "Gym",
+      "Finished Basement"
     ]
   },
 {
@@ -205,11 +205,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath:1,
-    price: 480,
+    price: "480/mo",
     floorspace: 551,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -235,10 +235,10 @@ const data = [
     price: 3250760,
     floorspace: 3620 ,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -252,8 +252,8 @@ const data = [
     price: 1099000,
     floorspace: 1025,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -264,11 +264,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath:1,
-    price: 2200,
+    price: "2200/mo",
     floorspace: 600,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -279,12 +279,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 8000,
+    price:1088000,
     floorspace: 1000,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },{
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoHOThCqVq_3ChO-z-KenJGH36GCb1KO0Nyxj5B5WjU6BDCHcJ",
@@ -297,10 +297,10 @@ const data = [
     price: 347999,
     floorspace: 1800,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -323,11 +323,11 @@ const data = [
     hometype:"Apartment",
     rooms:4,
     bath: 4,
-    price: 2500,
+    price: "2500/mo",
     floorspace: 1800,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -353,8 +353,8 @@ const data = [
     price: 398000,
     floorspace:2100,
     extras: [
-      Gym,
-      Finished Basement
+      "Gym",
+      "Finished Basement"
     ]
   },
 {
@@ -377,11 +377,11 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 1375,
+    price: "1375/mo",
     floorspace: 1975,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -395,7 +395,7 @@ const data = [
     price: 267500,
     floorspace: 1900,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -409,10 +409,10 @@ const data = [
     price: 12900000,
     floorspace: 9000,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -426,7 +426,7 @@ const data = [
     price: 180850,
     floorspace: 2375,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -437,11 +437,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 1699,
+    price: "1699/mo",
     floorspace: 879,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -455,9 +455,9 @@ const data = [
     price: 190000,
     floorspace: 1750,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -471,8 +471,8 @@ const data = [
     price: 315759,
     floorspace: 2900,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -495,11 +495,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 2450,
+    price: "2450/mo",
     floorspace: 1400,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -510,12 +510,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 3700,
+    price: 379000,
     floorspace: 1980,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -541,9 +541,9 @@ const data = [
     price: 345500,
     floorspace: 2600,
     extras: [
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -554,11 +554,11 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 2200,
+    price: "2200/mo",
     floorspace: 1400,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -569,12 +569,12 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 4500,
+    price: 450500,
     floorspace: 1750,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -588,10 +588,10 @@ const data = [
     price: 789999,
     floorspace: 3475,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -605,22 +605,22 @@ const data = [
     price: 385000,
     floorspace: 2450,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStaHUBysYeLOQSK4vahXdx6zJNh3hKswpLExY1mPk9pn12PUn6gQ",
-    address:"7973 Bedford Dr.",
+    address:"7973 Bedford Drive",
     city:"Kaneohe",
     state:"HI",
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 2400,
+    price: "2400/mo",
     floorspace: 1399,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -631,12 +631,12 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 3000,
+    price: 300000,
     floorspace: 1675,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -662,9 +662,9 @@ const data = [
     price: 270000,
     floorspace: 2345,
     extras: [
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -675,11 +675,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 1899,
+    price: "1899/mo",
     floorspace: 1350,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -693,8 +693,8 @@ const data = [
     price: 230000,
     floorspace: 1400,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -708,8 +708,8 @@ const data = [
     price: 375888,
     floorspace: 2925,
     extras: [
-      Gym,
-      Finished Basement
+      "Gym",
+      "Finished Basement"
     ]
   },
 {
@@ -723,7 +723,7 @@ const data = [
     price: 325500,
     floorspace: 2460,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -734,12 +734,12 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 2500,
+    price: "2500/mo",
     floorspace: 1365,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -750,13 +750,13 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 2500,
+    price: 520000,
     floorspace: 1340,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -791,11 +791,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 1475,
+    price: "1475/mo",
     floorspace: 1255,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -806,13 +806,13 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 3565,
+    price: 353265,
     floorspace: 1850,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -835,11 +835,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 1799,
+    price: "1799/mo",
     floorspace: 1480,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -850,12 +850,12 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 3000,
+    price: 230000,
     floorspace: 1899,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -869,7 +869,7 @@ const data = [
     price: 585888,
     floorspace: 3000,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -883,7 +883,7 @@ const data = [
     price: 240000,
     floorspace: 2145,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -894,11 +894,11 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 1766,
+    price: "1766/mo",
     floorspace: 1425,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -912,9 +912,9 @@ const data = [
     price: 200000,
     floorspace: 2000,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -940,9 +940,9 @@ const data = [
     price: 470500,
     floorspace: 2500,
     extras: [
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -953,11 +953,11 @@ const data = [
     hometype:"Apartment",
     rooms:4,
     bath: 4,
-    price: 1900,
+    price: "1900/mo",
     floorspace: 1800,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -968,12 +968,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 5000,
+    price: 500000,
     floorspace: 1550,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -987,7 +987,7 @@ const data = [
     price: 220500,
     floorspace: 2160,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1001,24 +1001,23 @@ const data = [
     price: 465000,
     floorspace: 2800,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBzqN9uhD5LKVHuGF2jp1bxdwHin8_vmhfpQJmNN8_QbA8WEi",
-    address:"930 Tarkiln Hill Dr.
-    ",
+    address:"930 Tarkiln Hill Drive",
     city:"Baton Rouge",
     state:"LA",
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 999,
+    price: "999/mo",
     floorspace: 850,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1029,10 +1028,10 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 2000,
+    price: 200000,
     floorspace: 1100,
     extras: [
-      Gym
+      "Gym"
     ]
   },
 {
@@ -1046,8 +1045,8 @@ const data = [
     price: 555555,
     floorspace: 3425,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1070,27 +1069,27 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2 ,
-    price: 1320,
+    price: "1320/mo",
     floorspace: 1099,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKMOJyoV5lfRzdJPwYqo_7ykh3rX8mhyhpbgWKGgL_VVtLkJov",
-    address:"469 Victoria Avenue.",
+    address:"469 Victoria Avenue",
     city:"Augusta",
     state:"ME",
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 2500,
+    price: 255500,
     floorspace: 1800,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1104,7 +1103,7 @@ const data = [
     price: 195999,
     floorspace: 1800,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1118,8 +1117,8 @@ const data = [
     price: 600000,
     floorspace: 3500,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1130,11 +1129,11 @@ const data = [
     hometype: "Apartment",
     rooms:3,
     bath: 3,
-    price: 1599,
+    price: "1599/mo",
     floorspace: 1200,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1145,12 +1144,12 @@ const data = [
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 2600,
+    price: 269800,
     floorspace: 2200,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1185,11 +1184,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 999,
+    price: "999/mo",
     floorspace: 875,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1200,12 +1199,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 1500,
+    price: 1500000,
     floorspace: 1100,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1219,7 +1218,7 @@ const data = [
     price: 235750,
     floorspace: 1900,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -1233,8 +1232,8 @@ const data = [
     price: 355899,
     floorspace: 2200,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1245,11 +1244,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 888,
+    price: "888/mo",
     floorspace: 1100,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1260,11 +1259,11 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 3000,
+    price: 399000,
     floorspace: 1420,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1290,7 +1289,7 @@ const data = [
     price: 200999,
     floorspace: 2000,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1301,11 +1300,11 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 2640,
+    price: "2640/mo",
     floorspace: 1355,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1316,11 +1315,11 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 5500,
+    price: 549500,
     floorspace: 1525,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1334,7 +1333,7 @@ const data = [
     price: 299000,
     floorspace: 2555,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1348,7 +1347,7 @@ const data = [
     price: 285999,
     floorspace: 2185,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1359,7 +1358,7 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 600,
+    price: "600/mo",
     floorspace: 700,
     extras: []
   },
@@ -1371,12 +1370,12 @@ const data = [
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 2000,
+    price: 758200,
     floorspace: 1500,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1390,9 +1389,9 @@ const data = [
     price: 775750,
     floorspace: 3750,
     extras: [
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1406,8 +1405,8 @@ const data = [
     price: 465999,
     floorspace: 3450,
     extras: [
-      Gym,
-      Finished Basement
+      "Gym",
+      "Finished Basement"
     ]
   },
 {
@@ -1418,11 +1417,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 965,
+    price: "965/mo",
     floorspace: 1422,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1433,12 +1432,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 1899,
+    price: 1089900,
     floorspace: 1525,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1452,9 +1451,9 @@ const data = [
     price: 500999,
     floorspace: 2975,
     extras: [
-      Elevator,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1468,8 +1467,8 @@ const data = [
     price: 535500,
     floorspace: 4350,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1480,7 +1479,7 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 1799,
+    price: "1799/mo",
     floorspace: 1855,
     extras: []
   },
@@ -1492,12 +1491,12 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 4655,
+    price: 460055,
     floorspace: 1650,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1511,7 +1510,7 @@ const data = [
     price: 325500,
     floorspace: 2200,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1525,8 +1524,8 @@ const data = [
     price: 380000,
     floorspace: 2345,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1537,7 +1536,7 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 1050,
+    price: "1050/mo",
     floorspace: 699,
     extras: []
   },
@@ -1549,7 +1548,7 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 2900,
+    price: 299900,
     floorspace: 1700,
     extras: []
   },
@@ -1564,8 +1563,8 @@ const data = [
     price: 360600,
     floorspace: 2750,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1588,11 +1587,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 1500,
+    price: "1500/mo",
     floorspace: 999,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1603,11 +1602,11 @@ const data = [
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 5000,
+    price: 503800,
     floorspace: 2199,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1621,7 +1620,7 @@ const data = [
     price: 245500,
     floorspace: 1785,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1635,8 +1634,8 @@ const data = [
     price: 300000,
     floorspace: 2450,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1647,12 +1646,12 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 3250,
+    price: "3250/mo",
     floorspace: 1850,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1663,13 +1662,13 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 3900,
+    price: 397800,
     floorspace: 1450,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1683,8 +1682,8 @@ const data = [
     price: 425000,
     floorspace: 3000,
     extras: [
-      Gym,
-      Finished Basement
+      "Gym",
+      "Finished Basement"
     ]
   },
 {
@@ -1698,7 +1697,7 @@ const data = [
     price: 659500,
     floorspace: 3455,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1709,11 +1708,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 785,
+    price: "785/mo",
     floorspace: 800,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1724,12 +1723,12 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 4699,
+    price: 469999,
     floorspace: 1645,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1755,10 +1754,10 @@ const data = [
     price: 1550000,
     floorspace: 5400,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1769,11 +1768,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 1300,
+    price: "1300/mo",
     floorspace: 1100,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1784,13 +1783,13 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 6000,
+    price: 659000,
     floorspace: 1640,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1816,8 +1815,8 @@ const data = [
     price: 345999,
     floorspace: 2200,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1828,27 +1827,27 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 4600,
+    price: "4600/mo",
     floorspace: 1500,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjs7KwLayaU0o-60lwd9CBjimMsx3Tj1Vu5J2zjgYMSDw7WaX",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjs7KwLayaU0o-60lwd9CBjimMsx3Tj1Vu5J2zjSDw7WaX",
     address:"8423 Bellevue Drive",
     city:"Syracuse",
     state:"NY",
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 9000,
+    price: 9870000,
     floorspace: 2000,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1883,11 +1882,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 1145,
+    price: "1145/mo",
     floorspace: 900,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1898,12 +1897,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 2799,
+    price: 275599,
     floorspace: 1099,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1929,7 +1928,7 @@ const data = [
     price: 1300,
     floorspace: 1300,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -1940,12 +1939,12 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 2699,
+    price: "2699/mo",
     floorspace: 1300,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1956,12 +1955,12 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 4500,
+    price: 454500,
     floorspace: 1499,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -1975,9 +1974,9 @@ const data = [
     price: 475750,
     floorspace: 3600,
     extras: [
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -1991,7 +1990,7 @@ const data = [
     price: 875999,
     floorspace: 4400,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -2002,12 +2001,12 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 3555,
+    price: "3555/mo",
     floorspace: 1755,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2018,13 +2017,13 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 4321,
+    price: 400321,
     floorspace: 1999,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2038,8 +2037,8 @@ const data = [
     price: 450550,
     floorspace: 8000,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2062,11 +2061,11 @@ const data = [
     hometype:"Apartment",
     rooms:4,
     bath: 4,
-    price: 3650,
+    price: "3650/mo",
     floorspace: 1700,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2077,7 +2076,7 @@ const data = [
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 3550,
+    price: 355350,
     floorspace: 1650,
     extras: []
   },
@@ -2104,7 +2103,7 @@ const data = [
     price: 298000,
     floorspace: 2300,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -2115,11 +2114,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 798,
+    price: "798/mo",
     floorspace: 899,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2130,12 +2129,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 2100,
+    price: 212900,
     floorspace: 985,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2170,11 +2169,11 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 2359,
+    price: "2359/mo",
     floorspace: 1555,
     extras: [
-      Gym,
-      Swimming Pool,
+      "Gym",
+      "Swimming Pool",
     ]
   },
 {
@@ -2185,13 +2184,13 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 7500,
+    price: 759500,
     floorspace: 2000,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2205,7 +2204,7 @@ const data = [
     price: 265999,
     floorspace: 2850,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -2228,11 +2227,11 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 3499,
+    price: "3499/mo",
     floorspace: 1645,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2243,12 +2242,12 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 7650,
+    price: 769350,
     floorspace: 1750,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2274,8 +2273,8 @@ const data = [
     price: 760465,
     floorspace: 3560,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2286,11 +2285,11 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 799,
+    price: "799/mo",
     floorspace: 675,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2301,11 +2300,11 @@ const data = [
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 5900,
+    price: 599900,
     floorspace: 2100,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2319,9 +2318,9 @@ const data = [
     price: 475000,
     floorspace: 3800,
     extras: [
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2344,12 +2343,12 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 1699,
+    price: "1699/mo",
     floorspace: 1485,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2360,12 +2359,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 3299,
+    price: 313299,
     floorspace: 1250,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2391,7 +2390,7 @@ const data = [
     price: 2450,
     floorspace: 2755,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -2402,11 +2401,11 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 1675,
+    price: "1675/mo",
     floorspace: 1445,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2417,11 +2416,11 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 8000,
+    price: 867000,
     floorspace: 1955,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2435,7 +2434,7 @@ const data = [
     price: 310675,
     floorspace: 2350,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -2449,9 +2448,9 @@ const data = [
     price: 400500,
     floorspace: 3545,
     extras: [
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2462,12 +2461,12 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 8599,
+    price: "8599/mo",
     floorspace: 2150,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2478,12 +2477,12 @@ const data = [
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 6450,
+    price: 649250,
     floorspace: 1765,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2509,8 +2508,8 @@ const data = [
     price: 445000,
     floorspace: 2655,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2521,12 +2520,12 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 9000,
+    price: "9000/mo",
     floorspace: 2000,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2537,11 +2536,11 @@ const data = [
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 5765,
+    price: 562765,
     floorspace: 1500,
     extras: [
-      Elevator,
-      Swimming Pool
+      "Elevator",
+      "Swimming Pool"
     ]
   },
 {
@@ -2555,7 +2554,7 @@ const data = [
     price: 220000,
     floorspace: 2350,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -2569,7 +2568,7 @@ const data = [
     price: 300999,
     floorspace: 2430,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -2580,12 +2579,12 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 1959,
+    price: "1959/mo",
     floorspace: 1600,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2596,12 +2595,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 3000,
+    price: 388000,
     floorspace: 1445,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2615,7 +2614,7 @@ const data = [
     price: 345700,
     floorspace: 3200,
     extras: [
-      Finished Basement
+      "Finished Basement"
     ]
   },
 {
@@ -2638,7 +2637,7 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 3500,
+    price: "3500/mo",
     floorspace: 900,
     extras: []
   },
@@ -2650,11 +2649,11 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 5000,
+    price: 521000,
     floorspace: 1299,
     extras: [
-      Elevator,
-      Gym
+      "Elevator",
+      "Gym"
     ]
   },
 {
@@ -2680,10 +2679,10 @@ const data = [
     price: 7520,
     floorspace: 1450,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool,
-      Finished Basement
+      "Elevator",
+      "Gym",
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2694,28 +2693,28 @@ const data = [
     hometype:"Apartment",
     rooms:2,
     bath: 2,
-    price: 2400,
+    price: "2400/mo",
     floorspace: 1500,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7-lEZdSbYRI_6mx2CPGqNHgM5zwWppten5mtvMAaipxTPdmxvg",
-    address:"8122 NE. Canal Street",
+    address:"8122 N.E. Canal Street",
     city:"Tacoma",
     state:"WA",
     hometype:"Condo",
     rooms:3,
     bath: 3,
-    price: 7655,
+    price: 769955,
     floorspace: 1800,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2729,8 +2728,8 @@ const data = [
     price: 345500,
     floorspace: 2200,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2753,11 +2752,11 @@ const data = [
     hometype:"Apartment",
     rooms:3,
     bath: 3,
-    price: 1150,
+    price: "1150/mo",
     floorspace: 1350,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2768,12 +2767,12 @@ const data = [
     hometype:"Condo",
     rooms:4,
     bath: 4,
-    price: 6455,
+    price: 645500,
     floorspace: 1888,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2808,11 +2807,11 @@ const data = [
     hometype:"Apartment",
     rooms:4,
     bath: 4,
-    price: 2850,
+    price: "2850/mo",
     floorspace: 2000,
     extras: [
-      Gym,
-      Swimming Pool
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2823,12 +2822,12 @@ const data = [
     hometype:"Condo",
     rooms:1,
     bath: 1,
-    price: 4450,
+    price: 430450,
     floorspace: 1675,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2842,8 +2841,8 @@ const data = [
     price: 500999,
     floorspace: 3450,
     extras: [
-      Swimming Pool,
-      Finished Basement
+      "Swimming Pool",
+      "Finished Basement"
     ]
   },
 {
@@ -2857,7 +2856,7 @@ const data = [
     price: 265755,
     floorspace: 2540,
     extras: [
-      Swimming Pool
+      "Swimming Pool"
     ]
   },
 {
@@ -2868,12 +2867,12 @@ const data = [
     hometype:"Apartment",
     rooms:1,
     bath: 1,
-    price: 900,
+    price: "900/mo",
     floorspace: 850,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
@@ -2884,17 +2883,17 @@ const data = [
     hometype:"Condo",
     rooms:2,
     bath: 2,
-    price: 3750,
+    price: 379950,
     floorspace: 1345,
     extras: [
-      Elevator,
-      Gym,
-      Swimming Pool
+      "Elevator",
+      "Gym",
+      "Swimming Pool"
     ]
   },
 {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsBmDxE6ntOFQXmlIG__Kd0ZcPFQzoy0Wwu_0EDwJXVqPe2-O1",
-    address:"",
+    address:"399 Discovery Way",
     city:"Wisconsin Dells",
     state:"WI",
     hometype:"House",
@@ -2903,6 +2902,8 @@ const data = [
     price: 360000,
     floorspace: 3500,
     extras: []
-    ]
   }
 ]
+
+
+export default listingsData;

@@ -7,7 +7,7 @@
 
 #filter {
   background: $lightgrey;
-  width: 30%;
+  width: 20%;
   display: inline-block;
   float: left;
 
@@ -65,7 +65,7 @@
 }
 
 #Listings {
-  width: 70%;
+  width: 80%;
   float: left;
   display: inline-block;
   padding: 15px;
@@ -126,8 +126,8 @@
       color: white;
       padding: 15px;
       position: relative;
-      background: url(https://cdn.freshome.com/wp-content/uploads/2014/04/Gorgeous-evening-view-of-Russet-Residence--1025x450.jpg)
-      no-repeat center center;-webkit-background-size: cover;
+
+      -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
@@ -145,12 +145,16 @@
         .address {
           opacity: 0;
           transition: all 0.4s ease-in-out
+
         }
       }
 
       .address {
+        font-size: 1.3rem;
+        text-transform: capitalize;
         position: absolute;
         bottom: 20px;
+        text-shadow: 1px 1px 5px rgba(107, 88, 150, 1);
       }
 
       .details {
@@ -210,12 +214,13 @@
             .fa{
               display: inline-block;
               font-size: 20px;
-              margin-right: 15px;
+              margin-right: 3px;
             }
             span {
               display: inline-block;
               font-size: 0.8rem;
               vertical-align: top;
+              text-align: right;
               position: relative;
               top: 3px;
             }
@@ -234,13 +239,15 @@
     margin-bottom: 10px;
     margin: 2px;
     color: black;
+    & i{
+      margin: 1px;
+    }
   }
   .price {
     font-size: 1rem;
     display: block;
     margin-bottom: 5px;
     color: $grey;
-
   }
 }
 
