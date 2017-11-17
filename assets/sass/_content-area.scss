@@ -1,7 +1,7 @@
 #content-area {
   overflow: auto;
   width: 100%;
-  background: black;
+  background: white;
   min-height: 100vh;
 }
 
@@ -29,8 +29,12 @@
     font-weight: 300;
     color: #1b1b1b;
     display: block;
-    margin-bottom: 25px;
-    width: 100%;
+    margin: 2px 2px 25px 2px;
+    width: 95%;
+  }
+
+  span {
+    margin: 5px;
   }
 
   .filters {
@@ -40,11 +44,12 @@
       margin-bottom: 1rem;
       color: $grey;
     }
-    input[type="text"]{
+    input[type="number"]{
       border-radius: 5px;
       font-size: 1rem;
       padding: 0.4rem;
       width: 45%;
+      margin-left: 3px;
       display:inline-block;
       margin-right: 2.5%;
       margin-bottom: 1rem;

@@ -34,6 +34,8 @@ var _listingsData2 = _interopRequireDefault(_listingsData);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -50,15 +52,33 @@ var App = function (_Component) {
 
     _this.state = {
       name: '',
-      listingsData: _listingsData2.default
+      listingsData: _listingsData2.default,
+      min_price: 0,
+      max_price: 100000000,
+      min_floor_space: 0,
+      max_floor_space: 20000,
+      elevator: false,
+      finished_basement: false,
+      swimming_pool: false
     };
+    _this.change = _this.change.bind(_this);
     return _this;
   }
 
   _createClass(App, [{
+    key: 'change',
+    value: function change(event) {
+      var _this2 = this;
+
+      var name = event.target.name;
+      var value = event.target.type === "checkbox" ? event.target.checked : event.target.value;
+      this.setState(_defineProperty({}, name, value), function () {
+        console.log(_this2.state);
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
-      console.log(this.state);
       return _react2.default.createElement(
         'div',
         null,
@@ -66,7 +86,7 @@ var App = function (_Component) {
         _react2.default.createElement(
           'section',
           { id: 'content-area' },
-          _react2.default.createElement(_Filter2.default, null),
+          _react2.default.createElement(_Filter2.default, { change: this.change, globalState: this.state }),
           _react2.default.createElement(_Listings2.default, { listingsData: this.state.listingsData })
         )
       );
@@ -135,30 +155,414 @@ var Filter = function (_Component) {
             'Filter'
           ),
           _react2.default.createElement(
-            'select',
-            { name: 'neighborhood', className: 'filters neighborhood' },
-            _react2.default.createElement(
-              'option',
-              null,
-              'Ridgewood'
-            )
+            'span',
+            { className: 'title city' },
+            'City'
           ),
           _react2.default.createElement(
             'select',
-            { name: 'housetype', className: 'filters housetype' },
+            { name: 'city', className: 'filters city', onChange: this.props.change },
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' }),
+            _react2.default.createElement('option', { value: '' })
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'title state' },
+            'State'
+          ),
+          _react2.default.createElement(
+            'select',
+            { name: 'state', className: 'filters state', onChange: this.props.change },
             _react2.default.createElement(
               'option',
-              null,
+              { value: 'AL' },
+              'AL'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'AK' },
+              'AK'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'AZ' },
+              'AZ'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'AR' },
+              'AR'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'CA' },
+              'CA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'CO' },
+              'CO'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'CT' },
+              'CT'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'DE' },
+              'DE'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'FL' },
+              'FL'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'GA' },
+              'GA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'HI' },
+              'HI'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'ID' },
+              'ID'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'IL' },
+              'IL'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'IN' },
+              'IN'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'IA' },
+              'IA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'KS' },
+              'KS'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'KY' },
+              'KY'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'LA' },
+              'LA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'ME' },
+              'ME'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'MD' },
+              'MD'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'MA' },
+              'MA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'MI' },
+              'MI'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'MN' },
+              'MN'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'MS' },
+              'MS'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'MO' },
+              'MO'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'MT' },
+              'MT'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'NE' },
+              'NE'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'NV' },
+              'NV'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'NH' },
+              'NH'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'NJ' },
+              'NJ'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'NM' },
+              'NM'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'NY' },
+              'NY'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'NC' },
+              'NC'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'ND' },
+              'ND'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'OH' },
+              'OH'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'OK' },
+              'OK'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'OR' },
+              'OR'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'PA' },
+              'PA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'RI' },
+              'RI'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'SC' },
+              'SC'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'SD' },
+              'SD'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'TN' },
+              'TN'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'TX' },
+              'TX'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'UT' },
+              'UT'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'VT' },
+              'VT'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'VA' },
+              'VA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'WA' },
+              'WA'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'WV' },
+              'WV'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'WI' },
+              'WI'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'WY' },
+              'WY'
+            )
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'title type' },
+            'Type'
+          ),
+          _react2.default.createElement(
+            'select',
+            { name: 'housetype', className: 'filters housetype', onChange: this.props.change },
+            _react2.default.createElement(
+              'option',
+              { value: 'Ranch' },
               'Ranch'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'Apartment' },
+              'Apartment'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'House' },
+              'House'
+            ),
+            _react2.default.createElement(
+              'option',
+              { value: 'Condo' },
+              'Condo'
             )
           ),
           _react2.default.createElement(
+            'span',
+            { className: 'title beds' },
+            'Bedrooms'
+          ),
+          _react2.default.createElement(
             'select',
-            { name: 'bedrooms', className: 'filters bedrooms' },
+            { name: 'bedrooms', className: 'filters bedrooms', onChange: this.props.change },
+            _react2.default.createElement(
+              'option',
+              null,
+              '1 BR'
+            ),
             _react2.default.createElement(
               'option',
               null,
               '2 BR'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '3 BR'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '4 BR'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '5 BR'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '6 BR'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '7 BR'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '8 BR'
+            )
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'title baths' },
+            'Bathrooms'
+          ),
+          _react2.default.createElement(
+            'select',
+            { name: 'bath', className: 'filters bath', onChange: this.props.change },
+            _react2.default.createElement(
+              'option',
+              null,
+              '1 BA'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '2 BA'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '3 BA'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '4 BA'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '5 BA'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '6 BA'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '7 BA'
+            ),
+            _react2.default.createElement(
+              'option',
+              null,
+              '8 BA'
             )
           ),
           _react2.default.createElement(
@@ -166,11 +570,13 @@ var Filter = function (_Component) {
             { className: 'filters price' },
             _react2.default.createElement(
               'span',
-              { className: 'title' },
+              { className: 'title price' },
               'Price'
             ),
-            _react2.default.createElement('input', { type: 'text', name: 'min-price', className: 'min-price' }),
-            _react2.default.createElement('input', { type: 'text', name: 'max-price', className: 'max-price' })
+            _react2.default.createElement('input', { type: 'number', name: 'min_price', className: 'min_price', onChange: this.props.change,
+              value: this.props.globalState.min_price }),
+            _react2.default.createElement('input', { type: 'number', name: 'max_price', className: 'max_price', onChange: this.props.change,
+              value: this.props.globalState.max_price })
           ),
           _react2.default.createElement(
             'div',
@@ -180,8 +586,10 @@ var Filter = function (_Component) {
               { className: 'title' },
               'Floor Space'
             ),
-            _react2.default.createElement('input', { type: 'text', name: 'min-floor-space', className: 'min-floor-space' }),
-            _react2.default.createElement('input', { type: 'text', name: 'max-floor-space', className: 'max-floor-space' })
+            _react2.default.createElement('input', { type: 'number', name: 'min_floor_space', className: 'min_floor_space', onChange: this.props.change,
+              value: this.props.globalState.min_floor_space }),
+            _react2.default.createElement('input', { type: 'number', name: 'max_floor_space', className: 'max_floor_space', onChange: this.props.change,
+              value: this.props.globalState.max_floor_space })
           ),
           _react2.default.createElement(
             'div',
@@ -194,7 +602,8 @@ var Filter = function (_Component) {
                 null,
                 'Elevators'
               ),
-              _react2.default.createElement('input', { type: 'checkbox', name: 'extras' })
+              _react2.default.createElement('input', { type: 'checkbox', value: 'elevator', name: 'elevator',
+                onChange: this.props.change })
             ),
             _react2.default.createElement(
               'label',
@@ -204,7 +613,8 @@ var Filter = function (_Component) {
                 null,
                 'Swimming Pool'
               ),
-              _react2.default.createElement('input', { type: 'checkbox', value: 'swimming-pool', name: 'extras' })
+              _react2.default.createElement('input', { type: 'checkbox', value: 'swimming_pool', name: 'swimming_pool',
+                onChange: this.props.change })
             ),
             _react2.default.createElement(
               'label',
@@ -214,7 +624,8 @@ var Filter = function (_Component) {
                 null,
                 'Finished Basement'
               ),
-              _react2.default.createElement('input', { type: 'checkbox', value: 'finished-basement', name: 'extras' })
+              _react2.default.createElement('input', { type: 'checkbox', value: 'finished_basement', name: 'finished_basement',
+                onChange: this.props.change })
             ),
             _react2.default.createElement(
               'label',
@@ -224,7 +635,8 @@ var Filter = function (_Component) {
                 null,
                 'Gym'
               ),
-              _react2.default.createElement('input', { type: 'checkbox', value: 'gym', name: 'extras' })
+              _react2.default.createElement('input', { type: 'checkbox', value: 'gym', name: 'gym',
+                onChange: this.props.change })
             )
           )
         )
@@ -1970,7 +2382,7 @@ var listingsData = [{
   floorspace: 1500,
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjs7KwLayaU0o-60lwd9CBjimMsx3Tj1Vu5J2zjSDw7WaX",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIc7F9R7ydrYIEVuaJrptsrLCu-WiLT-60gvrfhJ6SxEhjSyLtw",
   address: "8423 Bellevue Drive",
   city: "Syracuse",
   state: "NY",
