@@ -10,10 +10,15 @@ export default class Listings extends Component {
   loopListings(){
     const {listingsData} = this.props;
 
+    if(listingsData == undefined || listingsData.length == 0){
+      return "Sorry, your filter did not match any listing"
+    }
+
     return listingsData.map((listing, index)=>{
-      return(  <div className="col-md-3" key={index}>
+      return(<div className="col-md-3" key={index}>
           <div className="listing">
-          <div className="listing-img" style={{background: `url("${listing.image}")
+          <div className="listing-img" style={{background:
+              `url("${listing.image}")
           no-repeat center center`}}>
 
             <span className="address">{listing.address}</span>
@@ -23,13 +28,13 @@ export default class Listings extends Component {
               </div>
               <div className="col-md-9">
                 <div className="user-details">
-                  <span className="user-name">Nina Smith</span>
-                  <span className="user-date">05/08/2017</span>
+                  <span className="user-name">{listing.seller}</span>
+                  <span className="user-date">{listing.date}</span>
                 </div>
                 <div className="listing-details">
                   <div className="floor-space">
                     <i className="fa fa-check-square-o" aria-hidden="true"></i>
-                    <span>1000 ft&sup2;</span>
+                    <span>{listing.floorspace}</span>
                   </div>
                   <div className="bedrooms">
                     <i className="fa fa-bed" aria-hidden="true"></i>
