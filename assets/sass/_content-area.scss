@@ -165,7 +165,7 @@
       .details {
         transition: all 0.4s ease-in-out;
         opacity:0;
-        padding: 30px;
+        padding: 15px;
         position: absolute;
         top:0;
         left:0;
@@ -184,13 +184,14 @@
         background: linear-gradient(135deg, rgba(76,34,173,.8) 0%,rgba(235,137,255,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c22ad', endColorstr='#eb89ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
         .user-img {
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          border: 2px solid white;
-          display: inline-block;
-          background: url(https://cdn.freshome.com/wp-content/uploads/2014/04/Gorgeous-evening-view-of-Russet-Residence--1025x450.jpg)
-          no-repeat center center;-webkit-background-size: cover;
+          // width: 40px;
+          // height: 40px;
+          // border-radius: 50%;
+          // margin: 1px;
+          // border: 1px solid white;
+          // display: block;
+          // background: url(https://cdn.freshome.com/wp-content/uploads/2014/04/Gorgeous-evening-view-of-Russet-Residence--1025x450.jpg)
+          // no-repeat center center;-webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;
@@ -203,8 +204,8 @@
             font-weight: 300;
             color: rgba(255,255,255, 1);
             display: block;
-            margin-top: 3px;
-            margin-bottom: 5px;
+            margin: 3px;
+
           }
           .user-date {
             font-size: 0.9rem;
@@ -260,6 +261,7 @@
 
 .view-btn {
   background: black;
+
   padding: 8px;
   font-size: 0.9rem;
   border-radius: 5px;

@@ -13,11 +13,11 @@ class App extends Component {
     this.state = {
       name: "",
       listingsData,
-      city:"City",
-      state:"STATE",
-      homeType:"Home Type",
-      rooms:"1BR",
-      bath:"1BA",
+      city:"",
+      state:"",
+      homeType:"",
+      rooms: 0,
+      bath: 0,
       min_price: 0,
       max_price: 100000000,
       min_floor_space: 0,
@@ -47,13 +47,31 @@ change(event){
 }
 
 filteredData(){
-  const newData = this.state.listingsData.filter((item) => {
+  let newData;
+   newData = this.state.listingsData.filter((item) => {
     return (item.price >= this.state.min_price
     && item.price <= this.state.max_price)
     && (item.floorspace >= this.state.min_floor_space
     && item.floorspace <= this.state.max_floor_space)
-
+    && item.rooms >= this.state.rooms
   })
+  // if (this.state.city != "Any") {
+  //   newData = newData.filter((item) => {
+  //     return item.city == this.state.city
+  //   })
+  // }
+
+ if (this.state.state != "Any") {
+    newData = newData.filter((item) => {
+      return item.state == this.state.state
+    })
+  }
+
+ //  if (this.state.homeType != "Any") {
+ //     newData = newData.filter((item) => {
+ //       return item.homeType == this.state.homeType
+ //     })
+ //   }
 
 
 this.setState({

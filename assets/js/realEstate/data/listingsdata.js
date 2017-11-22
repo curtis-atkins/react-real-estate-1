@@ -9,8 +9,9 @@ const listingsData = [
     bath: 2,
     price: 135000,
     floorspace: 1348,
-    date:"",
-    seller:"",
+    date:"12/11/2017",
+    seller:"Wilson Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: []
   },
 {
@@ -23,8 +24,9 @@ const listingsData = [
     bath: 2,
     price: 64900,
     floorspace: 1064,
-    date:"",
-    seller:"",
+    date:"12/1/2017",
+    seller:"Sherry Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Gym"
     ]
@@ -32,15 +34,16 @@ const listingsData = [
 {
     image: "http://image2.apartmentfinder.com/i2/aRSuQQE_Ruc_5St-h68EyuaheHMOpS85ZIsAZgYBGxY/111/the-heights-montgomery-montgomery-al-building-photo.jpg",
     address:"605 Maxwell Boulevard",
-    city:"Montgomery",
-    state:"AL",
+    city: "Montgomery",
+    state: "AL",
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "1199/mo",
+    price: 1199,
     floorspace: 970,
-    date:"",
-    seller:"",
+    date:"1/9/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Elevator",
       "Gym"
@@ -56,8 +59,9 @@ const listingsData = [
     bath: 2,
     price: 229900,
     floorspace: 1883,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Gym"
     ]
@@ -72,8 +76,9 @@ const listingsData = [
     bath: 3,
     price: 1875000,
     floorspace: 4361,
-    date:"",
-    seller:"",
+    date:"11/20/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Elevator",
       "Gym",
@@ -91,8 +96,9 @@ const listingsData = [
     bath: 2,
     price: 429900,
     floorspace: 1675,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: []
   },
 {
@@ -103,10 +109,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 1,
-    price: "1069/mo",
+    price: 1069,
     floorspace: 830,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Swimming Pool",
       "Gym"
@@ -122,8 +129,9 @@ const listingsData = [
     bath: 1,
     price: 179000,
     floorspace: 864,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: []
   },
 {
@@ -136,8 +144,9 @@ const listingsData = [
     bath: 3,
     price: 371964,
     floorspace: 2676,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Finished Basement",
       "Swimming Pool"
@@ -153,8 +162,9 @@ const listingsData = [
     bath: 8,
     price:9900000 ,
     floorspace:12946 ,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Elevator",
       "Gym",
@@ -170,10 +180,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 2,
-    price: "1429/mo",
+    price: 1429,
     floorspace: 1371,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym",
@@ -190,8 +201,9 @@ const listingsData = [
     bath: 3,
     price: 655000,
     floorspace: 2575,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Gym",
       "Finished Basement"
@@ -207,8 +219,9 @@ const listingsData = [
     bath: 2 ,
     price: 215000,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: []
   },
 {
@@ -221,8 +234,9 @@ const listingsData = [
     bath: 1,
     price: 120000,
     floorspace: 792,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -233,10 +247,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "480/mo",
+    price: 480,
     floorspace: 551,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -252,8 +267,9 @@ const listingsData = [
     bath: 3,
     price: 399000,
     floorspace: 1600,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: []
   },
 {
@@ -266,8 +282,9 @@ const listingsData = [
     bath: 5,
     price: 3250760,
     floorspace: 3620,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Elevator",
       "Gym",
@@ -285,8 +302,9 @@ const listingsData = [
     bath: 1,
     price: 1099000,
     floorspace: 1025,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -300,10 +318,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 1,
-    price: "2200/mo",
+    price: 2200,
     floorspace: 600,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -319,8 +338,9 @@ const listingsData = [
     bath: 1,
     price:1088000,
     floorspace: 1000,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Elevator",
       "Gym",
@@ -336,8 +356,9 @@ const listingsData = [
     bath: 3,
     price: 347999,
     floorspace: 1800,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym",
@@ -355,8 +376,9 @@ const listingsData = [
     bath: 3,
     price: 290000,
     floorspace: 2300,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: []
   },
 {
@@ -367,10 +389,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 4,
     bath: 4,
-    price: "2500/mo",
+    price: 2500,
     floorspace: 1800,
-    date:"",
-    seller:"",
+    date:"10/14/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -386,8 +409,9 @@ const listingsData = [
     bath: 2,
     price: 150500,
     floorspace: 1800,
-    date:"",
-    seller:"",
+    date:"10/26/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -400,8 +424,9 @@ const listingsData = [
     bath: 3,
     price: 398000,
     floorspace:2100,
-    date:"",
-    seller:"",
+    date:"10/31/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Gym",
       "Finished Basement"
@@ -417,8 +442,9 @@ const listingsData = [
     bath: 3,
     price: 140500,
     floorspace: 1750,
-    date:"",
-    seller:"",
+    date:"11/20/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: []
   },
 {
@@ -429,10 +455,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "1375/mo",
+    price: 1375,
     floorspace: 1975,
-    date:"",
-    seller:"",
+    date:"12/1/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -448,8 +475,9 @@ const listingsData = [
     bath: 3,
     price: 267500,
     floorspace: 1900,
-    date:"",
-    seller:"",
+    date:"12/11/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Swimming Pool"
     ]
@@ -464,8 +492,9 @@ const listingsData = [
     bath: 6,
     price: 12900000,
     floorspace: 9000,
-    date:"",
-    seller:"",
+    date:"1/9/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Elevator",
       "Gym",
@@ -483,8 +512,9 @@ const listingsData = [
     bath: 4,
     price: 180850,
     floorspace: 2375,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Finished Basement"
     ]
@@ -497,10 +527,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "1699/mo",
+    price: 1699,
     floorspace: 879,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -516,8 +547,9 @@ const listingsData = [
     bath: 4,
     price: 190000,
     floorspace: 1750,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Elevator",
       "Gym",
@@ -534,8 +566,9 @@ const listingsData = [
     bath: 2,
     price: 315759,
     floorspace: 2900,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -551,8 +584,9 @@ const listingsData = [
     bath: 4,
     price: 315000,
     floorspace: 2500,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -563,10 +597,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "2450/mo",
+    price: 2450,
     floorspace: 1400,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -582,8 +617,9 @@ const listingsData = [
     bath: 1,
     price: 379000,
     floorspace: 1980,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Elevator",
       "Gym",
@@ -600,8 +636,9 @@ const listingsData = [
     bath: 4,
     price: 235000,
     floorspace: 2459,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: []
   },
 {
@@ -614,8 +651,9 @@ const listingsData = [
     bath: 6,
     price: 345500,
     floorspace: 2600,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -630,10 +668,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "2200/mo",
+    price: 2200,
     floorspace: 1400,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -649,8 +688,9 @@ const listingsData = [
     bath: 2,
     price: 450500,
     floorspace: 1750,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Elevator",
       "Gym",
@@ -667,8 +707,9 @@ const listingsData = [
     bath: 5,
     price: 789999,
     floorspace: 3475,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym",
@@ -686,8 +727,9 @@ const listingsData = [
     bath: 2,
     price: 385000,
     floorspace: 2450,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Finished Basement"
     ]
@@ -700,10 +742,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "2400/mo",
+    price: 2400,
     floorspace: 1399,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -719,8 +762,9 @@ const listingsData = [
     bath: 3,
     price: 300000,
     floorspace: 1675,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Elevator",
       "Gym",
@@ -737,8 +781,9 @@ const listingsData = [
     bath: 3,
     price: 266899,
     floorspace: 2175,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: []
   },
 {
@@ -751,8 +796,9 @@ const listingsData = [
     bath: 3,
     price: 270000,
     floorspace: 2345,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -767,10 +813,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "1899/mo",
+    price: 1899,
     floorspace: 1350,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -786,8 +833,9 @@ const listingsData = [
     bath: 4,
     price: 230000,
     floorspace: 1400,
-    date:"",
-    seller:"",
+    date:"10/14/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -803,8 +851,9 @@ const listingsData = [
     bath: 3,
     price: 375888,
     floorspace: 2925,
-    date:"",
-    seller:"",
+    date:"10/26/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Gym",
       "Finished Basement"
@@ -820,8 +869,9 @@ const listingsData = [
     bath: 4,
     price: 325500,
     floorspace: 2460,
-    date:"",
-    seller:"",
+    date:"10/31/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Finished Basement"
     ]
@@ -834,10 +884,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "2500/mo",
+    price: 2500,
     floorspace: 1365,
-    date:"",
-    seller:"",
+    date:"11/20/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym",
@@ -854,8 +905,9 @@ const listingsData = [
     bath: 1,
     price: 520000,
     floorspace: 1340,
-    date:"",
-    seller:"",
+    date:"12/1/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Elevator",
       "Gym",
@@ -873,8 +925,9 @@ const listingsData = [
     bath: 2,
     price: 199799,
     floorspace: 1875,
-    date:"",
-    seller:"",
+    date:"12/11/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: []
   },
 {
@@ -887,8 +940,9 @@ const listingsData = [
     bath: 4,
     price: 456700,
     floorspace: 2555,
-    date:"",
-    seller:"",
+    date:"1/9/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -899,10 +953,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "1475/mo",
+    price: 1475,
     floorspace: 1255,
-    date:"",
-    seller:"",
+    date:"10/31/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -918,8 +973,9 @@ const listingsData = [
     bath: 2,
     price: 353265,
     floorspace: 1850,
-    date:"",
-    seller:"",
+    date:"10/26/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Elevator",
       "Gym",
@@ -937,8 +993,9 @@ const listingsData = [
     bath: 3,
     price: 222000,
     floorspace: 2150,
-    date:"",
-    seller:"",
+    date:"10/14/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: []
   },
 {
@@ -949,10 +1006,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "1799/mo",
+    price: 1799,
     floorspace: 1480,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -968,8 +1026,9 @@ const listingsData = [
     bath: 3,
     price: 230000,
     floorspace: 1899,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Elevator",
       "Gym",
@@ -986,8 +1045,9 @@ const listingsData = [
     bath: 3,
     price: 585888,
     floorspace: 3000,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Swimming Pool"
     ]
@@ -1002,8 +1062,9 @@ const listingsData = [
     bath: 3,
     price: 240000,
     floorspace: 2145,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Finished Basement"
     ]
@@ -1016,10 +1077,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "1766/mo",
+    price: 1766,
     floorspace: 1425,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1035,8 +1097,9 @@ const listingsData = [
     bath: 4,
     price: 200000,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Elevator",
       "Gym",
@@ -1053,8 +1116,9 @@ const listingsData = [
     bath: 2,
     price: 275999,
     floorspace: 2200,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -1067,8 +1131,9 @@ const listingsData = [
     bath: 5,
     price: 470500,
     floorspace: 2500,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -1083,10 +1148,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 4,
     bath: 4,
-    price: "1900/mo",
+    price: 1900,
     floorspace: 1800,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1102,8 +1168,9 @@ const listingsData = [
     bath: 1,
     price: 500000,
     floorspace: 1550,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Elevator",
       "Gym",
@@ -1120,8 +1187,9 @@ const listingsData = [
     bath: 3,
     price: 220500,
     floorspace: 2160,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Finished Basement"
     ]
@@ -1136,8 +1204,9 @@ const listingsData = [
     bath: 3,
     price: 465000,
     floorspace: 2800,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -1151,10 +1220,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "999/mo",
+    price: 999,
     floorspace: 850,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1170,8 +1240,9 @@ const listingsData = [
     bath: 2,
     price: 200000,
     floorspace: 1100,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Gym"
     ]
@@ -1186,8 +1257,9 @@ const listingsData = [
     bath: 5,
     price: 555555,
     floorspace: 3425,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1203,8 +1275,9 @@ const listingsData = [
     bath: 4,
     price: 199000,
     floorspace: 1850,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: []
   },
 {
@@ -1215,10 +1288,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2 ,
-    price: "1320/mo",
+    price: 1320,
     floorspace: 1099,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1234,8 +1308,9 @@ const listingsData = [
     bath: 3,
     price: 255500,
     floorspace: 1800,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Elevator",
       "Gym",
@@ -1252,8 +1327,9 @@ const listingsData = [
     bath: 2,
     price: 195999,
     floorspace: 1800,
-    date:"",
-    seller:"",
+    date:"1/9/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Finished Basement"
     ]
@@ -1268,8 +1344,9 @@ const listingsData = [
     bath: 5,
     price: 600000,
     floorspace: 3500,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -1283,10 +1360,11 @@ const listingsData = [
     homeType: "Apartment",
     rooms: 3,
     bath: 3,
-    price: "1599/mo",
+    price: 1599,
     floorspace: 1200,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1302,8 +1380,9 @@ const listingsData = [
     bath: 4,
     price: 269800,
     floorspace: 2200,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Elevator",
       "Gym",
@@ -1320,8 +1399,9 @@ const listingsData = [
     bath: 3,
     price: 199900,
     floorspace: 1750,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: []
   },
 {
@@ -1334,8 +1414,9 @@ const listingsData = [
     bath: 5,
     price: 425600,
     floorspace: 3400,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: []
   },
 {
@@ -1346,10 +1427,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "999/mo",
+    price: 999,
     floorspace: 875,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1365,8 +1447,9 @@ const listingsData = [
     bath: 1,
     price: 1500000,
     floorspace: 1100,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Elevator",
       "Gym",
@@ -1383,8 +1466,9 @@ const listingsData = [
     bath: 4,
     price: 235750,
     floorspace: 1900,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Swimming Pool"
     ]
@@ -1399,8 +1483,9 @@ const listingsData = [
     bath: 2,
     price: 355899,
     floorspace: 2200,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -1414,10 +1499,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "888/mo",
+    price: 888,
     floorspace: 1100,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1433,8 +1519,9 @@ const listingsData = [
     bath: 2,
     price: 399000,
     floorspace: 1420,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1450,8 +1537,9 @@ const listingsData = [
     bath: 4,
     price: 300000,
     floorspace: 2600,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: []
   },
 {
@@ -1464,8 +1552,9 @@ const listingsData = [
     bath: 3,
     price: 200999,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Finished Basement"
     ]
@@ -1478,10 +1567,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "2640/mo",
+    price: 2640,
     floorspace: 1355,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1497,8 +1587,9 @@ const listingsData = [
     bath: 3,
     price: 549500,
     floorspace: 1525,
-    date:"",
-    seller:"",
+    date:"10/31/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1514,8 +1605,9 @@ const listingsData = [
     bath: 3,
     price: 299000,
     floorspace: 2555,
-    date:"",
-    seller:"",
+    date:"10/26/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Finished Basement"
     ]
@@ -1530,8 +1622,9 @@ const listingsData = [
     bath: 4,
     price: 285999,
     floorspace: 2185,
-    date:"",
-    seller:"",
+    date:"10/14/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Finished Basement"
     ]
@@ -1544,10 +1637,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "600/mo",
+    price: 600,
     floorspace: 700,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -1560,8 +1654,9 @@ const listingsData = [
     bath: 4,
     price: 758200,
     floorspace: 1500,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Elevator",
       "Gym",
@@ -1578,8 +1673,9 @@ const listingsData = [
     bath: 6,
     price: 775750,
     floorspace: 3750,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -1596,8 +1692,9 @@ const listingsData = [
     bath: 5,
     price: 465999,
     floorspace: 3450,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Gym",
       "Finished Basement"
@@ -1611,10 +1708,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "965/mo",
+    price: 965,
     floorspace: 1422,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1630,8 +1728,9 @@ const listingsData = [
     bath: 1,
     price: 1089900,
     floorspace: 1525,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Elevator",
       "Gym",
@@ -1648,8 +1747,9 @@ const listingsData = [
     bath: 4,
     price: 500999,
     floorspace: 2975,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Elevator",
       "Swimming Pool",
@@ -1666,8 +1766,9 @@ const listingsData = [
     bath: 4,
     price: 535500,
     floorspace: 4350,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -1681,10 +1782,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "1799/mo",
+    price: 1799,
     floorspace: 1855,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: []
   },
 {
@@ -1697,8 +1799,9 @@ const listingsData = [
     bath: 2,
     price: 460055,
     floorspace: 1650,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Elevator",
       "Gym",
@@ -1715,8 +1818,9 @@ const listingsData = [
     bath: 4,
     price: 325500,
     floorspace: 2200,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Finished Basement"
     ]
@@ -1731,8 +1835,9 @@ const listingsData = [
     bath: 3,
     price: 380000,
     floorspace: 2345,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -1746,10 +1851,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "1050/mo",
+    price: 1050,
     floorspace: 699,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: []
   },
 {
@@ -1762,8 +1868,9 @@ const listingsData = [
     bath: 3,
     price: 299900,
     floorspace: 1700,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: []
   },
 {
@@ -1776,8 +1883,9 @@ const listingsData = [
     bath: 4,
     price: 360600,
     floorspace: 2750,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -1793,8 +1901,9 @@ const listingsData = [
     bath: 4,
     price: 342000,
     floorspace: 1788,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: []
   },
 {
@@ -1805,10 +1914,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "1500/mo",
+    price: 1500,
     floorspace: 999,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1824,8 +1934,9 @@ const listingsData = [
     bath: 4,
     price: 503800,
     floorspace: 2199,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1841,8 +1952,9 @@ const listingsData = [
     bath: 4,
     price: 245500,
     floorspace: 1785,
-    date:"",
-    seller:"",
+    date:"1/9/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Finished Basement"
     ]
@@ -1857,8 +1969,9 @@ const listingsData = [
     bath: 2,
     price: 300000,
     floorspace: 2450,
-    date:"",
-    seller:"",
+    date:"12/11/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -1872,10 +1985,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "3250/mo",
+    price: 3250,
     floorspace: 1850,
-    date:"",
-    seller:"",
+    date:"12/1/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Elevator",
       "Gym",
@@ -1892,8 +2006,9 @@ const listingsData = [
     bath: 1,
     price: 397800,
     floorspace: 1450,
-    date:"",
-    seller:"",
+    date:"11/20/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Elevator",
       "Gym",
@@ -1911,8 +2026,9 @@ const listingsData = [
     bath: 3,
     price: 425000,
     floorspace: 3000,
-    date:"",
-    seller:"",
+    date:"10/31/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Finished Basement"
@@ -1928,8 +2044,9 @@ const listingsData = [
     bath: 5,
     price: 659500,
     floorspace: 3455,
-    date:"",
-    seller:"",
+    date:"10/26/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Finished Basement"
     ]
@@ -1942,10 +2059,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "785/mo",
+    price: 785,
     floorspace: 800,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -1961,8 +2079,9 @@ const listingsData = [
     bath: 2,
     price: 469999,
     floorspace: 1645,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Elevator",
       "Gym",
@@ -1979,8 +2098,9 @@ const listingsData = [
     bath: 3,
     price: 275500,
     floorspace: 2150,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: []
   },
 {
@@ -1993,8 +2113,9 @@ const listingsData = [
     bath: 4,
     price: 1550000,
     floorspace: 5400,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym",
@@ -2010,10 +2131,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "1300/mo",
+    price: 1300,
     floorspace: 1100,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2029,8 +2151,9 @@ const listingsData = [
     bath: 3,
     price: 659000,
     floorspace: 1640,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Elevator",
       "Gym",
@@ -2048,8 +2171,9 @@ const listingsData = [
     bath: 2,
     price: 210000,
     floorspace: 2600,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -2062,8 +2186,9 @@ const listingsData = [
     bath: 3,
     price: 345999,
     floorspace: 2200,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -2077,10 +2202,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "4600/mo",
+    price: 4600,
     floorspace: 1500,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2096,8 +2222,9 @@ const listingsData = [
     bath: 4,
     price: 9870000,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Elevator",
       "Gym",
@@ -2114,8 +2241,9 @@ const listingsData = [
     bath: 4,
     price: 189990,
     floorspace: 2450,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: []
   },
 {
@@ -2128,8 +2256,9 @@ const listingsData = [
     bath: 3,
     price: 185999,
     floorspace: 2500,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: []
   },
 {
@@ -2140,10 +2269,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "1145/mo",
+    price: 1145,
     floorspace: 900,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2159,8 +2289,9 @@ const listingsData = [
     bath: 1,
     price: 275599,
     floorspace: 1099,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym",
@@ -2177,8 +2308,9 @@ const listingsData = [
     bath: 3,
     price: 205500,
     floorspace: 1950,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: []
   },
 {
@@ -2191,8 +2323,9 @@ const listingsData = [
     bath: 3,
     price: 1300,
     floorspace: 1300,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Finished Basement"
     ]
@@ -2205,10 +2338,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "2699/mo",
+    price: 2699,
     floorspace: 1300,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Elevator",
       "Gym",
@@ -2225,8 +2359,9 @@ const listingsData = [
     bath: 2,
     price: 454500,
     floorspace: 1499,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Elevator",
       "Gym",
@@ -2243,8 +2378,9 @@ const listingsData = [
     bath: 2,
     price: 475750,
     floorspace: 3600,
-    date:"",
-    seller:"",
+    date:"1/9/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -2261,8 +2397,9 @@ const listingsData = [
     bath: 4,
     price: 875999,
     floorspace: 4400,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Finished Basement"
     ]
@@ -2275,10 +2412,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "3555/mo",
+    price: 3555,
     floorspace: 1755,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Elevator",
       "Gym",
@@ -2295,8 +2433,9 @@ const listingsData = [
     bath: 3,
     price: 400321,
     floorspace: 1999,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Elevator",
       "Gym",
@@ -2314,8 +2453,9 @@ const listingsData = [
     bath: 4,
     price: 450550,
     floorspace: 8000,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -2331,8 +2471,9 @@ const listingsData = [
     bath: 4,
     price: 333999,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: []
   },
 {
@@ -2343,10 +2484,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 4,
     bath: 4,
-    price: "3650/mo",
+    price: 3650,
     floorspace: 1700,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2362,8 +2504,9 @@ const listingsData = [
     bath: 4,
     price: 355350,
     floorspace: 1650,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: []
   },
 {
@@ -2376,8 +2519,9 @@ const listingsData = [
     bath: 3,
     price: 285000,
     floorspace: 2500,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -2390,8 +2534,9 @@ const listingsData = [
     bath: 4,
     price: 298000,
     floorspace: 2300,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Swimming Pool"
     ]
@@ -2404,10 +2549,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "798/mo",
+    price: 998,
     floorspace: 899,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2423,8 +2569,9 @@ const listingsData = [
     bath: 1,
     price: 212900,
     floorspace: 985,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Ashley	Kennedy",headshot:"",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Elevator",
       "Gym",
@@ -2441,8 +2588,9 @@ const listingsData = [
     bath: 3,
     price: 235600,
     floorspace: 2200,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: []
   },
 {
@@ -2455,8 +2603,9 @@ const listingsData = [
     bath: 4,
     price: 342500,
     floorspace: 2600,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: []
   },
 {
@@ -2467,10 +2616,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "2359/mo",
+    price: 2359,
     floorspace: 1555,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -2486,8 +2636,9 @@ const listingsData = [
     bath: 2,
     price: 759500,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym",
@@ -2505,8 +2656,9 @@ const listingsData = [
     bath: 2,
     price: 265999,
     floorspace: 2850,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Finished Basement"
     ]
@@ -2521,8 +2673,9 @@ const listingsData = [
     bath: 4,
     price: 320990,
     floorspace: 2250,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: []
   },
 {
@@ -2533,10 +2686,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "3499/mo",
+    price: 3499,
     floorspace: 1645,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2552,8 +2706,9 @@ const listingsData = [
     bath: 3,
     price: 769350,
     floorspace: 1750,
-    date:"",
-    seller:"",
+    date:"10/14/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Elevator",
       "Gym",
@@ -2570,8 +2725,9 @@ const listingsData = [
     bath: 2,
     price: 288600,
     floorspace: 1950,
-    date:"",
-    seller:"",
+    date:"10/26/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: []
   },
 {
@@ -2584,8 +2740,9 @@ const listingsData = [
     bath: 4,
     price: 760465,
     floorspace: 3560,
-    date:"",
-    seller:"",
+    date:"10/14/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -2599,10 +2756,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "799/mo",
+    price: 799,
     floorspace: 675,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2618,8 +2776,9 @@ const listingsData = [
     bath: 4,
     price: 599900,
     floorspace: 2100,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2635,8 +2794,9 @@ const listingsData = [
     bath: 3,
     price: 475000,
     floorspace: 3800,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -2653,8 +2813,9 @@ const listingsData = [
     bath: 3,
     price: 139575,
     floorspace: 2255,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: []
   },
 {
@@ -2665,10 +2826,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "1699/mo",
+    price: 1699,
     floorspace: 1485,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Elevator",
       "Gym",
@@ -2685,8 +2847,9 @@ const listingsData = [
     bath: 1,
     price: 313299,
     floorspace: 1250,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Elevator",
       "Gym",
@@ -2703,8 +2866,9 @@ const listingsData = [
     bath: 3,
     price: 215999,
     floorspace: 2375,
-    date:"",
-    seller:"",
+    date:"5/22/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: []
   },
 {
@@ -2717,8 +2881,9 @@ const listingsData = [
     bath: 2,
     price: 2450,
     floorspace: 2755,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Swimming Pool"
     ]
@@ -2731,10 +2896,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "1675/mo",
+    price: 1675,
     floorspace: 1445,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2750,8 +2916,9 @@ const listingsData = [
     bath: 2,
     price: 867000,
     floorspace: 1955,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -2767,8 +2934,9 @@ const listingsData = [
     bath: 4,
     price: 310675,
     floorspace: 2350,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Swimming Pool"
     ]
@@ -2783,8 +2951,9 @@ const listingsData = [
     bath: 4,
     price: 400500,
     floorspace: 3545,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Gym",
       "Swimming Pool",
@@ -2799,10 +2968,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "8599/mo",
+    price: 8599,
     floorspace: 2150,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Elevator",
       "Gym",
@@ -2819,8 +2989,9 @@ const listingsData = [
     bath: 3,
     price: 649250,
     floorspace: 1765,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Elevator",
       "Gym",
@@ -2837,8 +3008,9 @@ const listingsData = [
     bath: 2,
     price: 175000,
     floorspace: 1950,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: []
   },
 {
@@ -2851,8 +3023,9 @@ const listingsData = [
     bath: 4,
     price: 445000,
     floorspace: 2655,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -2866,10 +3039,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "9000/mo",
+    price: 9000,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Elevator",
       "Gym",
@@ -2886,8 +3060,9 @@ const listingsData = [
     bath: 4,
     price: 562765,
     floorspace: 1500,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Elevator",
       "Swimming Pool"
@@ -2903,8 +3078,9 @@ const listingsData = [
     bath: 3,
     price: 220000,
     floorspace: 2350,
-    date:"",
-    seller:"",
+    date:"1/9/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Swimming Pool"
     ]
@@ -2919,8 +3095,9 @@ const listingsData = [
     bath: 5,
     price: 300999,
     floorspace: 2430,
-    date:"",
-    seller:"",
+    date:"1/10/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Finished Basement"
     ]
@@ -2933,10 +3110,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "1959/mo",
+    price: 1959,
     floorspace: 1600,
-    date:"",
-    seller:"",
+    date:"1/23/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Elevator",
       "Gym",
@@ -2953,8 +3131,9 @@ const listingsData = [
     bath: 1,
     price: 388000,
     floorspace: 1445,
-    date:"",
-    seller:"",
+    date:"1/26/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Elevator",
       "Gym",
@@ -2971,8 +3150,9 @@ const listingsData = [
     bath: 3,
     price: 345700,
     floorspace: 3200,
-    date:"",
-    seller:"",
+    date:"2/1/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Finished Basement"
     ]
@@ -2987,8 +3167,9 @@ const listingsData = [
     bath: 4,
     price: 198000,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"2/16/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: []
   },
 {
@@ -2999,10 +3180,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "3500/mo",
+    price: 3500,
     floorspace: 900,
-    date:"",
-    seller:"",
+    date:"2/20/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: []
   },
 {
@@ -3015,8 +3197,9 @@ const listingsData = [
     bath: 2,
     price: 521000,
     floorspace: 1299,
-    date:"",
-    seller:"",
+    date:"2/28/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: [
       "Elevator",
       "Gym"
@@ -3032,8 +3215,9 @@ const listingsData = [
     bath: 2,
     price: 169500,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"3/6/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: []
   },
 {
@@ -3046,8 +3230,9 @@ const listingsData = [
     bath: 3,
     price: 7520,
     floorspace: 1450,
-    date:"",
-    seller:"",
+    date:"5/1/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Elevator",
       "Gym",
@@ -3063,10 +3248,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 2,
     bath: 2,
-    price: "2400/mo",
+    price: 2400,
     floorspace: 1500,
-    date:"",
-    seller:"",
+    date:"5/3/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Elevator",
       "Gym",
@@ -3083,8 +3269,9 @@ const listingsData = [
     bath: 3,
     price: 769955,
     floorspace: 1800,
-    date:"",
-    seller:"",
+    date:"5/9/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Elevator",
       "Gym",
@@ -3101,8 +3288,9 @@ const listingsData = [
     bath: 2,
     price: 345500,
     floorspace: 2200,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -3118,8 +3306,9 @@ const listingsData = [
     bath: 3,
     price: 145000,
     floorspace: 2050,
-    date:"",
-    seller:"",
+    date:"6/4/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: []
   },
 {
@@ -3130,10 +3319,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 3,
     bath: 3,
-    price: "1150/mo",
+    price: 1150,
     floorspace: 1350,
-    date:"",
-    seller:"",
+    date:"7/19/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -3149,8 +3339,9 @@ const listingsData = [
     bath: 4,
     price: 645500,
     floorspace: 1888,
-    date:"",
-    seller:"",
+    date:"8/25/2017",
+    seller:"Kate	Wagner",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
     extras: [
       "Elevator",
       "Gym",
@@ -3167,8 +3358,9 @@ const listingsData = [
     bath: 2,
     price: 399000,
     floorspace: 1970,
-    date:"",
-    seller:"",
+    date:"9/24/2017",
+    seller:"Wilson	Foster",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
     extras: []
   },
 {
@@ -3181,8 +3373,9 @@ const listingsData = [
     bath: 4,
     price: 355000,
     floorspace: 2250,
-    date:"",
-    seller:"",
+    date:"10/4/2017",
+    seller:"Sherry	Tucker",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
     extras: []
   },
 {
@@ -3193,10 +3386,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 4,
     bath: 4,
-    price: "2850/mo",
+    price: 2850,
     floorspace: 2000,
-    date:"",
-    seller:"",
+    date:"10/14/2017",
+    seller:"Randy	Wood",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
     extras: [
       "Gym",
       "Swimming Pool"
@@ -3212,8 +3406,9 @@ const listingsData = [
     bath: 1,
     price: 430450,
     floorspace: 1675,
-    date:"",
-    seller:"",
+    date:"10/26/2017",
+    seller:"Amelia	Berry",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
     extras: [
       "Elevator",
       "Gym",
@@ -3230,8 +3425,9 @@ const listingsData = [
     bath: 4,
     price: 500999,
     floorspace: 3450,
-    date:"",
-    seller:"",
+    date:"10/31/2017",
+    seller:"Austin	Alvarado",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
     extras: [
       "Swimming Pool",
       "Finished Basement"
@@ -3247,8 +3443,9 @@ const listingsData = [
     bath: 2,
     price: 265755,
     floorspace: 2540,
-    date:"",
-    seller:"",
+    date:"11/20/2017",
+    seller:"Ivan	Walters",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
     extras: [
       "Swimming Pool"
     ]
@@ -3261,10 +3458,11 @@ const listingsData = [
     homeType:"Apartment",
     rooms: 1,
     bath: 1,
-    price: "900/mo",
+    price: 900,
     floorspace: 850,
-    date:"",
-    seller:"",
+    date:"12/1/2017",
+    seller:"Ashley	Kennedy",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
     extras: [
       "Elevator",
       "Gym",
@@ -3281,8 +3479,9 @@ const listingsData = [
     bath: 2,
     price: 379950,
     floorspace: 1345,
-    date:"",
-    seller:"",
+    date:"12/11/2017",
+    seller:"Marshall	Patrick",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
     extras: [
       "Elevator",
       "Gym",
@@ -3299,8 +3498,9 @@ const listingsData = [
     bath: 2,
     price: 360000,
     floorspace: 3500,
-    date:"",
-    seller:"",
+    date:"6/2/2017",
+    seller:"Mattie	Simon",
+    headshot:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
     extras: []
   }
 ]
