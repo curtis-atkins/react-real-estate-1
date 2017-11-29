@@ -4,7 +4,7 @@ export default class Filter extends Component {
   constructor () {
     super()
     this.state = {
-      name: 'Joe'
+      name: ''
     }
   }
   render () {
@@ -12,6 +12,7 @@ export default class Filter extends Component {
       <div className="inside">
         <section id="filter">
           <h4>Filter</h4>
+          <label for="city"></label>
           <span className="title city">City</span>
           <select name="city" className="filters city" onChange={this.props.change}>
             <option value="Any" defaultValue>Any City</option>
@@ -273,15 +274,17 @@ export default class Filter extends Component {
           </select>
 
           <span className="title type">Type</span>
-          <select name="homeType" className="filters homeType"  onChange={this.props.change}>
-            <option value="Any ">Any Home</option>
+          <label for="city"></label>
+          <select name="homeType" className="filters homeType" onChange={this.props.change}>
+            <option value="Any">Any Home</option>
             <option value="Ranch">Ranch</option>
-              <option value="Apartment">Apartment</option>
-                <option value="House">House</option>
-                  <option value="Condo">Condo</option>
+            <option value="Apartment">Apartment</option>
+            <option value="House">House</option>
+            <option value="Condo">Condo</option>
           </select>
           <span className="title beds">Bedrooms</span>
-          <select name="bedrooms" className="filters bedrooms"  onChange={this.props.change}>
+          <label for="city"></label>
+          <select name="bedrooms" className="filters bedrooms" onChange={this.props.change}>
             <option value="0">0+ BR</option>
             <option value="1">1+ BR</option>
             <option value="2">2+ BR</option>
@@ -294,6 +297,7 @@ export default class Filter extends Component {
           </select>
 
           <span className="title baths">Bathrooms</span>
+          <label for="city"></label>
           <select name="bath" className="filters bath"  onChange={this.props.change}>
               <option value="0">0+ BA</option>
               <option value="1">1+ BA</option>

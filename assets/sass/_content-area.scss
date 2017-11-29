@@ -42,7 +42,7 @@
       font-size: 0.9rem;
       display: block;
       margin-bottom: 1rem;
-      color: $grey;
+      color: $darkpurple;
     }
     input[type="number"]{
       border-radius: 5px;
@@ -83,8 +83,9 @@
     background: transparent;
     font-size: 1rem;
     border: none;
-    border: 2px solid $gray;
+    border: 2px solid $darkpurple;
     margin-bottom: 20px;
+    padding: 2px;
     color: black;
     }
   }
@@ -92,7 +93,7 @@
     margin-bottom: 20px;
         .results {
       font-size: 0.8rem;
-      color: $gray;
+      color: $darkpurple;
       display: inline-block;
 
     }
@@ -165,8 +166,9 @@
       .details {
         transition: all 0.4s ease-in-out;
         opacity:0;
-        padding: 15px;
+        padding: 5px;
         position: absolute;
+        text-align: center;
         top:0;
         left:0;
         bottom:0;
@@ -184,17 +186,22 @@
         background: linear-gradient(135deg, rgba(76,34,173,.8) 0%,rgba(235,137,255,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c22ad', endColorstr='#eb89ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
         .user-img {
-          // width: 40px;
-          // height: 40px;
-          // border-radius: 50%;
-          // margin: 1px;
-          // border: 1px solid white;
-          // display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin: 1px;
+          border: 0.4px solid white;
+          display: inline-block;
           // background: url(https://cdn.freshome.com/wp-content/uploads/2014/04/Gorgeous-evening-view-of-Russet-Residence--1025x450.jpg)
           // no-repeat center center;-webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;
+
+              .fa-user-o {
+                font-size: 35px;
+                align-items: center;
+              }
         }
         .user-details {
           display: inline-block;
@@ -204,7 +211,7 @@
             font-weight: 300;
             color: rgba(255,255,255, 1);
             display: block;
-            margin: 3px;
+            margin: 1px;
 
           }
           .user-date {
@@ -215,20 +222,21 @@
           }
         }
         .listing-details {
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin: 3px;
             .fa{
               display: inline-block;
+              margin: 3px;
               font-size: 20px;
               margin-right: 3px;
+              align-content: left;
             }
             span {
               display: inline-block;
-              font-size: 0.8rem;
-              vertical-align: top;
-              text-align: right;
+              font-size: 1.1rem;
+              text-align: center;
               position: relative;
-              top: 3px;
+              top: 0.5px;
+              margin-left: 3px;
             }
             .floor-space {
               margin-bottom: 5px;
@@ -256,18 +264,15 @@
     color: $grey;
   }
 }
-
 }
 
 .view-btn {
   background: black;
-
   padding: 8px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   border-radius: 5px;
-  text-align: center;
-  margin: 1px;
-  max-width: 150px;
+  margin: 14px 0px 10px 28px;
+  max-width: 120px;
   transition: background 0.2s ease-in-out;
   &:hover {
     background: $pink;
@@ -305,10 +310,11 @@
   width: 25%;
   display: inline-block;
   vertical-align: top;
-  padding: 0 15px;
+  padding: 0 10px;
+margin-bottom: 10px;
 }
 
 .col-md-9 {
-  width: 75%;
+  width: 90%;
   display: inline-block;
 }

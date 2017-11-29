@@ -24,7 +24,11 @@ export default class Listings extends Component {
             <span className="address">{listing.address}</span>
             <div className="details">
               <div className="col-md-3">
-              <div className="user-img"></div>
+                <div className="user-img">
+                  <i className="fa fa-user-o" aria-hidden="true"
+                    style={{background:`no-repeat center center`}}>
+                  </i>
+                </div>
               </div>
               <div className="col-md-9">
                 <div className="user-details">

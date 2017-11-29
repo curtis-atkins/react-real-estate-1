@@ -70,6 +70,7 @@ var App = function (_Component) {
     };
     _this.change = _this.change.bind(_this);
     _this.filteredData = _this.filteredData.bind(_this);
+    _this.populateData = _this.populateForms.bind(_this);
 
     return _this;
   }
@@ -94,13 +95,8 @@ var App = function (_Component) {
 
       var newData = void 0;
       newData = this.state.listingsData.filter(function (item) {
-        return item.price >= _this3.state.min_price && item.price <= _this3.state.max_price && item.floorspace >= _this3.state.min_floor_space && item.floorspace <= _this3.state.max_floor_space && item.rooms >= _this3.state.rooms;
+        return item.price >= _this3.state.min_price && item.price <= _this3.state.max_price && item.floorspace >= _this3.state.min_floor_space && item.floorspace <= _this3.state.max_floor_space && item.rooms >= _this3.state.rooms && item.bath >= _this3.state.bath;
       });
-      // if (this.state.city != "Any") {
-      //   newData = newData.filter((item) => {
-      //     return item.city == this.state.city
-      //   })
-      // }
 
       if (this.state.state != "Any") {
         newData = newData.filter(function (item) {
@@ -108,11 +104,17 @@ var App = function (_Component) {
         });
       }
 
-      //  if (this.state.homeType != "Any") {
-      //     newData = newData.filter((item) => {
-      //       return item.homeType == this.state.homeType
-      //     })
-      //   }
+      if (this.state.city != "Any") {
+        newData = newData.filter(function (item) {
+          return item.city == _this3.state.city;
+        });
+      }
+
+      // if (this.state.homeType != "Any") {
+      //   newData = newData.filter((item) => {
+      //     return item.homeType == this.state.homeType
+      //   })
+      // }
 
 
       this.setState({
@@ -178,7 +180,7 @@ var Filter = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Filter.__proto__ || Object.getPrototypeOf(Filter)).call(this));
 
     _this.state = {
-      name: 'Joe'
+      name: ''
     };
     return _this;
   }
@@ -197,6 +199,7 @@ var Filter = function (_Component) {
             null,
             'Filter'
           ),
+          _react2.default.createElement('label', { 'for': 'city' }),
           _react2.default.createElement(
             'span',
             { className: 'title city' },
@@ -1476,12 +1479,13 @@ var Filter = function (_Component) {
             { className: 'title type' },
             'Type'
           ),
+          _react2.default.createElement('label', { 'for': 'city' }),
           _react2.default.createElement(
             'select',
             { name: 'homeType', className: 'filters homeType', onChange: this.props.change },
             _react2.default.createElement(
               'option',
-              { value: 'Any ' },
+              { value: 'Any' },
               'Any Home'
             ),
             _react2.default.createElement(
@@ -1510,6 +1514,7 @@ var Filter = function (_Component) {
             { className: 'title beds' },
             'Bedrooms'
           ),
+          _react2.default.createElement('label', { 'for': 'city' }),
           _react2.default.createElement(
             'select',
             { name: 'bedrooms', className: 'filters bedrooms', onChange: this.props.change },
@@ -1564,6 +1569,7 @@ var Filter = function (_Component) {
             { className: 'title baths' },
             'Bathrooms'
           ),
+          _react2.default.createElement('label', { 'for': 'city' }),
           _react2.default.createElement(
             'select',
             { name: 'bath', className: 'filters bath', onChange: this.props.change },
@@ -1852,7 +1858,12 @@ var Listings = function (_Component) {
                 _react2.default.createElement(
                   "div",
                   { className: "col-md-3" },
-                  _react2.default.createElement("div", { className: "user-img" })
+                  _react2.default.createElement(
+                    "div",
+                    { className: "user-img" },
+                    _react2.default.createElement("i", { className: "fa fa-user-o", "aria-hidden": "true",
+                      style: { background: "no-repeat center center" } })
+                  )
                 ),
                 _react2.default.createElement(
                   "div",
