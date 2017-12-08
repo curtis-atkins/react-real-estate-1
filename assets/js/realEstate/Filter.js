@@ -96,7 +96,6 @@ states() {
             onChange={this.props.change}>
             <option value="Any" defaultValue>Any City</option>
             {this.cities()}
-
           </select>
 
           <span className="title state">State</span>

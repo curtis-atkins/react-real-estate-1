@@ -27,7 +27,8 @@ class App extends Component {
       swimming_pool: false,
       gym: false,
       filteredData: listingsData,
-      populateFormsData:""
+      populateFormsData:"",
+      sortby: "price-asc"
     }
 
     this.change = this.change.bind(this)
@@ -36,6 +37,16 @@ class App extends Component {
 
   }
 
+componentWillMount(){
+
+const listingsData = this.state.listingsData.sort((a,b)=>{
+return a.price - b.price
+})
+
+  this.setState({
+    listingsData: listingsData
+  })
+}
 
 change(event){
   const name = event.target.name
@@ -78,6 +89,17 @@ filteredData(){
      })
    }
 
+   if(this.state.sortby == "price-dsc"){
+     newData = newData.sort((a,b) =>{
+      return b.price - a.price
+     })
+   }
+
+   if(this.state.sortby == "price-asc"){
+     newData = newData.sort((a,b) =>{
+      return a.price - b.price
+     })
+   }
 
 this.setState({
   filteredData: newData
@@ -151,7 +173,7 @@ this.setState({
           <Filter  change={this.change} globalState = {this.state}
             populateAction={this.populateForms}/>
 
-          <Listings listingsData={this.state.filteredData}/>
+          <Listings listingsData={this.state.filteredData} change= {this.change}/>
         </section>
       </div>)
   }

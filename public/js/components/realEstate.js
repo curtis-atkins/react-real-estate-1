@@ -69,7 +69,8 @@ var App = function (_Component) {
       swimming_pool: false,
       gym: false,
       filteredData: _listingsData2.default,
-      populateFormsData: ""
+      populateFormsData: "",
+      sortby: "price-asc"
     };
 
     _this.change = _this.change.bind(_this);
@@ -80,6 +81,18 @@ var App = function (_Component) {
   }
 
   _createClass(App, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+
+      var listingsData = this.state.listingsData.sort(function (a, b) {
+        return a.price - b.price;
+      });
+
+      this.setState({
+        listingsData: listingsData
+      });
+    }
+  }, {
     key: 'change',
     value: function change(event) {
       var _this2 = this;
@@ -117,6 +130,18 @@ var App = function (_Component) {
       if (this.state.homeType != "Any") {
         newData = newData.filter(function (item) {
           return item.homeType == _this3.state.homeType;
+        });
+      }
+
+      if (this.state.sortby == "price-dsc") {
+        newData = newData.sort(function (a, b) {
+          return b.price - a.price;
+        });
+      }
+
+      if (this.state.sortby == "price-asc") {
+        newData = newData.sort(function (a, b) {
+          return a.price - b.price;
         });
       }
 
@@ -198,7 +223,7 @@ var App = function (_Component) {
           { id: 'content-area' },
           _react2.default.createElement(_Filter2.default, { change: this.change, globalState: this.state,
             populateAction: this.populateForms }),
-          _react2.default.createElement(_Listings2.default, { listingsData: this.state.filteredData })
+          _react2.default.createElement(_Listings2.default, { listingsData: this.state.filteredData, change: this.change })
         )
       );
     }
@@ -794,16 +819,17 @@ var Listings = function (_Component) {
             { className: "sort-options" },
             _react2.default.createElement(
               "select",
-              { name: "sortby", className: "sortby" },
+              { name: "sortby", className: "sortby",
+                onChange: this.props.change },
               _react2.default.createElement(
                 "option",
                 { value: "price-asc" },
-                "Highest Price"
+                "Lowest Price"
               ),
               _react2.default.createElement(
                 "option",
                 { value: "price-dsc" },
-                "Lowest Price"
+                "Highest Price"
               )
             ),
             _react2.default.createElement(
