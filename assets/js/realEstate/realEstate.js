@@ -13,9 +13,9 @@ class App extends Component {
     this.state = {
       name: "",
       listingsData,
-      city:"",
-      state:"",
-      homeType:"",
+      city:"Any",
+      state:"Any",
+      homeType:"Any",
       rooms: 0,
       bath: 0,
       min_price: 0,
@@ -26,11 +26,13 @@ class App extends Component {
       finished_basement: false,
       swimming_pool: false,
       gym: false,
-      filteredData: listingsData
+      filteredData: listingsData,
+      populateFormsData:""
     }
+
     this.change = this.change.bind(this)
     this.filteredData = this.filteredData.bind(this)
-    this.populateData = this.populateForms.bind(this)
+    this.populateForms = this.populateForms.bind(this)
 
   }
 
@@ -58,28 +60,68 @@ filteredData(){
     && item.bath >= this.state.bath
   })
 
+  if (this.state.city != "Any") {
+  newData = newData.filter((item) => {
+    return item.city == this.state.city
+  })
+}
+
   if (this.state.state != "Any") {
      newData = newData.filter((item) => {
        return item.state == this.state.state
      })
    }
 
-    if (this.state.city != "Any") {
-    newData = newData.filter((item) => {
-      return item.city == this.state.city
-    })
-  }
-
-
-   // if (this.state.homeType != "Any") {
-   //   newData = newData.filter((item) => {
-   //     return item.homeType == this.state.homeType
-   //   })
-   // }
+   if (this.state.homeType != "Any") {
+     newData = newData.filter((item) => {
+       return item.homeType == this.state.homeType
+     })
+   }
 
 
 this.setState({
   filteredData: newData
+})
+}
+
+populateForms() {
+//City
+let cities = this.state.listingsData.map((item)=> {
+  return item.city
+})
+cities = new Set(cities)
+cities = [...cities]
+
+//State
+let states = this.state.listingsData.map((item)=> {
+  return item.state
+})
+states = new Set(states)
+states = [...states]
+
+//homeType
+let homeType = this.state.listingsData.map((item)=> {
+  return item.homeType
+})
+homeType = new Set(homeType)
+homeType = [...homeType]
+
+//rooms
+let rooms = this.state.listingsData.map((item)=> {
+  return item.rooms
+})
+rooms = new Set(rooms)
+rooms = [...rooms]
+
+this.setState({
+  populateForms: {
+    cities,
+    states,
+    homeType,
+    rooms
+  }
+}, () => {
+  console.log(this.state)
 })
 }
 
@@ -88,7 +130,9 @@ this.setState({
     return (<div>
         <Header />
         <section id="content-area">
-          <Filter  change={this.change} globalState = {this.state}/>
+          <Filter  change={this.change} globalState = {this.state}
+            populateAction={this.populateForms}/>
+
           <Listings listingsData={this.state.filteredData}/>
         </section>
       </div>)

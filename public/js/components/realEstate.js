@@ -34,6 +34,8 @@ var _listingsData2 = _interopRequireDefault(_listingsData);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53,9 +55,9 @@ var App = function (_Component) {
     _this.state = {
       name: "",
       listingsData: _listingsData2.default,
-      city: "",
-      state: "",
-      homeType: "",
+      city: "Any",
+      state: "Any",
+      homeType: "Any",
       rooms: 0,
       bath: 0,
       min_price: 0,
@@ -66,11 +68,13 @@ var App = function (_Component) {
       finished_basement: false,
       swimming_pool: false,
       gym: false,
-      filteredData: _listingsData2.default
+      filteredData: _listingsData2.default,
+      populateFormsData: ""
     };
+
     _this.change = _this.change.bind(_this);
     _this.filteredData = _this.filteredData.bind(_this);
-    _this.populateData = _this.populateForms.bind(_this);
+    _this.populateForms = _this.populateForms.bind(_this);
 
     return _this;
   }
@@ -98,27 +102,70 @@ var App = function (_Component) {
         return item.price >= _this3.state.min_price && item.price <= _this3.state.max_price && item.floorspace >= _this3.state.min_floor_space && item.floorspace <= _this3.state.max_floor_space && item.rooms >= _this3.state.rooms && item.bath >= _this3.state.bath;
       });
 
-      if (this.state.state != "Any") {
-        newData = newData.filter(function (item) {
-          return item.state == _this3.state.state;
-        });
-      }
-
       if (this.state.city != "Any") {
         newData = newData.filter(function (item) {
           return item.city == _this3.state.city;
         });
       }
 
-      // if (this.state.homeType != "Any") {
-      //   newData = newData.filter((item) => {
-      //     return item.homeType == this.state.homeType
-      //   })
-      // }
+      if (this.state.state != "Any") {
+        newData = newData.filter(function (item) {
+          return item.state == _this3.state.state;
+        });
+      }
 
+      if (this.state.homeType != "Any") {
+        newData = newData.filter(function (item) {
+          return item.homeType == _this3.state.homeType;
+        });
+      }
 
       this.setState({
         filteredData: newData
+      });
+    }
+  }, {
+    key: 'populateForms',
+    value: function populateForms() {
+      var _this4 = this;
+
+      //City
+      var cities = this.state.listingsData.map(function (item) {
+        return item.city;
+      });
+      cities = new Set(cities);
+      cities = [].concat(_toConsumableArray(cities));
+
+      //State
+      var states = this.state.listingsData.map(function (item) {
+        return item.state;
+      });
+      states = new Set(states);
+      states = [].concat(_toConsumableArray(states));
+
+      //homeType
+      var homeType = this.state.listingsData.map(function (item) {
+        return item.homeType;
+      });
+      homeType = new Set(homeType);
+      homeType = [].concat(_toConsumableArray(homeType));
+
+      //rooms
+      var rooms = this.state.listingsData.map(function (item) {
+        return item.rooms;
+      });
+      rooms = new Set(rooms);
+      rooms = [].concat(_toConsumableArray(rooms));
+
+      this.setState({
+        populateForms: {
+          cities: cities,
+          states: states,
+          homeType: homeType,
+          rooms: rooms
+        }
+      }, function () {
+        console.log(_this4.state);
       });
     }
   }, {
@@ -131,7 +178,8 @@ var App = function (_Component) {
         _react2.default.createElement(
           'section',
           { id: 'content-area' },
-          _react2.default.createElement(_Filter2.default, { change: this.change, globalState: this.state }),
+          _react2.default.createElement(_Filter2.default, { change: this.change, globalState: this.state,
+            populateAction: this.populateForms }),
           _react2.default.createElement(_Listings2.default, { listingsData: this.state.filteredData })
         )
       );
@@ -182,10 +230,88 @@ var Filter = function (_Component) {
     _this.state = {
       name: ''
     };
+    _this.cities = _this.cities.bind(_this);
+    _this.states = _this.states.bind(_this);
+    _this.homeType = _this.homeType.bind(_this);
+    _this.rooms = _this.rooms.bind(_this);
+
     return _this;
   }
 
   _createClass(Filter, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.props.populateAction();
+    }
+  }, {
+    key: 'cities',
+    value: function cities() {
+      if (this.props.globalState.populateFormsData.cities != undefined) {
+        var cities = this.props.globalState.populteFormsData.cities;
+
+        console.log(cities);
+        return cities.map(function (item) {
+          return _react2.default.createElement(
+            'option',
+            { key: item, value: item },
+            ' ',
+            item
+          );
+        });
+      }
+    }
+  }, {
+    key: 'states',
+    value: function states() {
+      if (this.props.globalState.populateFormsData.states != undefined) {
+        var states = this.props.globalState.populteFormsData.states;
+
+        console.log(states);
+        return states.map(function (item) {
+          return _react2.default.createElement(
+            'option',
+            { key: item, value: item },
+            ' ',
+            item
+          );
+        });
+      }
+    }
+  }, {
+    key: 'homeType',
+    value: function homeType() {
+      if (this.props.globalState.populateFormsData.homeType != undefined) {
+        var homeType = this.props.globalState.populteFormsData.homeType;
+
+        console.log(homeType);
+        return homeType.map(function (item) {
+          return _react2.default.createElement(
+            'option',
+            { key: item, value: item },
+            ' ',
+            item
+          );
+        });
+      }
+    }
+  }, {
+    key: 'rooms',
+    value: function rooms() {
+      if (this.props.globalState.populateFormsData.rooms != undefined) {
+        var rooms = this.props.globalState.populteFormsData.rooms;
+
+        console.log(rooms);
+        return rooms.map(function (item) {
+          return _react2.default.createElement(
+            'option',
+            { key: item, value: item },
+            ' ',
+            item
+          );
+        });
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -199,7 +325,7 @@ var Filter = function (_Component) {
             null,
             'Filter'
           ),
-          _react2.default.createElement('label', { 'for': 'city' }),
+          _react2.default.createElement('label', { htmlFor: 'city' }),
           _react2.default.createElement(
             'span',
             { className: 'title city' },
@@ -207,7 +333,8 @@ var Filter = function (_Component) {
           ),
           _react2.default.createElement(
             'select',
-            { name: 'city', className: 'filters city', onChange: this.props.change },
+            { name: 'city', className: 'filters city',
+              onChange: this.props.change },
             _react2.default.createElement(
               'option',
               { value: 'Any', defaultValue: true },
@@ -1476,10 +1603,10 @@ var Filter = function (_Component) {
           ),
           _react2.default.createElement(
             'span',
-            { className: 'title type' },
-            'Type'
+            { className: 'title homeType' },
+            'homeType'
           ),
-          _react2.default.createElement('label', { 'for': 'city' }),
+          _react2.default.createElement('label', { htmlFor: 'homeType' }),
           _react2.default.createElement(
             'select',
             { name: 'homeType', className: 'filters homeType', onChange: this.props.change },
@@ -1514,10 +1641,10 @@ var Filter = function (_Component) {
             { className: 'title beds' },
             'Bedrooms'
           ),
-          _react2.default.createElement('label', { 'for': 'city' }),
+          _react2.default.createElement('label', { htmlFor: 'rooms' }),
           _react2.default.createElement(
             'select',
-            { name: 'bedrooms', className: 'filters bedrooms', onChange: this.props.change },
+            { name: 'rooms', className: 'filters rooms', onChange: this.props.change },
             _react2.default.createElement(
               'option',
               { value: '0' },
@@ -1569,7 +1696,7 @@ var Filter = function (_Component) {
             { className: 'title baths' },
             'Bathrooms'
           ),
-          _react2.default.createElement('label', { 'for': 'city' }),
+          _react2.default.createElement('label', { htmlFor: 'bath' }),
           _react2.default.createElement(
             'select',
             { name: 'bath', className: 'filters bath', onChange: this.props.change },
@@ -1963,7 +2090,7 @@ var Listings = function (_Component) {
           _react2.default.createElement(
             "div",
             { className: "results" },
-            "390 results found"
+            "200 result(s) found"
           ),
           _react2.default.createElement(
             "div",
