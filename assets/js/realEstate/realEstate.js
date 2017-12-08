@@ -92,12 +92,16 @@ let cities = this.state.listingsData.map((item)=> {
 cities = new Set(cities)
 cities = [...cities]
 
+cities = cities.sort()
+
 //State
 let states = this.state.listingsData.map((item)=> {
   return item.state
 })
 states = new Set(states)
 states = [...states]
+
+states = states.sort()
 
 //homeType
 let homeType = this.state.listingsData.map((item)=> {
@@ -106,6 +110,8 @@ let homeType = this.state.listingsData.map((item)=> {
 homeType = new Set(homeType)
 homeType = [...homeType]
 
+homeType = homeType.sort()
+
 //rooms
 let rooms = this.state.listingsData.map((item)=> {
   return item.rooms
@@ -113,12 +119,24 @@ let rooms = this.state.listingsData.map((item)=> {
 rooms = new Set(rooms)
 rooms = [...rooms]
 
+rooms = rooms.sort()
+
+//Bathrooms
+let bath = this.state.listingsData.map((item)=> {
+  return item.bath
+})
+bath = new Set(bath)
+bath = [...bath]
+
+bath = bath.sort()
+
 this.setState({
-  populateForms: {
+  populateFormsData: {
     cities,
     states,
     homeType,
-    rooms
+    rooms,
+    bath
   }
 }, () => {
   console.log(this.state)

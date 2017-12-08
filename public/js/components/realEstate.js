@@ -136,12 +136,16 @@ var App = function (_Component) {
       cities = new Set(cities);
       cities = [].concat(_toConsumableArray(cities));
 
+      cities = cities.sort();
+
       //State
       var states = this.state.listingsData.map(function (item) {
         return item.state;
       });
       states = new Set(states);
       states = [].concat(_toConsumableArray(states));
+
+      states = states.sort();
 
       //homeType
       var homeType = this.state.listingsData.map(function (item) {
@@ -150,6 +154,8 @@ var App = function (_Component) {
       homeType = new Set(homeType);
       homeType = [].concat(_toConsumableArray(homeType));
 
+      homeType = homeType.sort();
+
       //rooms
       var rooms = this.state.listingsData.map(function (item) {
         return item.rooms;
@@ -157,12 +163,24 @@ var App = function (_Component) {
       rooms = new Set(rooms);
       rooms = [].concat(_toConsumableArray(rooms));
 
+      rooms = rooms.sort();
+
+      //Bathrooms
+      var bath = this.state.listingsData.map(function (item) {
+        return item.bath;
+      });
+      bath = new Set(bath);
+      bath = [].concat(_toConsumableArray(bath));
+
+      bath = bath.sort();
+
       this.setState({
-        populateForms: {
+        populateFormsData: {
           cities: cities,
           states: states,
           homeType: homeType,
-          rooms: rooms
+          rooms: rooms,
+          bath: bath
         }
       }, function () {
         console.log(_this4.state);
@@ -234,6 +252,7 @@ var Filter = function (_Component) {
     _this.states = _this.states.bind(_this);
     _this.homeType = _this.homeType.bind(_this);
     _this.rooms = _this.rooms.bind(_this);
+    _this.bath = _this.bath.bind(_this);
 
     return _this;
   }
@@ -247,7 +266,7 @@ var Filter = function (_Component) {
     key: 'cities',
     value: function cities() {
       if (this.props.globalState.populateFormsData.cities != undefined) {
-        var cities = this.props.globalState.populteFormsData.cities;
+        var cities = this.props.globalState.populateFormsData.cities;
 
         console.log(cities);
         return cities.map(function (item) {
@@ -264,7 +283,7 @@ var Filter = function (_Component) {
     key: 'states',
     value: function states() {
       if (this.props.globalState.populateFormsData.states != undefined) {
-        var states = this.props.globalState.populteFormsData.states;
+        var states = this.props.globalState.populateFormsData.states;
 
         console.log(states);
         return states.map(function (item) {
@@ -281,7 +300,7 @@ var Filter = function (_Component) {
     key: 'homeType',
     value: function homeType() {
       if (this.props.globalState.populateFormsData.homeType != undefined) {
-        var homeType = this.props.globalState.populteFormsData.homeType;
+        var homeType = this.props.globalState.populateFormsData.homeType;
 
         console.log(homeType);
         return homeType.map(function (item) {
@@ -298,7 +317,7 @@ var Filter = function (_Component) {
     key: 'rooms',
     value: function rooms() {
       if (this.props.globalState.populateFormsData.rooms != undefined) {
-        var rooms = this.props.globalState.populteFormsData.rooms;
+        var rooms = this.props.globalState.populateFormsData.rooms;
 
         console.log(rooms);
         return rooms.map(function (item) {
@@ -306,7 +325,26 @@ var Filter = function (_Component) {
             'option',
             { key: item, value: item },
             ' ',
-            item
+            item,
+            '+ BR'
+          );
+        });
+      }
+    }
+  }, {
+    key: 'bath',
+    value: function bath() {
+      if (this.props.globalState.populateFormsData.bath != undefined) {
+        var bath = this.props.globalState.populateFormsData.bath;
+
+        console.log(bath);
+        return bath.map(function (item) {
+          return _react2.default.createElement(
+            'option',
+            { key: item, value: item },
+            ' ',
+            item,
+            '+ BA'
           );
         });
       }
@@ -340,1002 +378,7 @@ var Filter = function (_Component) {
               { value: 'Any', defaultValue: true },
               'Any City'
             ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Mobile' },
-              'Mobile'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Birmingham' },
-              'Birmingham'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Montgomery' },
-              'Montgomery'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Huntsville' },
-              'Huntsville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Anchorage' },
-              'Anchorage'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Juneau' },
-              'Juneau'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fairbanks' },
-              'Fairbanks'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Sitka' },
-              'Sitka'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Phoenix' },
-              'Phoenix'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Tucson' },
-              'Tucson'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Scottsdale' },
-              'Scottsdale'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Mesa' },
-              'Mesa'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Little Rock' },
-              'Little Rock'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fayetteville' },
-              'Fayetteville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fort Smith' },
-              'Fort Smith'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Hot Springs' },
-              'Hot Springs'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Los Angeles' },
-              'Los Angeles'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'San Francisco' },
-              'San Francisco'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'San Diego' },
-              'San Diego'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Sacramento' },
-              'Sacramento'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Denver' },
-              'Denver'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Colorado Springs' },
-              'Colorado Springs'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Boulder' },
-              'Boulder'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fort Collins' },
-              'Fort Collins'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Hartford' },
-              'Hartford'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'New Haven' },
-              'New Haven'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Stamford' },
-              'Stamford'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bridgeport' },
-              'Bridgeport'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Wilmington' },
-              'Wilmington'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Newark' },
-              'Newark'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Dover' },
-              'Dover'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Lewes' },
-              'Lewes'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Miami' },
-              'Miami'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Orlando' },
-              'Orlando'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Tampa' },
-              'Tampa'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fort Lauderdale' },
-              'Fort Lauderdale'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Atlanta' },
-              'Atlanta'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Savannah' },
-              'Savannah'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Marietta' },
-              'Marietta'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Augusta' },
-              'Augusta'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Honolulu' },
-              'Honolulu'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Kailua' },
-              'Kailua'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Kaneohe' },
-              'Kaneohe'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Kapolei' },
-              'Kapolei'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Boise' },
-              'Boise'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Coeur d\'Alene' },
-              'Coeur d\'Alene'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Nampa' },
-              'Nampa'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Meridian' },
-              'Meridian'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Chicago' },
-              'Chicago'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Naperville' },
-              'Naperville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Peoria' },
-              'Peoria'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Champaign' },
-              'Champaign'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Carmel' },
-              'Carmel'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fort Wayne' },
-              'Fort Wayne'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bloomington' },
-              'Bloomington'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'South Bend' },
-              'South Bend'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Des Moines' },
-              'Des Moines'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Iowa City' },
-              'Iowa City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Cedar Rapids' },
-              'Cedar Rapids'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'South Bend' },
-              'South Bend'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Topeka' },
-              'Topeka'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Overland Park' },
-              'Overland Park'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Lawrence' },
-              'Lawrence'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Ames' },
-              'Ames'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Louisville' },
-              'Louisville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Lexington' },
-              'Lexington'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Frankfort' },
-              'Frankfort'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Kansas City' },
-              'Kansas City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'New Orleans' },
-              'New Orleans'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Baton Rouge' },
-              'Baton Rouge'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Lafayette' },
-              'Lafayette'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bowling Green' },
-              'Bowling Green'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Portland' },
-              'Portland'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bangor' },
-              'Bangor'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Augusta' },
-              'Augusta'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Shreveport' },
-              'Shreveport'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Baltimore' },
-              'Baltimore'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Annapolis' },
-              'Annapolis'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Rockville' },
-              'Rockville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Lewiston' },
-              'Lewiston'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Boston' },
-              'Boston'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Cambridge' },
-              'Cambridge'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Worcester' },
-              'Worcester'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Silver Spring' },
-              'Silver Spring'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Detroit' },
-              'Detroit'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Ann Arbor' },
-              'Ann Arbor'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Grand Rapids' },
-              'Grand Rapids'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Springfield' },
-              'Springfield'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Minneapolis' },
-              'Minneapolis'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Saint Paul' },
-              'Saint Paul'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Duluth' },
-              'Duluth'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Kalamazoo' },
-              'Kalamazoo'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Jackson' },
-              'Jackson'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Biloxi' },
-              'Biloxi'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Hattiesburg' },
-              'Hattiesburg'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'St. Cloud' },
-              'St. Cloud'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'St. Louis' },
-              'St. Louis'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Kansas City' },
-              'Kansas City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Springfield' },
-              'Springfield'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Gulfport' },
-              'Gulfport'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Missoula' },
-              'Missoula'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Billings' },
-              'Billings'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bozeman' },
-              'Bozeman'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Jefferson City' },
-              'Jefferson City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Omaha' },
-              'Omaha'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Lincoln' },
-              'Lincoln'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Grand Island' },
-              'Grand Island'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Helena' },
-              'Helena'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Las Vegas' },
-              'Las Vegas'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Reno' },
-              'Reno'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Henderson' },
-              'Henderson'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Kearney' },
-              'Kearney'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Manchester' },
-              'Manchester'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Concord' },
-              'Concord'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Nashua' },
-              'Nashua'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Carson City' },
-              'Carson City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Newark' },
-              'Newark'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Trenton' },
-              'Trenton'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Atlantic City' },
-              'Atlantic City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Portsmouth' },
-              'Portsmouth'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Albuquerque' },
-              'Albuquerque'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Santa Fe' },
-              'Santa Fe'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Las Cruces' },
-              'Las Cruces'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Atlantic City' },
-              'Atlantic City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Buffalo' },
-              'Buffalo'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Albany' },
-              'Albany'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Syracuse' },
-              'Syracuse'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Roswell' },
-              'Roswell'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Raleigh' },
-              'Raleigh'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fayetteville' },
-              'Fayetteville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Charlotte' },
-              'Charlotte'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'New York City' },
-              'New York City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Fargo' },
-              'Fargo'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bismarck' },
-              'Bismarck'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Minot' },
-              'Minot'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Wilmington' },
-              'Wilmington'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Cleveland' },
-              'Cleveland'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Cincinnati' },
-              'Cincinnati'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Columbus' },
-              'Columbus'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Grand Forks' },
-              'Grand Forks'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Oklahoma City' },
-              'Oklahoma City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Tulsa' },
-              'Tulsa'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Norman' },
-              'Norman'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Dayton' },
-              'Dayton'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Portland' },
-              'Portland'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Eugene' },
-              'Eugene'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Salem' },
-              'Salem'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Edmond' },
-              'Edmond'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Philadelphia' },
-              'Philadelphia'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Pittsburgh' },
-              'Pittsburgh'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Harrisburg' },
-              'Harrisburg'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bend' },
-              'Bend'
-            ),
-            _react2.default.createElement('option', { value: 'Providence' }),
-            _react2.default.createElement(
-              'option',
-              { value: 'Newport' },
-              'Newport'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Warwick' },
-              'Warwick'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Lancaster' },
-              'Lancaster'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Charleston' },
-              'Charleston'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Columbia' },
-              'Columbia'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Myrtle Beach' },
-              'Myrtle Beach'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Cranston' },
-              'Cranston'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Sioux Falls' },
-              'Sioux Falls'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Rapid City' },
-              'Rapid City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Pierre' },
-              'Pierre'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Greenville' },
-              'Greenville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Nashville' },
-              'Nashville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Memphis' },
-              'Memphis'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Knoxville' },
-              'Knoxville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Aberdeen' },
-              'Aberdeen'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Houston' },
-              'Houston'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Dallas' },
-              'Dallas'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Austin' },
-              'Austin'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Chattanooga' },
-              'Chattanooga'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Salt Lake City' },
-              'Salt Lake City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Provo' },
-              'Provo'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Ogden' },
-              'Ogden'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'San Antonio' },
-              'San Antonio'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Burlington' },
-              'Burlington'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Montpelier' },
-              'Montpelier'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Rutland City' },
-              'Rutland City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Park City' },
-              'Park City'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Charlottesville' },
-              'Charlottesville'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Richmond' },
-              'Richmond'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Virginia Beach' },
-              'Virginia Beach'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Brattleboro' },
-              'Bratteleboro'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Seattle' },
-              'Seattle'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Spokane' },
-              'Spokane'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Tacoma' },
-              'Tacoma'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Norfolk' },
-              'Norfolk'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Charleston' },
-              'Charleston'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Morgantown' },
-              'Morgantown'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Huntington' },
-              'Huntington'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Bellevue' },
-              'Bellevue'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Milwaukee' },
-              'Milwaukee'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Madison' },
-              'Madison'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Green Bay' },
-              'Green Bay'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Wheeling' },
-              'Wheeling'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Cheyenne' },
-              'Cheyenne'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Jackson' },
-              'Jackson'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Laramie' },
-              'Laramie'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Wisconsin Dells' },
-              'Wisconsin Dells'
-            )
+            this.cities()
           ),
           _react2.default.createElement(
             'span',
@@ -1350,256 +393,7 @@ var Filter = function (_Component) {
               { value: 'Any', defaultValue: true },
               'Any State'
             ),
-            _react2.default.createElement(
-              'option',
-              { value: 'AL' },
-              'AL'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'AK' },
-              'AK'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'AZ' },
-              'AZ'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'AR' },
-              'AR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'CA' },
-              'CA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'CO' },
-              'CO'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'CT' },
-              'CT'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'DE' },
-              'DE'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'FL' },
-              'FL'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'GA' },
-              'GA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'HI' },
-              'HI'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'ID' },
-              'ID'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'IL' },
-              'IL'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'IN' },
-              'IN'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'IA' },
-              'IA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'KS' },
-              'KS'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'KY' },
-              'KY'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'LA' },
-              'LA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'ME' },
-              'ME'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'MD' },
-              'MD'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'MA' },
-              'MA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'MI' },
-              'MI'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'MN' },
-              'MN'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'MS' },
-              'MS'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'MO' },
-              'MO'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'MT' },
-              'MT'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'NE' },
-              'NE'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'NV' },
-              'NV'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'NH' },
-              'NH'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'NJ' },
-              'NJ'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'NM' },
-              'NM'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'NY' },
-              'NY'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'NC' },
-              'NC'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'ND' },
-              'ND'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'OH' },
-              'OH'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'OK' },
-              'OK'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'OR' },
-              'OR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'PA' },
-              'PA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'RI' },
-              'RI'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'SC' },
-              'SC'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'SD' },
-              'SD'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'TN' },
-              'TN'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'TX' },
-              'TX'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'UT' },
-              'UT'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'VT' },
-              'VT'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'VA' },
-              'VA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'WA' },
-              'WA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'WV' },
-              'WV'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'WI' },
-              'WI'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'WY' },
-              'WY'
-            )
+            this.states()
           ),
           _react2.default.createElement(
             'span',
@@ -1615,26 +409,7 @@ var Filter = function (_Component) {
               { value: 'Any' },
               'Any Home'
             ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Ranch' },
-              'Ranch'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Apartment' },
-              'Apartment'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'House' },
-              'House'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: 'Condo' },
-              'Condo'
-            )
+            this.homeType()
           ),
           _react2.default.createElement(
             'span',
@@ -1650,46 +425,7 @@ var Filter = function (_Component) {
               { value: '0' },
               '0+ BR'
             ),
-            _react2.default.createElement(
-              'option',
-              { value: '1' },
-              '1+ BR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '2' },
-              '2+ BR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '3' },
-              '3+ BR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '4' },
-              '4+ BR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '5' },
-              '5+ BR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '6' },
-              '6+ BR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '7' },
-              '7+ BR'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '8' },
-              '8+ BR'
-            )
+            this.rooms()
           ),
           _react2.default.createElement(
             'span',
@@ -1705,46 +441,7 @@ var Filter = function (_Component) {
               { value: '0' },
               '0+ BA'
             ),
-            _react2.default.createElement(
-              'option',
-              { value: '1' },
-              '1+ BA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '2' },
-              '2+ BA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '3' },
-              '3+ BA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '4' },
-              '4+ BA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '5' },
-              '5+ BA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '6' },
-              '6+ BA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '7' },
-              '7+ BA'
-            ),
-            _react2.default.createElement(
-              'option',
-              { value: '8' },
-              '8+ BA'
-            )
+            this.bath()
           ),
           _react2.default.createElement(
             'div',
