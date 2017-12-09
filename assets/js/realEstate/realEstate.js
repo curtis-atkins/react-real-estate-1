@@ -28,12 +28,14 @@ class App extends Component {
       gym: false,
       filteredData: listingsData,
       populateFormsData:"",
-      sortby: "price-asc"
+      sortby: "price-asc",
+      view: "box"
     }
 
     this.change = this.change.bind(this)
     this.filteredData = this.filteredData.bind(this)
     this.populateForms = this.populateForms.bind(this)
+    this.changeView = this.changeView.bind(this)
 
   }
 
@@ -57,6 +59,12 @@ change(event){
   }, () => {
     console.log(this.state)
     this.filteredData()
+  })
+}
+
+changeView(viewName){
+  this.setState({
+    view: viewName
   })
 }
 
@@ -173,7 +181,8 @@ this.setState({
           <Filter  change={this.change} globalState = {this.state}
             populateAction={this.populateForms}/>
 
-          <Listings listingsData={this.state.filteredData} change= {this.change}/>
+          <Listings listingsData={this.state.filteredData}
+            change= {this.change} globalState = {this.state} changeView={this.changeView}/>
         </section>
       </div>)
   }
