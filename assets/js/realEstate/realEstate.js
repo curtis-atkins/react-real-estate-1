@@ -5,8 +5,6 @@ import Filter from './Filter.js';
 import Listings from './Listings.js';
 import listingsData from './data/listingsData.js';
 
-
-
 class App extends Component {
   constructor () {
     super()
@@ -23,8 +21,8 @@ class App extends Component {
       min_floor_space: 0,
       max_floor_space: 20000,
       elevator: false,
-      finished_basement: false,
       swimming_pool: false,
+      finished_basement: false,
       gym: false,
       filteredData: listingsData,
       populateFormsData:"",
@@ -98,6 +96,14 @@ filteredData(){
      })
    }
 
+   if (this.state.elevator != false) {
+     newData = newData.filter((item) => {
+       return item.extras.includes("elevator") == true
+       console.log()
+     })
+   }
+
+
    if(this.state.sortby == "price-dsc"){
      newData = newData.sort((a,b) =>{
       return b.price - a.price
@@ -131,6 +137,7 @@ populateForms() {
 //City
 let cities = this.state.listingsData.map((item)=> {
   return item.city
+  console.log(city)
 })
 cities = new Set(cities)
 cities = [...cities]
@@ -167,11 +174,14 @@ rooms = rooms.sort()
 //Bathrooms
 let bath = this.state.listingsData.map((item)=> {
   return item.bath
+  conosole.log("bath")
 })
 bath = new Set(bath)
 bath = [...bath]
 
 bath = bath.sort()
+
+
 
 this.setState({
   populateFormsData: {

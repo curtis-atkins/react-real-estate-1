@@ -11,8 +11,6 @@ export default class Filter extends Component {
     this.homeType = this.homeType.bind(this)
     this.rooms = this.rooms.bind(this)
     this.bath = this.bath.bind(this)
-
-
   }
 
   componentWillMount(){
@@ -22,7 +20,6 @@ export default class Filter extends Component {
 cities() {
   if (this.props.globalState.populateFormsData.cities != undefined){
     let {cities} =  this.props.globalState.populateFormsData
-    console.log(cities)
     return cities.map((item) => {
       return(
         <option key={item} value={item}> {item}</option>
@@ -35,7 +32,6 @@ cities() {
 states() {
   if (this.props.globalState.populateFormsData.states != undefined){
     let {states} =  this.props.globalState.populateFormsData
-    console.log(states)
     return states.map((item) => {
       return(
         <option key={item} value={item}> {item}</option>
@@ -48,7 +44,6 @@ states() {
  homeType() {
   if (this.props.globalState.populateFormsData.homeType != undefined){
     let {homeType} =  this.props.globalState.populateFormsData
-    console.log(homeType)
     return homeType.map((item) => {
       return(
         <option key={item} value={item}> {item}</option>
@@ -61,7 +56,6 @@ states() {
  rooms() {
   if (this.props.globalState.populateFormsData.rooms != undefined){
   let {rooms} =  this.props.globalState.populateFormsData
-  console.log(rooms)
   return rooms.map((item) => {
     return(
       <option key={item} value={item}> {item}+ BR</option>
@@ -73,16 +67,15 @@ states() {
 
  bath() {
   if (this.props.globalState.populateFormsData.bath != undefined){
-  let {bath} =  this.props.globalState.populateFormsData
-  console.log(bath)
-  return bath.map((item) => {
-    return(
-      <option key={item} value={item}> {item}+ BA</option>
-    )
-  })
+    let {bath} =  this.props.globalState.populateFormsData
+    return bath.map((item) => {
+      return(
+        <option key={item} value={item}> {item}+ BA</option>
+      )
+    })
+  }
+ }
 
- }
- }
 
 
   render () {
@@ -96,6 +89,7 @@ states() {
             onChange={this.props.change}>
             <option value="Any" defaultValue>Any City</option>
             {this.cities()}
+
           </select>
 
           <span className="title state">State</span>
@@ -139,7 +133,9 @@ states() {
             <input type="number" name="max_floor_space" className="max_floor_space"  onChange={this.props.change}
               value ={this.props.globalState.max_floor_space}/>
           </div>
-          <div className="filters extras">
+
+
+         <div className="filters extras">
             <label htmlFor="extras">
               <span>Elevators</span>
               <input type="checkbox" value="elevator" name="elevator"
@@ -164,6 +160,7 @@ states() {
                 onChange={this.props.change}/>
             </label>
           </div>
+
         </section>
       </div>
       )
