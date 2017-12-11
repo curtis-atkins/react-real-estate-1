@@ -9,7 +9,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      name: "",
+      name: '',
       listingsData,
       city:"Any",
       state:"Any",
