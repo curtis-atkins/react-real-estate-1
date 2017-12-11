@@ -3,7 +3,9 @@ import React, { Component} from 'react';
 export default class Listings extends Component {
   constructor () {
     super()
-    this.state = {}
+    this.state = {
+      name: ''
+    }
   this.loopListings =  this.loopListings.bind(this);
   }
 
