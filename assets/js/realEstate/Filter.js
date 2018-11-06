@@ -98,7 +98,7 @@ states() {
               {this.states()}
           </select>
 
-          <span className="title homeType">homeType</span>
+          <span className="title homeType">Home Type</span>
           <label htmlFor="homeType"></label>
           <select name="homeType" className="filters homeType" onChange={this.props.change}>
             <option value="Any">Any Home</option>

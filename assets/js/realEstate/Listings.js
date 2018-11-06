@@ -21,9 +21,7 @@ export default class Listings extends Component {
         // THIS IS THE BOX VIEW
         return(<div className="col-md-3" key={index}>
             <div className="listing">
-            <div className="listing-img" style={{background:
-                `url("${listing.image}")
-            no-repeat center center`}}>
+            <div className="listing-img" style={{background:`url(${listing.image}) no-repeat center center`}}>
 
               <span className="address">{listing.address}</span>
               <div className="details">

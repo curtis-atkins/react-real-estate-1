@@ -10,6 +10,7 @@
   width: 20%;
   display: inline-block;
   float: left;
+  padding: 5px;
 
   .inside {
     padding: 20px;
@@ -17,8 +18,8 @@
   }
 
   h4 {
-    font-size: 0.9rem;
-    margin-bottom: 25px;
+    font-size: 1.1rem;
+    margin: 10px 0 25px 0;
     text-transform: uppercase;
     font-weight: 500px;
   }
@@ -81,7 +82,7 @@
     input[type="text"] {
     width: 80%;
     background: transparent;
-    font-size: 1rem;
+    font-size: 1.4rem;
     border: none;
     border: 2px solid $darkpurple;
     margin-bottom: 20px;
@@ -92,7 +93,7 @@
   .sortby-area {
     margin-bottom: 20px;
         .results {
-      font-size: 0.8rem;
+      font-size: 1.35rem;
       color: $darkpurple;
       display: inline-block;
 
