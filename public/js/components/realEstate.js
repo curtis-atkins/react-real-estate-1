@@ -444,17 +444,8 @@ var Listings = function (_Component) {
                   { className: 'details' },
                   _react2.default.createElement(
                     'div',
-                    { className: 'col-md-3' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'user-img' },
-                      _react2.default.createElement('i', { className: 'fa fa-user-o', 'aria-hidden': 'true',
-                        style: { background: 'no-repeat center center' } })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-9' },
+                    { className: 'col-md-12' },
+                    _react2.default.createElement('div', { className: 'user-img', style: { background: 'url(' + listing.headshot + ') no-repeat center' } }),
                     _react2.default.createElement(
                       'div',
                       { className: 'user-details' },
@@ -555,17 +546,8 @@ var Listings = function (_Component) {
                   { className: 'details' },
                   _react2.default.createElement(
                     'div',
-                    { className: 'col-md-3' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'user-img' },
-                      _react2.default.createElement('i', { className: 'fa fa-user-o', 'aria-hidden': 'true',
-                        style: { background: 'no-repeat center center' } })
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-9' },
+                    { className: 'col-md-12' },
+                    _react2.default.createElement('div', { className: 'user-img', style: { background: 'url(' + listing.headshot + ') no-repeat center' } }),
                     _react2.default.createElement(
                       'div',
                       { className: 'user-details' },
@@ -770,13 +752,8 @@ exports.default = Listings;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _ref;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var listingsData = [{
-  image: "https://activerain-store.s3.amazonaws.com/image_store/uploads/agents/rocummings/files/4149%20Bay%20Front%20Rd%20Mobile%20AL%2036605.jpg",
+  image: "../img/homes/al-mobile.jpg",
   address: "4149 Spring Lake Drive North",
   city: "Mobile",
   state: "AL",
@@ -787,10 +764,10 @@ var listingsData = [{
   floorspace: 1348,
   date: "12/11/2017",
   seller: "Wilson Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: []
 }, {
-  image: "https://cdnparap90.paragonrels.com/ParagonImages/Property/P9/GALMLS/827855/0/0/0/38ba31ea96e9ae1532742d6b635ddac9/1/9ae89262437a4a8c58cfa28d4af0b815/827855.JPG",
+  image: "../img/homes/al-birmingham.jpg",
   address: "1805 Castleberry Way",
   city: "Birmingham",
   state: "AL",
@@ -801,10 +778,10 @@ var listingsData = [{
   floorspace: 1064,
   date: "12/1/2017",
   seller: "Sherry Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Gym"]
 }, {
-  image: "https://image3.apartmentfinder.com/i2/aqG-j66ES5l9OPVkeD20qoHa7mbYBpK2QWxX-Xa7BBg/117/verandas-at-taylor-oaks-montgomery-al-building-photo.jpg",
+  image: "../img/homes/al-montgomery.jpg",
   address: "605 Maxwell Boulevard",
   city: "Montgomery",
   state: "AL",
@@ -815,10 +792,10 @@ var listingsData = [{
   floorspace: 970,
   date: "1/9/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Elevator", "Gym"]
 }, {
-  image: "http://media.al.com/business_impact/photo/artisan-courtyard11jpg-1a1bfb51bff343da.jpg",
+  image: "../img/homes/al-hunstville.jpg",
   address: "1020 Cresent Falls",
   city: "Huntsville",
   state: "AL",
@@ -829,10 +806,10 @@ var listingsData = [{
   floorspace: 1883,
   date: "1/10/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Gym"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISyvy3awu4f16r0000000000.jpg",
+  image: "../img/homes/ak-anchorage.jpg",
   address: "19665 Villages Scenic Parkway",
   city: "Anchorage",
   state: "AK",
@@ -843,10 +820,10 @@ var listingsData = [{
   floorspace: 4361,
   date: "11/20/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://cdnparap80.paragonrels.com/ParagonImages/Property/P8/SEAMLS/18831/0/0/0/672db1c1938656041f2658e84f3315b2/5/422dbc55f2b00ef7aaab4df0a01b87c8/18831.JPG",
+  image: "../img/homes/ak-juneau.jpg",
   address: "1023 Wolfram Way",
   city: "Juneau",
   state: "AK",
@@ -857,10 +834,10 @@ var listingsData = [{
   floorspace: 1675,
   date: "1/23/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: []
 }, {
-  image: "https://storage.googleapis.com/idx-photos-gs.ihouseprd.com/AK-GFMLS/136280/org/000.jpg",
+  image: "../img/homes/ak-fairbanks.jpg",
   address: "1301 Kellum Street",
   city: "Fairbanks",
   state: "AK",
@@ -871,10 +848,10 @@ var listingsData = [{
   floorspace: 830,
   date: "1/26/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Swimming Pool", "Gym"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISmepz2ojx7ktd1000000000.jpg",
+  image: "../img/homes/ak-sitka.jpg",
   address: "L6 Middle Is",
   city: "Sitka",
   state: "AK",
@@ -885,10 +862,10 @@ var listingsData = [{
   floorspace: 864,
   date: "2/1/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: []
 }, {
-  image: "https://highestcashoffer.com/wp-content/uploads/2017/02/phoenix-az-homes-for-sale-1.jpg",
+  image: "../img/homes/az-phoenix.jpg",
   address: "2047 E Cielo Grande Avenue",
   city: "Phoenix",
   state: "AZ",
@@ -899,10 +876,10 @@ var listingsData = [{
   floorspace: 2676,
   date: "2/16/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Finished Basement", "Swimming Pool"]
 }, {
-  image: "http://www.whitehouse51.com/pic/activerain-store.s3.amazonaws.com/blog_entries/850/4976850/original/scottsdale_ranch_house.jpg?1478420684",
+  image: "../img/homes/az-tucson.jpg",
   address: "6799 N Rattlesnake Canyon Rd",
   city: "Tucson",
   state: "AZ",
@@ -913,10 +890,10 @@ var listingsData = [{
   floorspace: 12946,
   date: "2/20/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://images1.apartments.com/i2/rHg72g2H7kFdt0UbHqzOW4hVOh71EYTJZWJ37LiMoPA/111/image.jpg",
+  image: "../img/homes/az-scottsdale.jpg",
   address: "9595 E Thunderbird Road",
   city: "Scottsdale",
   state: "AZ",
@@ -927,10 +904,10 @@ var listingsData = [{
   floorspace: 1371,
   date: "2/28/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://cdngeneral.rentcafe.com/dmslivecafe/3/521497/CieloGilbert_gilbert_az_bkgrd.jpg?crop=(0,0,300,191)&cropxunits=300&cropyunits=191&quality=85&scale=both&",
+  image: "../img/homes/az-mesa.jpg",
   address: "1508 N Alta Mesa Dr 114",
   city: "Mesa",
   state: "AZ",
@@ -941,10 +918,10 @@ var listingsData = [{
   floorspace: 2575,
   date: "3/6/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Gym", "Finished Basement"]
 }, {
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Thurston_House%2C_Little_Rock%2C_AR.JPG/1200px-Thurston_House%2C_Little_Rock%2C_AR.JPG",
+  image: "../img/homes/ar-little_rock.jpg",
   address: "923 Hartford St",
   city: "Little Rock",
   state: "AR",
@@ -955,10 +932,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "5/1/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: []
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/ps.110/6/e/d/7/picture-uh=db9d4f6a49283d4d1851fe1834212be1-ps=6ed7faa6736a07092ec9592c0d483.jpg",
+  image: "../img/homes/ar-fayetteville.jpg",
   address: "374 Mimosa Lane",
   city: "Fayetteville",
   state: "AR",
@@ -969,10 +946,10 @@ var listingsData = [{
   floorspace: 792,
   date: "5/3/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "https://images1.apartments.com/i2/eCGGaOZTwoeXTTItqkLm5-uwpzBx8JBxwuj3BrklOLE/117/willow-lake-townhomes-fort-smith-ar-primary-photo.jpg",
+  image: "../img/homes/ar-fort_smith.jpg",
   address: "5100 Zero St",
   city: "Fort Smith",
   state: "AR",
@@ -983,10 +960,10 @@ var listingsData = [{
   floorspace: 551,
   date: "5/9/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://mediavault.point2.com/p2a/htmltext/7064/ea94/3719/ef4502d142c24a4f1461/original.jpg",
+  image: "../img/homes/ar-hot_springs.jpg",
   address: "5000 Central Ave APT 33",
   city: "Hot Springs",
   state: "AR",
@@ -997,10 +974,10 @@ var listingsData = [{
   floorspace: 1600,
   date: "5/22/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: []
 }, {
-  image: "https://www.thepropertyseekers.com/wp-content/uploads/2017/06/los-angeles-homes-for-sale.jpg",
+  image: "../img/homes/ca-los_angeles.jpg",
   address: "2393 Castilian Drive",
   city: "Los Angeles",
   state: "CA",
@@ -1011,10 +988,10 @@ var listingsData = [{
   floorspace: 3620,
   date: "6/2/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://cdn.vox-cdn.com/uploads/chorus_image/image/49473701/445108_1.0.jpg",
+  image: "../img/homes/ca-san_francisco.jpg",
   address: "6705 Evelyn Way",
   city: "San Francisco",
   state: "CA",
@@ -1025,10 +1002,10 @@ var listingsData = [{
   floorspace: 1025,
   date: "6/4/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://media.equityapartments.com/images/c_crop,x_0,y_0,w_1920,h_1080/c_fill,w_1920,h_1080/q_80/163-27/carmel-terrace-apartments-exterior.jpg",
+  image: "../img/homes/ca-san_diego.jpg",
   address: "11727 Genesee Avenue",
   city: "San Diego",
   state: "CA",
@@ -1039,10 +1016,10 @@ var listingsData = [{
   floorspace: 600,
   date: "7/19/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://www.sacbee.com/news/business/real-estate-news/3te3tb/picture144870839/alternates/FREE_1140/Cresleigh",
+  image: "../img/homes/ca-sacramento.jpg",
   address: "4077 Libby Street",
   city: "Sacramento",
   state: "CA",
@@ -1053,10 +1030,10 @@ var listingsData = [{
   floorspace: 1000,
   date: "8/25/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/ps.73/d/6/1/b/picture-uh=381a4b46862467abd3584781fcb6b6-ps=d61b88ca4fe214844adc26ec5746e17.jpg",
+  image: "../img/homes/co-denver.jpg",
   address: "5188 W County 150 Rd S",
   city: "Denver",
   state: "CO",
@@ -1067,10 +1044,10 @@ var listingsData = [{
   floorspace: 1800,
   date: "9/24/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://www.mychallengerhomes.com/images/uploaded/810109558049589_rwr.jpg",
+  image: "../img/homes/co-colorado_springs.jpg",
   address: "8418 N Wabash Ave",
   city: "Colorado Springs",
   state: "CO",
@@ -1081,10 +1058,10 @@ var listingsData = [{
   floorspace: 2300,
   date: "10/4/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: []
 }, {
-  image: "https://apollostore.blob.core.windows.net/apex5510/uploads/images/photogallery/5510-spine-rd-boulder-co-80301-large-011-10-igp9035-6-7-8-9-1500x994-72dpi.7034b1b2-3aa0-4d50-90d4-edbe1a6529bb.jpg",
+  image: "../img/homes/co-boulder.jpg",
   address: "3381 New London Rd",
   city: "Boulder",
   state: "CO",
@@ -1095,10 +1072,10 @@ var listingsData = [{
   floorspace: 1800,
   date: "10/14/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://odis.homeaway.com/odis/listing/81346a07-f807-4429-b6b2-f117b722d015.c10.jpg",
+  image: "../img/homes/co-fort_collins.jpg",
   address: "2727 Iowa Dr",
   city: "Fort Collins",
   state: "CO",
@@ -1109,10 +1086,10 @@ var listingsData = [{
   floorspace: 1800,
   date: "10/26/2017",
   seller: "Amelia Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "https://maps.googleapis.com/maps/api/streetview?size=2048x1536&sensor=false&location=30+Tredeau+St%2C+Hartford+CT+06114&client=gme-zillowinc3&signature=G6CgGOAF_fXLkrbyGUmfODTqzlw=",
+  image: "../img/homes/ct-hartford.jpg",
   address: "30 Boston Cliff Rd",
   city: "Hartford",
   state: "CT",
@@ -1123,10 +1100,10 @@ var listingsData = [{
   floorspace: 2100,
   date: "10/31/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Gym", "Finished Basement"]
 }, {
-  image: "https://cdn.listingphotos.sierrastatic.com/large/v1539373139/142/142_18032490_01.jpg",
+  image: "../img/homes/ct-new_haven.jpg",
   address: "15729 Parkwood Dr S",
   city: "New Haven",
   state: "CT",
@@ -1137,10 +1114,10 @@ var listingsData = [{
   floorspace: 1750,
   date: "11/20/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: []
 }, {
-  image: "https://yukbisniskost.com/wp-content/uploads/2018/07/apartment-1-1024x576.jpg",
+  image: "../img/homes/ct-stamford.jpg",
   address: "2404 Edmonton Rd",
   city: "Stamford",
   state: "CT",
@@ -1151,10 +1128,10 @@ var listingsData = [{
   floorspace: 1975,
   date: "12/1/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://4.bp.blogspot.com/-6T5VJTW7HoA/VAKcnY90bfI/AAAAAAAABUw/xG9uSwr-SQE/s1600/3deckers.jpg",
+  image: "../img/homes/ct-bridgeport.jpg",
   address: "220 Meadow Ln",
   city: "Bridgeport",
   state: "CT",
@@ -1165,10 +1142,10 @@ var listingsData = [{
   floorspace: 1900,
   date: "12/11/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "http://images.mris.com/image/V3/1/gWunFXNklPB-GE4cJhW3gzKVj8DtEJZ5uJzQFbAIVlI_jmYJN3ZyPDC0qsMb3qQvG3w6HWTPttDWKLaWUWslowz_XBVf_uP5U7Lp5_XpWfk.jpg",
+  image: "../img/homes/de-wilmington.jpg",
   address: "738 Kentucky Ave",
   city: "Wilmington",
   state: "DE",
@@ -1179,10 +1156,10 @@ var listingsData = [{
   floorspace: 9000,
   date: "1/9/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://bright-media.brightmls.com/bright/images/0000/3007/4851/4316/300748514316_2048_1536_WM_qUI7EV6TplHGrw8g.jpg",
+  image: "../img/homes/de-newark.jpg",
   address: "4201 Townsend Ave",
   city: "Newark",
   state: "DE",
@@ -1193,10 +1170,10 @@ var listingsData = [{
   floorspace: 2375,
   date: "1/10/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "http://spxeastwebfarm7.spherexx.com/common/dynamic.asp?p=/common/uploads/www_liveatthegrande_com/property_photos/11173-pho-Grande-Exterior-8_Opt_1__161358.jpg&w=1&mw=1920&h=1&mh=1080&q=50",
+  image: "../img/homes/de-dover.jpg",
   address: "81 S. Fairground Lane",
   city: "Dover",
   state: "DE",
@@ -1206,11 +1183,11 @@ var listingsData = [{
   price: 1699,
   floorspace: 879,
   date: "1/23/2017",
-  seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  seller: "Wilson Foster",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://cbanker.com/media/images/property_plus_extras_image/RLC_POOL-3.jpg",
+  image: "../img/homes/de-lewes.jpg",
   address: "403 Glen Creek Lane",
   city: "Lewes",
   state: "DE",
@@ -1221,10 +1198,10 @@ var listingsData = [{
   floorspace: 1750,
   date: "1/26/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/ps.109/4/e/1/e/picture-uh=7997771747b8fccb55f97af45bda48-ps=4e1ebfeb91c23ec7ec58854c2027ebb.jpg",
+  image: "../img/homes/fl-miami.jpg",
   address: "7 Maple Street",
   city: "Miami",
   state: "FL",
@@ -1235,10 +1212,10 @@ var listingsData = [{
   floorspace: 2900,
   date: "2/1/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://jonathanmcgrathconstruction.com/new/wp-content/uploads/2012/03/Sanford-FL-Home-Exterior-Renovation-Project-Preview.jpg",
+  image: "../img/homes/fl-orlando.jpg",
   address: "384 South Drive",
   city: "Orlando",
   state: "FL",
@@ -1249,10 +1226,10 @@ var listingsData = [{
   floorspace: 2500,
   date: "2/16/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "https://greystar.mytouchtour.com/uploads/31_184_Greystar-Crescent-Bayshore-Apartment-6289_1920x1270.jpg",
+  image: "../img/homes/fl-tampa.jpg",
   address: "195 West Lane",
   city: "Tampa",
   state: "FL",
@@ -1263,10 +1240,10 @@ var listingsData = [{
   floorspace: 1400,
   date: "2/20/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.seasidepropertiesgroup.com/upload/condobuilding/desktop_slideshow_img_20160705151808.jpg",
+  image: "../img/homes/fl-fort_lauderdale.jpg",
   address: "8157 Railroad Lane",
   city: "Fort Lauderdale",
   state: "FL",
@@ -1277,10 +1254,10 @@ var listingsData = [{
   floorspace: 1980,
   date: "2/28/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "http://www.whitehouse51.com/pic/homeatlantaga.com/images/homes-atlanta/homethree.jpg",
+  image: "../img/homes/ga-atlanta.jpg",
   address: "6 Grant Street",
   city: "Atlanta",
   state: "GA",
@@ -1291,10 +1268,10 @@ var listingsData = [{
   floorspace: 2459,
   date: "3/6/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: []
 }, {
-  image: "https://peachtreerealtygroup.com/wp-content/uploads/2018/03/420-Savannah-Dr-57Front1_HDR.jpg",
+  image: "../img/homes/ga-savannah.jpg",
   address: "78 Fifth Lane",
   city: "Savannah",
   state: "GA",
@@ -1305,10 +1282,10 @@ var listingsData = [{
   floorspace: 2600,
   date: "5/1/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://www.lowincomehousing.us/gallery/127974_abbington-trail-apartments_ris.jpg",
+  image: "../img/homes/ga-marietta.jpg",
   address: "677 Richardson Drive",
   city: "Marietta",
   state: "GA",
@@ -1319,10 +1296,10 @@ var listingsData = [{
   floorspace: 1400,
   date: "5/3/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.rhodesporter.com/wp-content/uploads/2013/08/3422-Covington-Lexington-Augusta-Ga-Rhodes-Porter-homes-20130719_093456-1.jpg",
+  image: "../img/homes/ga-augusta.jpg",
   address: "81 Miles Road",
   city: "Augusta",
   state: "GA",
@@ -1333,10 +1310,10 @@ var listingsData = [{
   floorspace: 1750,
   date: "5/9/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://photonet.hotpads.com/search/listingPhoto/HotPads/2gsq93kmgm27/0008_1122794267_large.jpg",
+  image: "../img/homes/hi-honolulu.jpg",
   address: "4747 Victoria Street",
   city: "Honolulu",
   state: "HI",
@@ -1347,10 +1324,10 @@ var listingsData = [{
   floorspace: 3475,
   date: "5/22/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISijqcs0pn5n9b0000000000.jpg",
+  image: "../img/homes/hi-kailua.jpg",
   address: "9085 Orchard Street",
   city: "Kailua",
   state: "HI",
@@ -1361,10 +1338,10 @@ var listingsData = [{
   floorspace: 2450,
   date: "6/2/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://images1.apartments.com/i2/0mCVCKXXkCzSmR7zqv64ggUIlZ2SUlV-_QzkQbnKO3I/111/waikiki-walina-apartments-honolulu-hi-primary-photo.jpg",
+  image: "../img/homes/hi-kaneohe.jpg",
   address: "7973 Bedford Drive",
   city: "Kaneohe",
   state: "HI",
@@ -1375,10 +1352,10 @@ var listingsData = [{
   floorspace: 1399,
   date: "6/4/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/IS66w65wjdbr6k1000000000.jpg",
+  image: "../img/homes/hi-kapolei.jpg",
   address: "525 Manawai Street",
   city: "Kapolei",
   state: "HI",
@@ -1389,10 +1366,10 @@ var listingsData = [{
   floorspace: 1675,
   date: "7/19/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://s3-us-west-2.amazonaws.com/hh-wp-images/sites/126/helen-law-boise-idaho-real-estate-homes-7-2000x800.jpg",
+  image: "../img/homes/id-boise.jpg",
   address: "822 Green Lake Lane",
   city: "Boise",
   state: "ID",
@@ -1403,10 +1380,10 @@ var listingsData = [{
   floorspace: 2175,
   date: "8/25/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: []
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISq9oyeoa886c50000000000.jpg",
+  image: "../img/homes/id-coeur_d_alene.jpg",
   address: "59 Argyle Drive",
   city: "Coeur d'Alene",
   state: "ID",
@@ -1417,10 +1394,10 @@ var listingsData = [{
   floorspace: 2345,
   date: "9/24/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://cdn.homes.com/cgi-bin/readimage/6567187234/4595-stamm-ln-canyon-county-id-83687-0.jpg",
+  image: "../img/homes/id-nampa.jpg",
   address: "9025 Clay Street",
   city: "Nampa",
   state: "ID",
@@ -1431,10 +1408,10 @@ var listingsData = [{
   floorspace: 1350,
   date: "10/4/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://img.tourre.com/mls_images/swidaho/98681094/IMLS98681094-01.jpg",
+  image: "../img/homes/id-meridian.jpg",
   address: "7792 Annadale Drive",
   city: "Meridian",
   state: "ID",
@@ -1445,10 +1422,10 @@ var listingsData = [{
   floorspace: 1400,
   date: "10/14/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.trbimg.com/img-5771b415/turbine/ct-elite-street-scottie-pippen-highland-park-mansion-0630-biz-20160627",
+  image: "../img/homes/il-chicago.jpg",
   address: "8371 Augusta Street",
   city: "Chicago",
   state: "IL",
@@ -1459,10 +1436,10 @@ var listingsData = [{
   floorspace: 2925,
   date: "10/26/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Gym", "Finished Basement"]
 }, {
-  image: "http://photos.listhub.net/MREDIL/09946754/1?lm=20180511T122438",
+  image: "../img/homes/il-naperville.jpg",
   address: "202 S. Jones Street",
   city: "Naperville",
   state: "IL",
@@ -1473,10 +1450,10 @@ var listingsData = [{
   floorspace: 2460,
   date: "10/31/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "http://www.catoncommercial.com/wp-content/uploads/2018/04/311371.jpg",
+  image: "../img/homes/il-peoria.jpg",
   address: "7669 Edgemont Drive",
   city: "Peoria",
   state: "IL",
@@ -1487,10 +1464,10 @@ var listingsData = [{
   floorspace: 1365,
   date: "11/20/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://d2cc5bro5bu049.cloudfront.net/57251/14336121/large.jpg",
+  image: "../img/homes/il-champaign.jpg",
   address: "8 Summit Court",
   city: "Champaign",
   state: "IL",
@@ -1501,10 +1478,10 @@ var listingsData = [{
   floorspace: 1340,
   date: "12/1/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://blog.thegreenhouseproject.org.72-10-34-23.d7yv-zwls.accessdomain.com/wp-content/uploads/2016/09/exterior-Carmel-home.jpg",
+  image: "../img/homes/in-carmel.jpg",
   address: "172 South Blackburn Avenue",
   city: "Carmel",
   state: "IN",
@@ -1515,10 +1492,10 @@ var listingsData = [{
   floorspace: 1875,
   date: "12/11/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: []
 }, {
-  image: "https://ap.rdcpix.com/930580018/40306a54a8337ac4f475cd400e089ad9l-m0xd-w1020_h770_q80.jpg",
+  image: "../img/homes/in-fort_wayne.jpg",
   address: "114 Virginia Road",
   city: "Fort Wayne",
   state: "IN",
@@ -1529,10 +1506,10 @@ var listingsData = [{
   floorspace: 2555,
   date: "1/9/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "http://www.tenthandcollege.com/wp-content/uploads/2014/12/East-Bay-apartments-bloomington-indiana.jpg",
+  image: "../img/homes/in-bloomington.jpg",
   address: "9619 Longfellow Street",
   city: "Bloomington",
   state: "IN",
@@ -1543,10 +1520,10 @@ var listingsData = [{
   floorspace: 1255,
   date: "10/31/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.atthecascade.com/wp-content/uploads/ThreeTwenty_Night_1920x1078.jpg",
+  image: "../img/homes/in-south_bed.jpg",
   address: "672 Rock Maple Lane",
   city: "South Bend",
   state: "IN",
@@ -1557,10 +1534,10 @@ var listingsData = [{
   floorspace: 1850,
   date: "10/26/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://photos.listhub.net/DMAARIA/558650/1?lm=20180416T194659",
+  image: "../img/homes/ia-des_moines.jpg",
   address: "295 Jockey Hollow Lane",
   city: "Des Moines",
   state: "IA",
@@ -1571,10 +1548,10 @@ var listingsData = [{
   floorspace: 2150,
   date: "10/14/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: []
 }, {
-  image: "https://pp.walk.sc/full/p/139420812/b5a052.jpg",
+  image: "../img/homes/ia-iowa_city.jpg",
   address: "3 St Paul Avenue",
   city: "Iowa City",
   state: "IA",
@@ -1585,10 +1562,10 @@ var listingsData = [{
   floorspace: 1480,
   date: "10/4/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://c1.staticflickr.com/6/5489/30986748970_5911d1bc5e_b.jpg",
+  image: "../img/homes/ia-cedar_rapids.jpg",
   address: "8166 Myrtle Street",
   city: "Cedar Rapids",
   state: "IA",
@@ -1599,12 +1576,12 @@ var listingsData = [{
   floorspace: 1899,
   date: "9/24/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://cdnparap90.paragonrels.com/ParagonImages/Property/P9/IRMLS/201607251/0/0/0/945f0cfc77842f90566ff62892640bfc/4/787b15dd295d6e11177a3104a3273e0e/201607251.JPG",
+  image: "../img/homes/in-gary.jpg",
   address: "42 Grove Avenue",
-  city: "South Bend",
+  city: "Gary",
   state: "IN",
   homeType: "House",
   rooms: 4,
@@ -1613,10 +1590,10 @@ var listingsData = [{
   floorspace: 3000,
   date: "8/25/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "https://s3.amazonaws.com/rewsllc-photos-listings/topeka_201863_0.jpg",
+  image: "../img/homes/ks-topeka.jpg",
   address: "43 Glen Eagles Road",
   city: "Topeka",
   state: "KS",
@@ -1627,10 +1604,10 @@ var listingsData = [{
   floorspace: 2145,
   date: "7/19/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://apollostore.blob.core.windows.net/cityplace/uploads/assets/gemini-background-template.3e5b9015-bde4-43fa-8767-f733a06379c3.jpg",
+  image: "../img/homes/ks-overland_park.jpg",
   address: "714 Augusta Street",
   city: "Overland Park",
   state: "KS",
@@ -1641,10 +1618,10 @@ var listingsData = [{
   floorspace: 1425,
   date: "6/4/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.firstconstructionllc.com/_img/888Lofts/DSC_2712_preview.jpeg",
+  image: "../img/homes/ks-lawrence.jpg",
   address: "7 New Saddle Avenue",
   city: "Lawrence",
   state: "KS",
@@ -1655,10 +1632,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "6/2/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISaxj6jk9ewuxk1000000000.jpg",
+  image: "../img/homes/ia-ames.jpg",
   address: "992 Valley Court",
   city: "Ames",
   state: "IA",
@@ -1669,10 +1646,10 @@ var listingsData = [{
   floorspace: 2200,
   date: "5/22/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "https://southlandrealtors.com/wp-content/uploads/Wakefield.jpg",
+  image: "../img/homes/ky-louisville.jpg",
   address: "7840 Walnut Street",
   city: "Louisville",
   state: "KY",
@@ -1683,10 +1660,10 @@ var listingsData = [{
   floorspace: 2500,
   date: "5/9/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://res.cloudinary.com/apartmentlist/image/upload/t_fullsize/ae9e7984b308a59f9dc529263b833a0c.jpg",
+  image: "../img/homes/ky-lexington.jpg",
   address: "85 W. State Avenue",
   city: "Lexington",
   state: "KY",
@@ -1697,10 +1674,10 @@ var listingsData = [{
   floorspace: 1800,
   date: "5/3/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://res.cloudinary.com/apartmentlist/image/upload/t_fullsize/ypqdl4r5ant6ejmw6ikr.jpg",
+  image: "../img/homes/ky-frankfort.jpg",
   address: "96 Cottage Street",
   city: "Frankfort",
   state: "KY",
@@ -1711,10 +1688,10 @@ var listingsData = [{
   floorspace: 1550,
   date: "5/1/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://activerain-store.s3.amazonaws.com/image_store/uploads/agents/overlandparkhomes/files/12815%20Hubbard%20Rd%20-%20Web-100.jpg",
+  image: "../img/homes/ks-kansas_city.jpg",
   address: "99 Sunnyslope Lane",
   city: "Kansas City",
   state: "KS",
@@ -1725,10 +1702,10 @@ var listingsData = [{
   floorspace: 2160,
   date: "3/6/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://www.paloverdehome.com/blog/wp-content/uploads/2016/10/AdobeStock_850933.jpeg",
+  image: "../img/homes/la-new_orleans.jpg",
   address: "472 Glenlake Street",
   city: "New Orleans",
   state: "LA",
@@ -1739,10 +1716,10 @@ var listingsData = [{
   floorspace: 2800,
   date: "2/28/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://i.pinimg.com/originals/2c/38/57/2c385786a2455c25fb4fa68771a3432f.jpg",
+  image: "../img/homes/la-baton_rouge.jpg",
   address: "930 Tarkiln Hill Drive",
   city: "Baton Rouge",
   state: "LA",
@@ -1753,10 +1730,10 @@ var listingsData = [{
   floorspace: 850,
   date: "2/20/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://ap.rdcpix.com/2078256230/56d092bca4a851d5006d8167c7e08f2fl-m1xd-w1020_h770_q80.jpg",
+  image: "../img/homes/la-lafayette.jpg",
   address: "9718 South Fremont Avenue",
   city: "Lafayette",
   state: "LA",
@@ -1767,10 +1744,10 @@ var listingsData = [{
   floorspace: 1100,
   date: "2/16/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Gym"]
 }, {
-  image: "http://photos.listhub.net/RASKKY/20183884/1?lm=20180917T180113",
+  image: "../img/homes/ky-bowling_green.jpg",
   address: "194 Thompson Road",
   city: "Bowling Green",
   state: "KY",
@@ -1781,10 +1758,10 @@ var listingsData = [{
   floorspace: 3425,
   date: "2/1/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.mainehomeconnection.com/image_display.php?id=3668",
+  image: "../img/homes/me-portland.jpg",
   address: "20 Armstrong Street",
   city: "Portland",
   state: "ME",
@@ -1795,10 +1772,10 @@ var listingsData = [{
   floorspace: 1850,
   date: "1/26/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: []
 }, {
-  image: "https://www.publichousing.com/gallery/_tx_75217_sterlingshire-apartment-homes_kyn.jpg",
+  image: "../img/homes/me-bangor.jpg",
   address: "48 Mulberry Court",
   city: "Bangor",
   state: "ME",
@@ -1809,10 +1786,10 @@ var listingsData = [{
   floorspace: 1099,
   date: "1/23/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://photos.zolo.ca/303-1750-augusta-avenue-burnaby-r2287256-photo-1.jpg?2018-09-06+15%3A49%3A29",
+  image: "../img/homes/me-augusta.jpg",
   address: "469 Victoria Avenue",
   city: "Augusta",
   state: "ME",
@@ -1823,10 +1800,10 @@ var listingsData = [{
   floorspace: 1800,
   date: "1/10/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bliss-Hoyer_House%2C_Shreveport%2C_LA_IMG_1580.JPG/1200px-Bliss-Hoyer_House%2C_Shreveport%2C_LA_IMG_1580.JPG",
+  image: "../img/homes/la-shreveport.jpg",
   address: "194 Thompson Road",
   city: "Shreveport",
   state: "LA",
@@ -1837,10 +1814,10 @@ var listingsData = [{
   floorspace: 1800,
   date: "1/9/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "http://legendhomeshouston.com/sites/legendhomecorp.com/files/community/image-3-web.jpg",
+  image: "../img/homes/md-baltimore.jpg",
   address: "21606 Mulberry Court",
   city: "Baltimore",
   state: "MD",
@@ -1851,10 +1828,10 @@ var listingsData = [{
   floorspace: 3500,
   date: "1/10/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://cdnselect.rentcafe.com/dmslivecafe/3/567974/Exterior-Courtyard-1.jpg?crop=(0,0,300,138)&cropxunits=300&cropyunits=138&quality=85&scale=both&",
+  image: "../img/homes/md-annapolis.jpg",
   address: "815 Belmont Avenue",
   city: "Annapolis",
   state: "MD",
@@ -1865,10 +1842,10 @@ var listingsData = [{
   floorspace: 1200,
   date: "1/23/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://images1.apartments.com/i2/gg1Wbn2Iw5wMwObg3XHwdAKzbMO09OqpiTuV0Yq-9pc/111/the-terano-rockville-md-the-terano-apartments-in-rockville.jpg",
+  image: "../img/homes/md-rockville.jpg",
   address: "462 Brown Drive",
   city: "Rockville",
   state: "MD",
@@ -1879,10 +1856,10 @@ var listingsData = [{
   floorspace: 2200,
   date: "1/26/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://mapio.net/images-p/101782855.jpg",
+  image: "../img/homes/me-lewiston.jpg",
   address: "36 Railroad Street",
   city: "Lewiston",
   state: "ME",
@@ -1893,10 +1870,10 @@ var listingsData = [{
   floorspace: 1750,
   date: "2/1/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: []
 }, {
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Henry_Swan_House%2C_ArlingtonMA_-_IMG_2724.JPG/1200px-Henry_Swan_House%2C_ArlingtonMA_-_IMG_2724.JPG",
+  image: "../img/homes/ma-boston.jpg",
   address: "34 South Galvin Street",
   city: "Boston",
   state: "MA",
@@ -1907,10 +1884,10 @@ var listingsData = [{
   floorspace: 3400,
   date: "2/16/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: []
 }, {
-  image: "http://www.compassfurnishedapartments.com/wp-content/uploads/SS-Exterior.jpg",
+  image: "../img/homes/ma-cambridge.jpg",
   address: "8 6th St",
   city: "Cambridge",
   state: "MA",
@@ -1921,10 +1898,10 @@ var listingsData = [{
   floorspace: 875,
   date: "2/20/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://res.cloudinary.com/apartmentlist/image/upload/t_fullsize/6adaf2125da2c8e6c8d4670e0720a411.jpg",
+  image: "../img/homes/ma-worcester.jpg",
   address: "307 Sherwood Road",
   city: "Worcester",
   state: "MA",
@@ -1935,10 +1912,10 @@ var listingsData = [{
   floorspace: 1100,
   date: "2/28/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://bright-media.brightmls.com/bright/images/0000/3007/8528/4364/300785284364_2048_1536_WM_aeb0ncqwGtKlJXL_.jpg",
+  image: "../img/homes/md-silver_spring.jpg",
   address: "1510 West Grandrose Avenue",
   city: "Silver Spring",
   state: "MD",
@@ -1949,10 +1926,10 @@ var listingsData = [{
   floorspace: 1900,
   date: "3/6/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "https://c1.staticflickr.com/3/2449/4059278368_8881052c10_b.jpg",
+  image: "../img/homes/mi-detroit.jpg",
   address: "658 E. Sierra Court",
   city: "Detroit",
   state: "MI",
@@ -1963,10 +1940,10 @@ var listingsData = [{
   floorspace: 2200,
   date: "5/1/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://photonet.hotpads.com/search/listingPhoto/PropertySolutions/173413/0014_1963526125_large.jpg",
+  image: "../img/homes/mi-ann_arbor.jpg",
   address: "8 Windsor Avenue",
   city: "Ann Arbor",
   state: "MI",
@@ -1977,10 +1954,10 @@ var listingsData = [{
   floorspace: 1100,
   date: "5/3/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://images1.apartments.com/i2/EDG7XAhnrD4bhBUww80R_ChSruk-WPmkPnWfr6oPNak/111/image.jpg",
+  image: "../img/homes/mi-grand_rapids.jpg",
   address: "234 Deerfield Avenue",
   city: "Grand Rapids",
   state: "MI",
@@ -1991,10 +1968,10 @@ var listingsData = [{
   floorspace: 1420,
   date: "5/9/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://ap.rdcpix.com/296471891/ad77cadf5d2b98a5a8a26d27e46c4898l-m0xd-w1020_h770_q80.jpg",
+  image: "../img/homes/ma-springfield.jpg",
   address: "402 Rosewood Street",
   city: "Springfield",
   state: "MA",
@@ -2005,10 +1982,10 @@ var listingsData = [{
   floorspace: 2600,
   date: "5/22/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: []
 }, {
-  image: "https://3kpnuxym9k04c8ilz2quku1czd-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/IMG_8077.jpg",
+  image: "../img/homes/mn-minneapolis.jpg",
   address: "7927 Oak Meadow Street",
   city: "Minneapolis",
   state: "MN",
@@ -2019,10 +1996,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "6/2/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://images.adsttc.com/media/images/5422/1d25/c07a/800d/e500/0143/large_jpg/Seven27_MikeRebholz_005.jpg?1411521799",
+  image: "../img/homes/mn-saint_paul.jpg",
   address: "97 Lafayette Road",
   city: "Saint Paul",
   state: "MN",
@@ -2033,10 +2010,10 @@ var listingsData = [{
   floorspace: 1355,
   date: "5/22/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://www.beaconpointeduluth.com/wp-content/uploads/2016/02/beacon-pointe.jpg",
+  image: "../img/homes/mn-duluth.jpg",
   address: "8138 Peachtree Avenue",
   city: "Duluth",
   state: "MN",
@@ -2047,10 +2024,10 @@ var listingsData = [{
   floorspace: 1525,
   date: "10/31/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://cdn.resize.sparkplatform.com/ric/1024x768/true/20170421212538370348000000-o.jpg",
+  image: "../img/homes/mi-kalamazoo.jpg",
   address: "7956 Lincoln Court",
   city: "Kalamazoo",
   state: "MI",
@@ -2061,10 +2038,10 @@ var listingsData = [{
   floorspace: 2555,
   date: "10/26/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://www.ryanhomes.com/rh-community-gallery-NewAspectRatio/38071061-2fb5-4b60-a4fa-eeb822b57d60/db/38071061-2fb5-4b60-a4fa-eeb822b57d60.jpg",
+  image: "../img/homes/ms-jackson.jpg",
   address: "43 Fieldstone Street",
   city: "Jackson",
   state: "MS",
@@ -2075,10 +2052,10 @@ var listingsData = [{
   floorspace: 2185,
   date: "10/14/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://www.shopapartments.com/apartment-image/Maison-D-Orleans5hhbklkt.0fr.jpg",
+  image: "../img/homes/ms-biloxi.jpg",
   address: "392 Winchester Court",
   city: "Biloxi",
   state: "MS",
@@ -2089,10 +2066,10 @@ var listingsData = [{
   floorspace: 700,
   date: "10/4/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "https://res.cloudinary.com/apartmentlist/image/upload/t_fullsize/77c7256b1d2b6f1e26041221eaa2551d.jpg",
+  image: "../img/homes/ms-hattiesburg.jpg",
   address: "895 Carriage Street",
   city: "Hattiesburg",
   state: "MS",
@@ -2103,10 +2080,10 @@ var listingsData = [{
   floorspace: 1500,
   date: "9/24/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "http://1037theloon.com/files/2017/04/1512-Lucille-Lane-Saint-Cloud-MN-56303-4765412-image1.jpg",
+  image: "../img/homes/mn-st_cloud.jpg",
   address: "8965 Goldfield Street",
   city: "St. Cloud",
   state: "MN",
@@ -2117,10 +2094,10 @@ var listingsData = [{
   floorspace: 3750,
   date: "8/25/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://www.mcbridehomes.com/images/community/slideshow/full/2733.jpg",
+  image: "../img/homes/md-st_louis.jpg",
   address: "17 Valley Avenue",
   city: "St. Louis",
   state: "MO",
@@ -2131,10 +2108,10 @@ var listingsData = [{
   floorspace: 3450,
   date: "7/19/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Gym", "Finished Basement"]
 }, {
-  image: "https://pp.walk.sc/full/p/75028/adfb01.jpg",
+  image: "../img/homes/mo-kansas_city.jpg",
   address: "7874 Arcadia Street",
   city: "Kansas City",
   state: "MO",
@@ -2145,10 +2122,10 @@ var listingsData = [{
   floorspace: 1422,
   date: "6/4/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://pp.walk.sc/full/p/132625469/9a213d.jpg",
+  image: "../img/homes/mo-springfield.jpg",
   address: "9981 Wentworth Drive",
   city: "Springfield",
   state: "MO",
@@ -2159,10 +2136,10 @@ var listingsData = [{
   floorspace: 1525,
   date: "6/2/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://photonet.hotpads.com/search/listingPhoto/ZillowSale/2089265879/0000_1205966474_large.jpg",
+  image: "../img/homes/ms-gulfport.jpg",
   address: "92 Overlook Street",
   city: "Gulfport",
   state: "MS",
@@ -2173,10 +2150,10 @@ var listingsData = [{
   floorspace: 2975,
   date: "5/22/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Elevator", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://www.theranchatrockcreek.com/wp-content/uploads/2015/03/moose-house-hero-1600x660.jpg",
+  image: "../img/homes/mt-missoula.jpg",
   address: "808 4th Drive",
   city: "Missoula",
   state: "MT",
@@ -2187,10 +2164,10 @@ var listingsData = [{
   floorspace: 4350,
   date: "5/9/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://www.interpointeapartments.com/gridmedia/img/slide4.jpg",
+  image: "../img/homes/mt-billings.jpg",
   address: "9595 Division Street",
   city: "Billings",
   state: "MT",
@@ -2201,10 +2178,10 @@ var listingsData = [{
   floorspace: 1855,
   date: "5/3/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: []
 }, {
-  image: "https://cdn-1.eneighborhoods.com/L2/@v=521342763@/3/316/3yd-GARMT-308316/4948278116.jpg",
+  image: "../img/homes/mt-bozeman.jpg",
   address: "833 Cambridge Street",
   city: "Bozeman",
   state: "MT",
@@ -2215,10 +2192,10 @@ var listingsData = [{
   floorspace: 1650,
   date: "5/1/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "http://img.houseofbrokers.com/Homes/Images/Listings/127745897/1/984f1e646ac062030a12277861697a70/Photo.jpg",
+  image: "../img/homes/mo-jefferson_city.jpg",
   address: "34 Wagon Street",
   city: "Jefferson City",
   state: "MO",
@@ -2229,10 +2206,10 @@ var listingsData = [{
   floorspace: 2200,
   date: "3/6/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Dundee_HD_Omaha_NE.JPG",
+  image: "../img/homes/ne-omaha.jpg",
   address: "798 Squaw Creek Drive",
   city: "Omaha",
   state: "NE",
@@ -2243,10 +2220,10 @@ var listingsData = [{
   floorspace: 2345,
   date: "2/28/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://res.cloudinary.com/apartmentlist/image/upload/t_fullsize/7d8ec18c0ed7afb660494b4dbea69f74.jpg",
+  image: "../img/homes/ne-lincoln.jpg",
   address: "8180 Cambridge Drive",
   city: "Lincoln",
   state: "NE",
@@ -2257,10 +2234,10 @@ var listingsData = [{
   floorspace: 699,
   date: "2/20/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: []
 }, {
-  image: "https://www.guidehabitation.ca/wp-content/themes/gh/pub/auto/9355/xl-myx-condos-791890013x.jpg",
+  image: "../img/homes/ne-grand_island.jpg",
   address: "8257 W. Goldfield Street",
   city: "Grand Island",
   state: "NE",
@@ -2271,10 +2248,10 @@ var listingsData = [{
   floorspace: 1700,
   date: "2/16/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: []
 }, {
-  image: "http://explore.virtualmontana.com/wp-content/uploads/2014/07/DSC01806.jpg",
+  image: "../img/homes/mt-helena.jpg",
   address: "192 Sierra Avenue",
   city: "Helena",
   state: "MT",
@@ -2285,10 +2262,10 @@ var listingsData = [{
   floorspace: 2750,
   date: "2/1/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://www.lennar.com/images/com/images/new-homes/14/38/2293/mhi/1NEWPLAN2174IMG011200x650.jpg?w=1200&h=650&as=1",
+  image: "../img/homes/nv-las_vegas.jpg",
   address: "6429 Lake View Avenue",
   city: "Las Vegas",
   state: "NV",
@@ -2299,10 +2276,10 @@ var listingsData = [{
   floorspace: 1788,
   date: "1/26/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: []
 }, {
-  image: "https://images1.apartments.com/i2/dNO4UBfqQdSMq9XA7AXs8p72DmNsxwGrkejjZ3MCGq0/111/younion-at-reno--student-living-reno-nv-primary-photo.jpg",
+  image: "../img/homes/nv-reno.jpg",
   address: "56 NW. Circle Avenue",
   city: "Reno",
   state: "NV",
@@ -2313,10 +2290,10 @@ var listingsData = [{
   floorspace: 999,
   date: "1/23/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://photonet.hotpads.com/search/listingPhoto/HotPads/1374088/0001_1871826743_large.jpg",
+  image: "../img/homes/nv-henderson.jpg",
   address: "20 Birch Hill Court",
   city: "Henderson",
   state: "NV",
@@ -2327,10 +2304,10 @@ var listingsData = [{
   floorspace: 2199,
   date: "1/10/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.kearneysagent.com/house2.jpg",
+  image: "../img/homes/ne-kearney.jpg",
   address: "844 Courtland Street",
   city: "Kearney",
   state: "NE",
@@ -2341,10 +2318,10 @@ var listingsData = [{
   floorspace: 1785,
   date: "1/9/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://s3.amazonaws.com/files.usmre.com/5633/PC280111.JPG",
+  image: "../img/homes/nh-manchester.jpg",
   address: "8035 Iroquois Court",
   city: "Manchester",
   state: "NH",
@@ -2355,10 +2332,10 @@ var listingsData = [{
   floorspace: 2450,
   date: "12/11/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://a10e3ce81812d2c62d8f-ff67b352b586fa3c9d6df2715cadd8d2.ssl.cf5.rackcdn.com/fe7fac39e216fff8f465b696bbc85786-1-.jpg?1506722288",
+  image: "../img/homes/nh-concord.jpg",
   address: "394 Canterbury Street",
   city: "Concord",
   state: "NH",
@@ -2369,10 +2346,10 @@ var listingsData = [{
   floorspace: 1850,
   date: "12/1/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://m.cbhomes.com/p/951/4650605/513D68819BDF440/original.jpg",
+  image: "../img/homes/nh-nashua.jpg",
   address: "218 Beech Street",
   city: "Nashua",
   state: "NH",
@@ -2383,10 +2360,10 @@ var listingsData = [{
   floorspace: 1450,
   date: "11/20/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://c58ba9090ae0d2a43db7-6e08ef50cda417f6a96c0267d4afbe38.ssl.cf5.rackcdn.com/180009127-residential-n18ion-o.jpg",
+  image: "../img/homes/nv-carson_city.jpg",
   address: "800 Fawn Street",
   city: "Carson City",
   state: "NV",
@@ -2397,10 +2374,10 @@ var listingsData = [{
   floorspace: 3000,
   date: "10/31/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Finished Basement"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISin96n0tptkzt1000000000.jpg",
+  image: "../img/homes/nj-newark.jpg",
   address: "5 Lexington Street",
   city: "Newark",
   state: "NJ",
@@ -2411,10 +2388,10 @@ var listingsData = [{
   floorspace: 3455,
   date: "10/26/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://photonet.hotpads.com/search/listingPhoto/DiverseSolutionsMls1433/202644485/0000_1967663340_large.jpg",
+  image: "../img/homes/nj-trenton.jpg",
   address: "39 Taylor Road",
   city: "Trenton",
   state: "NJ",
@@ -2425,10 +2402,10 @@ var listingsData = [{
   floorspace: 800,
   date: "10/4/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://cdnparap70.paragonrels.com/ParagonImages/Property/P7/SJSR/484922/0/0/0/01e6a99c52ec74b28ff32165bee58031/5/5f61d54057a5d7e17d8147323ca371b7/484922.JPG",
+  image: "../img/homes/nj-atlantic_city.jpg",
   address: "670 Shirley Street",
   city: "Atlantic City",
   state: "NJ",
@@ -2439,10 +2416,10 @@ var listingsData = [{
   floorspace: 1645,
   date: "9/24/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "http://2.bp.blogspot.com/-Qi49KHt2Uzw/UfGXT5Vi_TI/AAAAAAAABOs/xIaizKirXr8/s1600/portsmouth1.jpg",
+  image: "../img/homes/nh-portsmouth.jpg",
   address: "477 Columbia Avenue",
   city: "Portsmouth",
   state: "NH",
@@ -2453,10 +2430,10 @@ var listingsData = [{
   floorspace: 2150,
   date: "8/25/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: []
 }, {
-  image: "https://wp.zillowstatic.com/1/NM-ranch-resized-hero-image-37a7cc.jpg",
+  image: "../img/homes/nm-albuquerque.jpg",
   address: "99 Oak Meadow Street",
   city: "Albuquerque",
   state: "NM",
@@ -2467,10 +2444,10 @@ var listingsData = [{
   floorspace: 5400,
   date: "7/19/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://cdngeneral.rentcafe.com/dmslivecafe/3/114543/Slider%20C%20-%2091.jpg?quality=85&scale=both&",
+  image: "../img/homes/nm-santa_fe.jpg",
   address: "7877 Edgewood Avenue",
   city: "Santa Fe",
   state: "NM",
@@ -2481,10 +2458,10 @@ var listingsData = [{
   floorspace: 1100,
   date: "6/4/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.whitehouse51.com/pic/s3.amazonaws.com/iremlsimg/snmmls/1600297-1.jpg",
+  image: "../img/homes/nm-las_cruces.jpg",
   address: "28 Trusel Lane",
   city: "Las Cruces",
   state: "NM",
@@ -2495,10 +2472,10 @@ var listingsData = [{
   floorspace: 1640,
   date: "6/2/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://cdnparap70.paragonrels.com/ParagonImages/Property/P7/SJSR/504423/0/0/0/943a10a50c60b5d2e0415ebde0c4bc2d/5/522f7d9e9eb90c5cc92cea165cf15600/504423.JPG",
+  image: "../img/homes/",
   address: "583 Hall Drive",
   city: "Atlantic City",
   state: "NJ",
@@ -2509,10 +2486,10 @@ var listingsData = [{
   floorspace: 2600,
   date: "5/22/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "https://www.marrano.com/wp-content/uploads/2016/03/hero-1.jpg",
+  image: "../img/homes/ny-buffalo.jpg",
   address: "786 Primrose Drive",
   city: "Buffalo",
   state: "NY",
@@ -2523,10 +2500,10 @@ var listingsData = [{
   floorspace: 2200,
   date: "5/9/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://rosettidevco.com/wp-content/uploads/2018/02/Northern-Pass-Luxury-Condos-Colonie-NY.jpg",
+  image: "../img/homes/ny-albany.jpg",
   address: "42 North Argyle Street",
   city: "Albany",
   state: "NY",
@@ -2537,10 +2514,10 @@ var listingsData = [{
   floorspace: 1500,
   date: "5/3/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://media.syracuse.com/news/photo/2013/04/500-building-2jpg-acc50e4f2b58894a.jpg",
+  image: "../img/homes/ny-syracuse.jpg",
   address: "8423 Bellevue Drive",
   city: "Syracuse",
   state: "NY",
@@ -2551,10 +2528,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "5/1/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://ap.rdcpix.com/742787638/0327934c37646ac27e8f719ee8154792l-m0xd-w1020_h770_q80.jpg",
+  image: "../img/homes/nm-roswell.jpg",
   address: "1510 Edgemont Drive",
   city: "Roswell",
   state: "NM",
@@ -2565,10 +2542,10 @@ var listingsData = [{
   floorspace: 2450,
   date: "3/6/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: []
 }, {
-  image: "http://www.mouse-house-tour.com/tourImg/1119/front1208.JPG",
+  image: "../img/homes/nc-raleigh.jpg",
   address: "97 Lafayette Avenue",
   city: "Raleigh",
   state: "NC",
@@ -2579,10 +2556,10 @@ var listingsData = [{
   floorspace: 2500,
   date: "2/28/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: []
 }, {
-  image: "http://www.summerlyncottagesapts.com/wp-content/uploads/2017/08/residents.jpg",
+  image: "../img/homes/nc-fayetteville.jpg",
   address: "712 Sunset Drive",
   city: "Fayetteville",
   state: "NC",
@@ -2593,10 +2570,10 @@ var listingsData = [{
   floorspace: 900,
   date: "2/20/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://www.clevelandconstruction.com/media/1717/008_skye-condos.jpg",
+  image: "../img/homes/nc-charlotte.jpg",
   address: "37 Delaware Street",
   city: "Charlotte",
   state: "NC",
@@ -2607,10 +2584,10 @@ var listingsData = [{
   floorspace: 1099,
   date: "2/16/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://static1.squarespace.com/static/59bd92a0c534a5fb3f72db33/t/59d92a23268b96ed79c4a086/1507404469910/",
+  image: "../img/homes/ny-nyc.jpg",
   address: "429 Church Street",
   city: "New York City",
   state: "NY",
@@ -2621,10 +2598,10 @@ var listingsData = [{
   floorspace: 1950,
   date: "2/1/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: []
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISeor1ndfaq1cj0000000000.jpg",
+  image: "../img/homes/nd-fargo.jpg",
   address: "30 Ohio Street",
   city: "Fargo",
   state: "ND",
@@ -2635,10 +2612,10 @@ var listingsData = [{
   floorspace: 1300,
   date: "1/26/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://cdngeneral.rentcafe.com/dmslivecafe/3/648443/Sundance%20Header%20Pool%20Dusk.jpg?crop=(0,0,300,191.25000000000028)&cropxunits=300&cropyunits=200&quality=85&scale=both&",
+  image: "../img/homes/nd-bismarck.jpg",
   address: "670 Jockey Hollow Drive",
   city: "Bismarck",
   state: "ND",
@@ -2649,10 +2626,10 @@ var listingsData = [{
   floorspace: 1300,
   date: "1/23/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://mms.businesswire.com/media/20170221006392/en/570926/5/The_Westerly_-_Exterior_Rendering.jpg",
+  image: "../img/homes/nd-minot.jpg",
   address: "778 Prairie Drive",
   city: "Minot",
   state: "ND",
@@ -2663,10 +2640,10 @@ var listingsData = [{
   floorspace: 1499,
   date: "1/10/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://teamgale.net/themes/impact-idx/assets/images/BellNight-6.jpg",
+  image: "../img/homes/nc-wilmington.jpg",
   address: "1213 South King Street",
   city: "Wilmington",
   state: "NC",
@@ -2677,10 +2654,10 @@ var listingsData = [{
   floorspace: 3600,
   date: "1/9/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://signaturecustomhomes.com/wp-content/uploads/2015/06/1352300074_house-in-the-woods.jpg",
+  image: "../img/homes/oh-cleveland.jpg",
   address: "64 Riverside Avenue",
   city: "Cleveland",
   state: "OH",
@@ -2691,10 +2668,10 @@ var listingsData = [{
   floorspace: 4400,
   date: "1/10/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://pp3.walk.sc/full/p/113590345/7ea0e2.jpg",
+  image: "../img/homes/oh-cincinnati.jpg",
   address: "43 Aspen Avenue",
   city: "Cincinnati",
   state: "OH",
@@ -2705,10 +2682,10 @@ var listingsData = [{
   floorspace: 1755,
   date: "1/23/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://www.ontologos-corp.com/wp-content/uploads/2018/01/5555555555555555.jpg",
+  image: "../img/homes/oh-columbus.jpg",
   address: "7 Beaver Ridge Street",
   city: "Columbus",
   state: "OH",
@@ -2719,10 +2696,10 @@ var listingsData = [{
   floorspace: 1999,
   date: "1/26/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://i.pinimg.com/originals/a7/32/c1/a732c1d74d62001d469b75fac525aa33.jpg",
+  image: "../img/homes/nd-grand_forks.jpg",
   address: "29 Greenrose Street",
   city: "Grand Forks",
   state: "ND",
@@ -2733,10 +2710,10 @@ var listingsData = [{
   floorspace: 8000,
   date: "2/1/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://images-cdn.torchx.com/property-images/633/2018-07-30t23:23/11601-tuscany-ranch-oklahoma-city_829713-1-full.jpg",
+  image: "../img/homes/ok-oklahoma_city.jpg",
   address: "32 Homestead Road",
   city: "Oklahoma City",
   state: "OK",
@@ -2747,10 +2724,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "2/16/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: []
 }, {
-  image: "https://images1.apartments.com/i2/FeJB2AVCPDZNnPoiMyY513FrwJ9evftyXUzlISZEDBw/111/71-apartments-tulsa-ok-primary-photo.jpg",
+  image: "../img/homes/ok-tulsa.jpg",
   address: "757 Mayfair Drive",
   city: "Tulsa",
   state: "OK",
@@ -2761,10 +2738,10 @@ var listingsData = [{
   floorspace: 1700,
   date: "2/20/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://g5-assets-cld-res.cloudinary.com/image/upload/q_auto,f_auto,fl_lossy/g5/g5-c-1skckws2-case-and-associates-properties-inc/g5-cl-ia5tcfkm-icon-at-norman/uploads/the-icon-norman-hero.jpg",
+  image: "../img/homes/ok-norman.jpg",
   address: "1 High Ridge Court",
   city: "Norman",
   state: "OK",
@@ -2775,10 +2752,10 @@ var listingsData = [{
   floorspace: 1650,
   date: "2/28/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: []
 }, {
-  image: "https://www.publichousing.com/gallery/_oh_45439_dayton-homes-oh_jdv.jpg",
+  image: "../img/homes/oh-dayton.jpg",
   address: "7031 Maiden Street",
   city: "Dayton",
   state: "OH",
@@ -2789,10 +2766,10 @@ var listingsData = [{
   floorspace: 2500,
   date: "3/6/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "http://jalynely.com/wp-content/uploads/ingenious-ideas-ranch-house-architecture-beautiful-northwest-home-plan-69582am-architectural-01.jpg",
+  image: "../img/homes/or-portland.jpg",
   address: "7070 St Margarets Drive",
   city: "Portland",
   state: "OR",
@@ -2803,10 +2780,10 @@ var listingsData = [{
   floorspace: 2300,
   date: "5/1/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "https://images1.apartments.com/i2/kk-grHbYQgIoeZVyHHWOaKKW2Uz8l5rbERbar1BQETw/111/links-at-fort-smith-fort-smith-ar-primary-photo.jpg",
+  image: "../img/homes/or-eugene.jpg",
   address: "9968 Bayport Avenue",
   city: "Eugene",
   state: "OR",
@@ -2817,10 +2794,10 @@ var listingsData = [{
   floorspace: 899,
   date: "5/3/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool"]
-}, (_ref = {
-  image: "https://images1.apartments.com/i2/aqQTzq3X2dEFdaec58aX_tpwkg76LVDCEJYyqIWxiyA/111/image.jpg",
+}, {
+  image: "../img/homes/or-salem.jpg",
   address: "597 University Road",
   city: "Salem",
   state: "OR",
@@ -2830,9 +2807,11 @@ var listingsData = [{
   price: 212900,
   floorspace: 985,
   date: "5/9/2017",
-  seller: "Ashley	Kennedy", headshot: ""
-}, _defineProperty(_ref, "headshot", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-"), _defineProperty(_ref, "extras", ["Elevator", "Gym", "Swimming Pool"]), _ref), {
-  image: "https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/2517/files/2016/08/001_Front-a.jpg",
+  seller: "Ashley	Kennedy",
+  headshot: "../img/agents/ashley-kennedy.jpg",
+  extras: ["Elevator", "Gym", "Swimming Pool"]
+}, {
+  image: "../img/homes/ok-edmond.jpg",
   address: "4900 Durham Drive",
   city: "Edmond",
   state: "OK",
@@ -2843,10 +2822,10 @@ var listingsData = [{
   floorspace: 2200,
   date: "5/22/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: []
 }, {
-  image: "http://photos.listhub.net/TRENDPA/1000838136/1?lm=20180730T051707",
+  image: "../img/homes/pa-philadelphia.jpg",
   address: "8135 Cactus Lane",
   city: "Philadelphia",
   state: "PA",
@@ -2857,10 +2836,10 @@ var listingsData = [{
   floorspace: 2600,
   date: "6/2/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: []
 }, {
-  image: "https://g5-assets-cld-res.cloudinary.com/image/upload/x_0,y_0,h_1200,w_2000,c_crop/q_auto,f_auto,c_fill,g_center,h_1200,w_2000/v1515007677/g5/g5-c-j2uwbrzj-morgan-management-llc/g5-cl-1h5bhrynj6-eastside-bond-apartments/uploads/hero_glzhtm.jpg",
+  image: "../img/homes/pa-pittsburgh.jpg",
   address: "607 South Union Avenue",
   city: "Pittsburgh",
   state: "PA",
@@ -2871,10 +2850,10 @@ var listingsData = [{
   floorspace: 1555,
   date: "6/4/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "http://www.vartangroup.com/wp-content/uploads/2014/07/The-1500-Condominium.jpg",
+  image: "../img/homes/pa-harrisburg.jpg",
   address: "1500 Corona Street",
   city: "Harrisburg",
   state: "PA",
@@ -2885,10 +2864,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "7/19/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://media.brstatic.com/2018/10/31122916/How-much-is-a-downpayment-on-a-house.jpg",
+  image: "../img/homes/or-bend.jpg",
   address: "678 School Avenue",
   city: "Bend",
   state: "OR",
@@ -2899,10 +2878,10 @@ var listingsData = [{
   floorspace: 2850,
   date: "8/25/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "http://media.mlspin.com/photo.aspx?mls=72270549&w=1024&h=768&n=0",
+  image: "../img/homes/ri-providence.jpg",
   address: "535 Bay Street",
   city: "Providence",
   state: "RI",
@@ -2913,10 +2892,10 @@ var listingsData = [{
   floorspace: 2250,
   date: "9/24/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: []
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/ps.111/9/7/9/3/picture-uh=d619671d1928ffbd5b7d4b8b3062b1a9-ps=97939da915246b122286ecb4bfae6c0.jpg",
+  image: "../img/homes/ri-newport.jpg",
   address: "9659 Newport Street",
   city: "Newport",
   state: "RI",
@@ -2927,10 +2906,10 @@ var listingsData = [{
   floorspace: 1645,
   date: "10/4/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://b386363e680359b5cc19-97ec1140354919029c7985d2568f0e82.ssl.cf1.rackcdn.com/assets/uploads/featured_property_image/picture/89961/optimized_fc46fbe2a479a489e2f715fb420412d5.jpg",
+  image: "../img/homes/ri-warwick.jpg",
   address: "7683 Pilgrim Lane",
   city: "Warwick",
   state: "RI",
@@ -2941,10 +2920,10 @@ var listingsData = [{
   floorspace: 1750,
   date: "10/14/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "http://4.bp.blogspot.com/-wklTVM-3OnY/VhF6J3OPVWI/AAAAAAAAA4U/gf_-cFkLzwM/s1600/New%2BWorld%2B-%2BUnited%2BStates%2B-%2BVA%2B-%2BTidewater%2B-%2BWilliamsburg%2B-%2BGeorge%2BWythe%2BHouse%2B-%2B091.JPG",
+  image: "../img/homes/pa-lancaster.jpg",
   address: "56 N. Sunbeam Street",
   city: "Lancaster",
   state: "PA",
@@ -2955,10 +2934,10 @@ var listingsData = [{
   floorspace: 1950,
   date: "10/26/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: []
 }, {
-  image: "http://homesfeed.com/wp-content/uploads/2015/08/inspiring-charleston-style-house-plans-with-brick-wall-and-rectangle-pool-and-lounge-pool-chairs-and-outdoor-kitchen-and-garden.jpg",
+  image: "../img/homes/sc-charleston.jpg",
   address: "2 Rockledge Avenue",
   city: "Charleston",
   state: "SC",
@@ -2969,10 +2948,10 @@ var listingsData = [{
   floorspace: 3560,
   date: "10/14/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://images1.apartments.com/i2/1z-WUKO9x8CAumk3kTPQlGzO8NfmC3-C1NDpJEt7_Dk/111/abberly-village-apartment-homes-west-columbia-sc-primary-photo.jpg",
+  image: "../img/homes/sc-columbia.jpg",
   address: "1000 State Street",
   city: "Columbia",
   state: "SC",
@@ -2983,10 +2962,10 @@ var listingsData = [{
   floorspace: 675,
   date: "10/4/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://www.beachcombervacations.com/properties/00_Ocean_Bay_Club%20(3).jpg",
+  image: "../img/homes/sc-myrtle_beach.jpg",
   address: "789 Anderson Street",
   city: "Myrtle Beach",
   state: "SC",
@@ -2997,10 +2976,10 @@ var listingsData = [{
   floorspace: 2100,
   date: "9/24/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://b386363e680359b5cc19-97ec1140354919029c7985d2568f0e82.ssl.cf1.rackcdn.com/assets/uploads/featured_property_image/picture/98615/optimized_967db4af2e86fbd51c102f721648e659.jpg",
+  image: "../img/homes/ri-cranston.jpg",
   address: "50 S. Rock Maple Street",
   city: "Cranston",
   state: "RI",
@@ -3011,10 +2990,10 @@ var listingsData = [{
   floorspace: 3800,
   date: "8/25/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://cdnparap80.paragonrels.com/ParagonImages/Property/P8/RASE/21802834/0/0/0/23a89f327c133c9c06c9b7b00bd0e861/2/8dcc31c884ddc08e9ac18bf66cbbfb14/21802834.JPG",
+  image: "../img/homes/sd-sioux_falls.jpg",
   address: "204 Gainsway Street",
   city: "Sioux Falls",
   state: "SD",
@@ -3025,10 +3004,10 @@ var listingsData = [{
   floorspace: 2255,
   date: "7/19/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: []
 }, {
-  image: "https://images1.apartments.com/i2/w4hTrEv3YJ4W4ZdErXhT1OE7JAgWXUxJ0KEza7Q2pa0/111/copper-ridge-apartments-rapid-city-sd-primary-photo.jpg",
+  image: "../img/homes/sd-rapid_city.jpg",
   address: "226 Old Beach Street",
   city: "Rapid City",
   state: "SD",
@@ -3039,10 +3018,10 @@ var listingsData = [{
   floorspace: 1485,
   date: "6/4/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://images1.apartments.com/i2/jf9bBFvFgfQh8RApoOAdoSu1c6pyCEmZSPH3zKhzep0/111/prairie-vista-apartments-pierre-sd-primary-photo.jpg",
+  image: "../img/homes/sd-pierre.jpg",
   address: "9878 Columbia Avenue",
   city: "Pierre",
   state: "SD",
@@ -3053,10 +3032,10 @@ var listingsData = [{
   floorspace: 1250,
   date: "6/2/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://i.ytimg.com/vi/XeaLCRdfW5k/maxresdefault.jpg",
+  image: "../img/homes/sc-greenville.jpg",
   address: "8016 Addison Avenue",
   city: "Greenville",
   state: "SC",
@@ -3067,10 +3046,10 @@ var listingsData = [{
   floorspace: 2375,
   date: "5/22/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: []
 }, {
-  image: "https://mlsphotos.onjax.com/realtracs/19/71/08/9/1971089_0.jpg/t1536965091/1240x764/",
+  image: "../img/homes/tn-nashville.jpg",
   address: "7701 North Heather Drive",
   city: "Nashville",
   state: "TN",
@@ -3081,10 +3060,10 @@ var listingsData = [{
   floorspace: 2755,
   date: "5/9/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "https://cdngeneral.rentcafe.com/dmslivecafe/3/156046/TN_Memphis_RiversetApartments_p0162721_03_4_FlashGallery.jpg?quality=85&scale=both&",
+  image: "../img/homes/tn-memphis.jpg",
   address: "216 W. Brewery Drive",
   city: "Memphis",
   state: "TN",
@@ -3095,10 +3074,10 @@ var listingsData = [{
   floorspace: 1445,
   date: "5/3/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://cdn.photos.sparkplatform.com/knx/20180814205809194804000000-o.jpg",
+  image: "../img/homes/tn-knoxville.jpg",
   address: "75 Del Monte Lane",
   city: "Knoxville",
   state: "TN",
@@ -3109,10 +3088,10 @@ var listingsData = [{
   floorspace: 1955,
   date: "5/1/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://upload.wikimedia.org/wikipedia/commons/6/64/SD-Aberdeen-Simmons-house.JPG",
+  image: "../img/homes/sd-aberdeen.jpg",
   address: "7160 Wilson Street",
   city: "Aberdeen",
   state: "SD",
@@ -3123,10 +3102,10 @@ var listingsData = [{
   floorspace: 2350,
   date: "3/6/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "https://www.zeenspublishing.com/img/images.dreesteam.com/dreeshomes2016/hpslides/HOU/1_LinleyA_RAP.jpg",
+  image: "../img/homes/tx-houston.jpg",
   address: "7016 Baker Lane",
   city: "Houston",
   state: "TX",
@@ -3137,10 +3116,10 @@ var listingsData = [{
   floorspace: 3545,
   date: "2/28/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "https://res.cloudinary.com/g5-assets-cld/image/upload/x_0,y_186,h_1002,w_1998,c_crop/q_auto,f_auto,fl_lossy,c_fill,g_center,h_1002,w_1998/g5/g5-c-1t2d31r8-berkshire-communities/g5-cl-1gjentuh6p-400-n-ervay/uploads/north-ervay-apartments-hero.jpg",
+  image: "../img/homes/tx-dallas.jpg",
   address: "6 Morris Street",
   city: "Dallas",
   state: "TX",
@@ -3151,10 +3130,10 @@ var listingsData = [{
   floorspace: 2150,
   date: "2/20/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://www.highrises.com/uploads/Tyndall-home-image-1.jpg",
+  image: "../img/homes/tx-austin.jpg",
   address: "824 Bohemia Road",
   city: "Austin",
   state: "TX",
@@ -3165,10 +3144,10 @@ var listingsData = [{
   floorspace: 1765,
   date: "2/16/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://www.nestofposies-blog.com/wp-content/uploads/2015/04/3819-Mission-View-Avenue-Chattanooga-TN-HOUSE-FOR-SALE.jpg",
+  image: "../img/homes/tn-chattanooga.jpg",
   address: "902 Parker Street",
   city: "Chattanooga",
   state: "TN",
@@ -3179,10 +3158,10 @@ var listingsData = [{
   floorspace: 1950,
   date: "2/1/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: []
 }, {
-  image: "https://i.pinimg.com/originals/bb/02/21/bb02215a74e320958322c5b6e713293c.jpg",
+  image: "../img/homes/ut-salt_lake_city.jpg",
   address: "9690 Essex Drive",
   city: "Salt Lake City",
   state: "UT",
@@ -3193,10 +3172,10 @@ var listingsData = [{
   floorspace: 2655,
   date: "1/26/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://www.e-p.com/file/d8ddaba4-ea0a-448f-871c-871d770106a2",
+  image: "../img/homes/ut-provo.jpg",
   address: "19 Nut Swamp Drive",
   city: "Provo",
   state: "UT",
@@ -3207,10 +3186,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "1/23/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://www.highrises.com/uploads/las-vegas-the-ogden-banner.jpg",
+  image: "../img/homes/ut-ogden.jpg",
   address: "59 Oak Drive",
   city: "Ogden",
   state: "UT",
@@ -3221,10 +3200,10 @@ var listingsData = [{
   floorspace: 1500,
   date: "1/10/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Elevator", "Swimming Pool"]
 }, {
-  image: "https://mthcdn.azureedge.net/-/media/assets/san-antonio-tx/the-heights-of-arcadia-ridge/san_heightsarcadiaridge-evergreen-ext-dusk_web.ashx?h=1200&w=1600&hash=F373C24B20B0FB91BE68866AF3EA0858A43EEDAA",
+  image: "../img/homes/tx-san_antonio.jpg",
   address: "331 East Edgemont Street",
   city: "San Antonio",
   state: "TX",
@@ -3235,10 +3214,10 @@ var listingsData = [{
   floorspace: 2350,
   date: "1/9/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "https://activerain-store.s3.amazonaws.com/blog_entries/428/5026428/original/31_Cranwell_MAIN.jpg?1487953744",
+  image: "../img/homes/vt-burlington.jpg",
   address: "8888 Thatcher Road",
   city: "Burlington",
   state: "VT",
@@ -3249,10 +3228,10 @@ var listingsData = [{
   floorspace: 2430,
   date: "1/10/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "https://downstreet.org/wordpress/wp-content/uploads/2014/12/nb-final-006.jpg",
+  image: "../img/homes/vt-montpelier.jpg",
   address: "490 Union Street",
   city: "Montpelier",
   state: "VT",
@@ -3263,10 +3242,10 @@ var listingsData = [{
   floorspace: 1600,
   date: "1/23/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "http://www.hideoutcanyon.com/uploads/shared/images/Settlement/Condo%20Building%20Exterior%20High%20Res.jpg",
+  image: "../img/homes/vt-rutland_city.jpg",
   address: "3 Fifth Street",
   city: "Rutland City",
   state: "VT",
@@ -3277,10 +3256,10 @@ var listingsData = [{
   floorspace: 1445,
   date: "1/26/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://assets.utahrealestate.com/photos/1024x768/1322686.jpg",
+  image: "../img/homes/ut-park_city.jpg",
   address: "565 Smoky Hollow Drive",
   city: "Park City",
   state: "UT",
@@ -3291,10 +3270,10 @@ var listingsData = [{
   floorspace: 3200,
   date: "2/1/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Finished Basement"]
 }, {
-  image: "http://photos.listhub.net/CAARMLSVA/571016/1?lm=20180124T210847",
+  image: "../img/homes/va-charlottesville.jpg",
   address: "97 Pennsylvania Avenue",
   city: "Charlottesville",
   state: "VA",
@@ -3305,10 +3284,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "2/16/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: []
 }, {
-  image: "https://aviaapartments.com/wp-content/uploads/2015/07/USE-ON-FRONT-3-copy.jpg",
+  image: "../img/homes/va-richmond.jpg",
   address: "7569 Pennington Street",
   city: "Richmond",
   state: "VA",
@@ -3319,10 +3298,10 @@ var listingsData = [{
   floorspace: 900,
   date: "2/20/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: []
 }, {
-  image: "https://www.sandbridge.com/application/files/7114/8125/1597/lux-masthead-01.jpg",
+  image: "../img/homes/va-virginia_beach.jpg",
   address: "977 Kent Street",
   city: "Virginia Beach",
   state: "VA",
@@ -3333,10 +3312,10 @@ var listingsData = [{
   floorspace: 1299,
   date: "2/28/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: ["Elevator", "Gym"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/zillowstatic/ISi3mi5m84r18m1000000000.jpg",
+  image: "../img/homes/vt-brattleboro.jpg",
   address: "7998 North Rock Maple Street",
   city: "Brattleboro",
   state: "VT",
@@ -3347,10 +3326,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "3/6/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: []
 }, {
-  image: "https://hammerandhand.com/wp-content/uploads/2013/11/pacific-northwest-home-styles.jpg",
+  image: "../img/homes/wa-seattle.jpg",
   address: "8260 Edgefield Street",
   city: "Seattle",
   state: "WA",
@@ -3361,10 +3340,10 @@ var listingsData = [{
   floorspace: 1450,
   date: "5/1/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://www.rentalhousingdeals.com/uploaded/Cathedral%20Plaza%20007.jpg",
+  image: "../img/homes/wa-spokane.jpg",
   address: "8721 Thompson Road",
   city: "Spokane",
   state: "WA",
@@ -3375,10 +3354,10 @@ var listingsData = [{
   floorspace: 1500,
   date: "5/3/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://www.highrises.com/uploads/baker-condos-tacoma_banner.jpg",
+  image: "../img/homes/wa-tacoma.jpg",
   address: "8122 N.E. Canal Street",
   city: "Tacoma",
   state: "WA",
@@ -3389,10 +3368,10 @@ var listingsData = [{
   floorspace: 1800,
   date: "5/9/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://c1.staticflickr.com/9/8201/8240544022_b518198d53_b.jpg",
+  image: "../img/homes/va-norfolk.jpg",
   address: "747B Cherry Hill Road",
   city: "Norfolk",
   state: "VA",
@@ -3403,10 +3382,10 @@ var listingsData = [{
   floorspace: 2200,
   date: "6/2/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://thumbs.trulia-cdn.com/pictures/thumbs_6/ps.90/4/c/e/2/picture-uh=b3dfbe6a5d2b4c42cee19e621bcfc88-ps=4ce24f7c569d388ca5a221a290166cdf.jpg",
+  image: "../img/homes/wv-charleston.jpg",
   address: "117 Hill Field Road",
   city: "Charleston",
   state: "WV",
@@ -3417,10 +3396,10 @@ var listingsData = [{
   floorspace: 2050,
   date: "6/4/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: []
 }, {
-  image: "https://s3-media3.fl.yelpcdn.com/bphoto/CKVAa1yAtfEPOv0RtE26dg/o.jpg",
+  image: "../img/homes/wv-morgantown.jpg",
   address: "10 Gartner Road",
   city: "Morgantown",
   state: "WV",
@@ -3431,10 +3410,10 @@ var listingsData = [{
   floorspace: 1350,
   date: "7/19/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://ccinvest.com/wp-content/uploads/2015/11/MEDHighlawnPlace-extSign-2.jpg",
+  image: "../img/homes/wv-huntington.jpg",
   address: "8052 Heather Street",
   city: "Huntington",
   state: "WV",
@@ -3445,10 +3424,10 @@ var listingsData = [{
   floorspace: 1888,
   date: "8/25/2017",
   seller: "Kate	Wagner",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQe21m4yrq9X5lUZAarvDuJT5B_E_Wz-YLi99_Vt-LjZDN_K2J3g",
+  headshot: "../img/agents/kate-wagner.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://images.mris.com/image/V3/1/z4WP9MX7eVK5vXPsqdfsDeBvml0QXI6y19b3c2znXHmbG9_md3OyPPLBkwT6ZI9qRqHKeO4ucDA_pK9GPbmRch9kM3Ybt6mLWt0XFz_TyHc.jpg",
+  image: "../img/homes/wa-bellevue.jpg",
   address: "2718 Morris Street",
   city: "Bellevue",
   state: "WA",
@@ -3459,10 +3438,10 @@ var listingsData = [{
   floorspace: 1970,
   date: "9/24/2017",
   seller: "Wilson	Foster",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4zd4Ewb9akgNZ7fpblpqPXnMBseqQ4BlvdBFQGuMTIalVc_s7sA",
+  headshot: "../img/agents/wilson-foster.jpg",
   extras: []
 }, {
-  image: "http://www.fieldstone-homes.com/wp-content/uploads/2015/06/Annabella1.jpg",
+  image: "../img/homes/wi-milwaukee.jpg",
   address: "6014 High Avenue",
   city: "Milwaukee",
   state: "WI",
@@ -3473,10 +3452,10 @@ var listingsData = [{
   floorspace: 2250,
   date: "10/4/2017",
   seller: "Sherry	Tucker",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxG750fDVb16ku903OcSZmF2y5mybeSjKDnug8O2GOT--Vh0y2Q",
+  headshot: "../img/agents/sherry-tucker.jpg",
   extras: []
 }, {
-  image: "https://images1.apartments.com/i2/Velp3bcsJsMlqnj8zoRu8OYqZRhCkoq_dkBJ01bkVHc/111/veritas-village-madison-wi-building-photo.jpg",
+  image: "../img/homes/wi-madison.jpg",
   address: "555 Illinois Avenue",
   city: "Madison",
   state: "WI",
@@ -3487,10 +3466,10 @@ var listingsData = [{
   floorspace: 2000,
   date: "10/14/2017",
   seller: "Randy	Wood",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmmj-msbj9Jbl4nJW7ouyXl8R6cAZaJR5QIkYNsGA92RNesdwfg",
+  headshot: "../img/agents/randy-wood.jpg",
   extras: ["Gym", "Swimming Pool"]
 }, {
-  image: "https://i.ytimg.com/vi/mS_w42DistQ/maxresdefault.jpg",
+  image: "../img/homes/wi-green_bay.jpg",
   address: "47 Hillside Street",
   city: "Green Bay",
   state: "WI",
@@ -3501,10 +3480,10 @@ var listingsData = [{
   floorspace: 1675,
   date: "10/26/2017",
   seller: "Amelia	Berry",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNB81AyZ1MmfQx7g2W4JMb8EkQmre2KXYQAhos9Uc2hFrjHkFpKg",
+  headshot: "../img/agents/amelia-berry.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/William_Miles_Tiernan_House.jpg/1200px-William_Miles_Tiernan_House.jpg",
+  image: "../img/homes/wv-wheeling.jpg",
   address: "55 Rockaway Drive",
   city: "Wheeling",
   state: "WV",
@@ -3515,10 +3494,10 @@ var listingsData = [{
   floorspace: 3450,
   date: "10/31/2017",
   seller: "Austin	Alvarado",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHEU48gTAuFmgjTrEi6J4v_GHwUiB0szfMJjFSP6voVdjnEhPoA",
+  headshot: "../img/agents/austin-alvarado.jpg",
   extras: ["Swimming Pool", "Finished Basement"]
 }, {
-  image: "http://dangregghomes.com/wp-content/gallery/13408-alpine-ranch/13408alpineranch-new-040.jpg",
+  image: "../img/homes/wy-cheyenne.jpg",
   address: "41 Kent Street",
   city: "Cheyenne",
   state: "WY",
@@ -3529,10 +3508,10 @@ var listingsData = [{
   floorspace: 2540,
   date: "11/20/2017",
   seller: "Ivan	Walters",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznoP3Yxhr1G60HGaczu77WMGQYJ2D0CQP8GITDldqe-pgsohH",
+  headshot: "../img/agents/ivan-walters.jpg",
   extras: ["Swimming Pool"]
 }, {
-  image: "http://static.trip101.com/paragraph_media/pictures/000/237/139/large/4de405ce-58cb-42de-bb12-e02f640f4096.c10.jpg?1501233535",
+  image: "../img/homes/wy-jackson.jpg",
   address: "9832 Oak Valley Avenue",
   city: "Jackson",
   state: "WY",
@@ -3543,10 +3522,10 @@ var listingsData = [{
   floorspace: 850,
   date: "12/1/2017",
   seller: "Ashley	Kennedy",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_Uae3WAkX00aN9fSaPSpVl9gbq99CXZlPD-sdQUIvQ9SsKP-",
+  headshot: "../img/agents/ashley-kennedy.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://storage.googleapis.com/idx-photos-gs.ihouseprd.com/WY-LBOR/180276/org/000.jpg",
+  image: "../img/homes/wy-laramie.jpg",
   address: "80 Mammoth Avenue",
   city: "Laramie",
   state: "WY",
@@ -3557,10 +3536,10 @@ var listingsData = [{
   floorspace: 1345,
   date: "12/11/2017",
   seller: "Marshall	Patrick",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4scLAeiM59hb-v3gRJjSvRg57FLXYnTdxx2iHJ9hUh8eRCEe2",
+  headshot: "../img/agents/marshall-patrick.jpg",
   extras: ["Elevator", "Gym", "Swimming Pool"]
 }, {
-  image: "https://www.spring-brook.com/wp-content/uploads/2018/01/banner-5bed.jpg",
+  image: "../img/homes/wi-wisconsin_dells.jpg",
   address: "399 Discovery Way",
   city: "Wisconsin Dells",
   state: "WI",
@@ -3571,7 +3550,7 @@ var listingsData = [{
   floorspace: 3500,
   date: "6/2/2017",
   seller: "Mattie	Simon",
-  headshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0A12utCN8r_NKJBxXSHtIOz5Kz4IkZ3KMTm-UpZglGi6Oqv-oQ",
+  headshot: "../img/agents/mattie-simon.jpg",
   extras: []
 }];
 

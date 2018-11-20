@@ -162,7 +162,7 @@
         text-transform: capitalize;
         position: absolute;
         bottom: 20px;
-        text-shadow: 1px 1px 5px rgba(107, 88, 150, 1);
+        text-shadow: 1px 1px 10px rgba(107, 88, 150, 1);
       }
 
       .details {
@@ -187,9 +187,9 @@
         background: -webkit-linear-gradient(-45deg, rgba(76,34,173,.8) 0%,rgba(235,137,255,.8) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(135deg, rgba(76,34,173,.8) 0%,rgba(235,137,255,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c22ad', endColorstr='#eb89ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        .user-img {
-          width: 40px;
-          height: 40px;
+        .user-img {float: left;
+          width: 80px;
+          height: 80px;
           border-radius: 50%;
           margin: 1px;
           border: 0.4px solid white;
@@ -212,7 +212,7 @@
             font-size: 0.9rem;
             font-weight: 300;
             color: rgba(255,255,255, 1);
-            display: block;
+            display: inline-block;
             margin: 1px;
 
           }
@@ -224,13 +224,13 @@
           }
         }
         .listing-details {
-            margin: 3px;
+            padding: 3px;
             .fa{
               display: inline-block;
               margin: 3px;
               font-size: 20px;
               margin-right: 3px;
-              align-content: left;
+              align-content: center;
             }
             span {
               display: inline-block;
@@ -274,6 +274,7 @@
   font-size: 0.7rem;
   border-radius: 5px;
   margin: 14px 0px 10px 28px;
+  align-content: center;
   max-width: 120px;
   transition: background 0.2s ease-in-out;
   &:hover {
