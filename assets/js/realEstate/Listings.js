@@ -161,7 +161,7 @@ export default class Listings extends Component {
             </div>
           </section>
 
-          {/*<section className="pagination" id="pagination">
+          {/* <section className="pagination" id="pagination">
             <div className="row">
               <ul className="pages">
                 <li>Prev</li>
@@ -173,8 +173,7 @@ export default class Listings extends Component {
                 <li>Next</li>
               </ul>
             </div>
-          </section>
-          */}
+          </section> */}
         </section>
     )
   }

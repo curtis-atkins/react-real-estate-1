@@ -684,53 +684,6 @@ var Listings = function (_Component) {
             { className: 'row' },
             this.loopListings()
           )
-        ),
-        _react2.default.createElement(
-          'section',
-          { className: 'pagination', id: 'pagination' },
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'ul',
-              { className: 'pages' },
-              _react2.default.createElement(
-                'li',
-                null,
-                'Prev'
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'active' },
-                '1'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                '2'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                '3'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                '4'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                '5'
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                'Next'
-              )
-            )
-          )
         )
       );
     }
