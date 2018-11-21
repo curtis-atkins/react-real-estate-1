@@ -119,48 +119,6 @@ export default class Listings extends Component {
                     </div>
                   </div>
                 </div>
-
-
-
-
-
-
-
-
-              {/*<div className="details">
-                <div className="col-md-3">
-                  <div className="user-img" style={{background:`url(${listing.headshot}) no-repeat center`}}>
-                    {/* <i className="fa fa-user-o" aria-hidden="true"
-                       style={{background:`no-repeat center center`}}>
-                     </i>
-
-                  </div>
-                </div>
-                <div className="col-md-9">
-                  <div className="user-details">
-                    <span className="user-name">{listing.seller}</span>
-                    <span className="user-date">{listing.date}</span>
-                  </div>
-                  <div className="listing-details">
-                    <div className="floor-space">
-                      <i className="fa fa-check-square-o" aria-hidden="true"></i>
-                      <span>{listing.floorspace} Sq Ft</span>
-                    </div>
-                    <div className="bedrooms">
-                      <i className="fa fa-bed" aria-hidden="true"></i>
-                      <span>{listing.rooms} bed</span>
-                    </div>
-                    <div className="bath">
-                      <i className="fa fa-bath" aria-hidden="true"></i>
-                      <span>{listing.bath} bath</span>
-                    </div>
-                    <div className="view-btn">
-                      View Listing
-                    </div>
-                  </div>
-                </div>
-              </div>
-              */}
             </div>
             <div className="bottom-info">
               <span className="price">${listing.price}</span>
@@ -203,7 +161,7 @@ export default class Listings extends Component {
             </div>
           </section>
 
-          <section className="pagination" id="pagination">
+          {/*<section className="pagination" id="pagination">
             <div className="row">
               <ul className="pages">
                 <li>Prev</li>
@@ -216,6 +174,7 @@ export default class Listings extends Component {
               </ul>
             </div>
           </section>
+          */}
         </section>
     )
   }
